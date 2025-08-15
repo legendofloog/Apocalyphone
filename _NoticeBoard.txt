@@ -15,3 +15,4 @@ Minor Bugs:
 - S Rank doesnt go epic green
 - Summon (and possibly other actions) giving too much exp in fatigue state when a 1HP unit so the logic somewhere in my CHAX is probably bad.
 - Bow Knight anim hangs when using the shortbow at 1 range.
+- HP resets when escaping, this is inherent to Ysor's hack but may be worth trying to fix.

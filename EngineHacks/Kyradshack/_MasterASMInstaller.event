@@ -141,6 +141,10 @@
 //Changes by Kyrads/Pikmin1211
 	#include "Fatigue/Fatigue.event"
 
+//Ysor
+//HP Persisting Through Chapters
+	#include "HpBetweenChapterHack/Installer.event"
+
 //A whole bunch of edits by various people, see Edits.event for more info
 	#include "Edits.event"
 
