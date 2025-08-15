@@ -96,70 +96,7 @@ void UnitAutolevelCore(struct Unit* unit, u8 classId, int levelCount) {
 //Additionally, designed to increase the likelihood of a stat being bang on average. Slightly hacky solution though.
 //Commented out but a system in place for random chances for highly deviant stats
 int GetAutoleveledStatIncrease(int growth, int levelCount) {
-    int baseChangegrowthValue;
-    int averagePercent;
-    int growthValue = growth * levelCount;
-
-    if(levelCount <= 5){
-      baseChangegrowthValue = Div(growthValue,2);
-      averagePercent = 20;
-    }
-    else if(levelCount <= 10){
-      baseChangegrowthValue = Div(growthValue,3);
-      averagePercent = 30;
-    }
-    else if (levelCount <= 15){
-      baseChangegrowthValue = Div(growthValue,4);
-      averagePercent = 40;
-    }
-    else if (levelCount <= 20){
-      baseChangegrowthValue = Div(growthValue,5);
-      averagePercent = 45;
-    }
-    else if (levelCount <= 25){
-      baseChangegrowthValue = Div(growthValue,6);
-      averagePercent = 50;
-    }
-    else{
-      baseChangegrowthValue = Div(growthValue,7);
-      averagePercent = 55;
-    }
-
-    int positiveValue = NextRN_N((Div(growthValue,3)) - (Div(growthValue,13))); //value A v & value B ^ = greater deviation and vice versa
-    int negativeValue = NextRN_N((Div(growthValue,3)) - (Div(growthValue,13)));
-
-    /*
-    int changegrowthValue
-    int randomNumber = NextRN_N(100)
-    if(randomNumber <= 30){
-      changegrowthValue = growthValue/x;
-    }
-    else if(randomNumber <= 15){
-      changegrowthValue = growthValue/y;
-    }
-    else if(randomNumber <= 5){
-      changegrowthValue = growthValue/z;
-    }
-    else{
-      changegrowthValue = basegrowthValue
-    }
-    */
-    //baseChangegrowthValue = growthValue/1;
-    int changeValue = MIN(ABS(positiveValue - negativeValue), baseChangegrowthValue);
-    if(negativeValue > positiveValue){
-    	changeValue *= -1;
-    }
-
-    int statIncreaseTotal = growthValue + changeValue;
-    //system in place to overwrite any randomness at x% to make a stat bang on average
-    if(statIncreaseTotal != growthValue){ //where growth value = growth * levelCount	
-      //averagePercent = 100;	
-		  if(NextRN_N(100) <= averagePercent){
-		  statIncreaseTotal = growthValue; //need to find a way to make this not roll up?
-		  }
-    }
-    
-    return GetStatIncreaseNPC(statIncreaseTotal);
+  return GetStatIncreaseNPC((growth * levelCount) + (NextRN_N((growth * levelCount) / 4) - (growth * levelCount) / 8));
 
 }
 

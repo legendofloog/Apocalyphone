@@ -1,7 +1,6 @@
 This text file is purely for documenting purposes
 
 Immediate To-Do's
-- Autolevel Code
 - Effectiveness Table Stuff
 - Item Table
 - Undo Bow Descs
