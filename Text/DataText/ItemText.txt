@@ -159,7 +159,6 @@ Shortbow[X]
 Can counter up close.[X]
 
 ## LongbowDesc
-3x effective against [Flier] & [Dragon][N]
 Extended attack range.[X]
 
 ## BeaconBowDesc
