@@ -1,23 +1,26 @@
 ## ClaymoreName
 Claymore[X]
 
+## ArmourslayerName
+Armourslayer[X]
+
 ## AntiCavDesc
-3x effective against [Horse][X]
+3x effective against cavalry.[X]
 
 ## AntiArmourDesc
-3x effective against [Armour][X]
+3x effective against heavy armour.[X]
 
 ## AntiDragonDesc
-3x effective against [Dragon][X]
+3x effective against wyverns.[X]
 
 ## AntiFlierDesc
-3x effective against [Flier] & [Dragon][X]
+3x effective against flying units.[X]
 
 ## AntiMonsterDescA
-2x effective against [Monster][X]
+2x effective against monsters.[X]
 
 ## AntiMonsterDescB
-3x effective against [Monster][X]
+3x effective against monsters.[X]
 
 ## SwiftSwordName
 SwiftSword[X]
@@ -40,7 +43,7 @@ Uses magic at range.[X]
 
 ## WindSwordDesc
 Imbued with wind magic.[N]
-3x effective against [Flier] & [Dragon].[X]
+3x effective against flying units.[X]
 
 ## ShamshirDesc
 Greatly improves critical[N]
@@ -103,7 +106,7 @@ Pierces opponent's defence.[X]
 Longinus[X]
 
 ## LonginusDesc
-2x effective against [Monster][N]
+2x effective against monsters.[N]
 Grants +5 Defence.[X]
 
 ## SlimAxeName
@@ -113,7 +116,7 @@ Slim Axe[X]
 Iron Poleaxe[X]
 
 ## SteelPoleaxeName
-Steel Poleaxe[X]
+Stl Poleaxe[X]
 
 ## SwiftAxeName
 Swift Axe[X]
@@ -143,7 +146,7 @@ Sends opponents flying.[X]
 An axe for breaking swordsmen.[X]
 
 ## SAxeDesc
-2x effective against [Monster][N]
+2x effective against monsters.[N]
 Grants +5 Strength.[X]
 
 ## SlimBowName
@@ -162,8 +165,8 @@ Can counter up close.[X]
 Extended attack range.[X]
 
 ## BeaconBowDesc
-2x effective against [Monster][N]
-& 3x effective against [Flier][X]
+2x effective against monsters.[N]
+& 3x effective against fliers.[X]
 
 ## SteelWarbowName
 Steel Warbow[X]
@@ -181,15 +184,15 @@ Uses magic to attack.[X]
 Spellbane[X]
 
 ## SpellbaneDesc
-3x effective against [Magic][N]
-& [Flier] +8 Res.[X]
+3x effective against mages[N]
+& flying units +8 Res.[X]
 
 ## YabusameName
 Yabusame[X]
 
 ## YabusameDesc
-3x effective against [Horse][N]
-[Armour] & [Flier][X]
+3x effective against cavalry,[N]
+heavy armour & flying units.[X]
 
 ## HeavyBowName
 Heavy Bow[X]
@@ -211,7 +214,7 @@ Refreshes the user after[N]
 defeating an opponent.[X]
 
 ## SBowDesc
-2x effective against [Monster][N]
+2x effective against monsters.[N]
 Grants +6 Skill.[X]
 
 ## WindName
@@ -236,7 +239,7 @@ Combustion[X]
 Damages foes surrounding target.[X]
 
 ## DyrnwynDesc
-2x effective against [Monster][N]
+2x effective against monsters.[N]
 Grants +5 Resistance.[X]
 
 
@@ -265,7 +268,7 @@ Seraphim[X]
 Sanctus[X]
 
 ## SanctusDesc
-2x effective against [Monster][N]
+2x effective against monsters.[N]
 Grants +6 Luck.[X]
 
 ## DuskName
@@ -300,7 +303,7 @@ Belial[X]
 Goetia[X]
 
 ## GoetiaDesc
-2x effective against [Monster][N]
+2x effective against monsters.[N]
 Grants +5 Magic.[X]
 
 ## HealDesc
@@ -376,7 +379,7 @@ Wingclipper[X]
 
 ## WingclipperDesc
 Ignore defence in melee. 3x effective[N]
-against [Flier] & [Dragon]. Strike twice per attack.[X]
+against flying units. Strike twice per attack.[X]
 
 ## SilencerName
 Silencer[X]

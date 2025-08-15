@@ -3,9 +3,9 @@
 #define SlayerTableEntry(class_id, type_list, coefficient_times_2) "BYTE class_id coefficient_times_2; SHORT type_list"
 ALIGN 4
 SlayerTable:
-SlayerTableEntry(Bishop, MonsterType, 6)
-SlayerTableEntry(Bishop_F, MonsterType, 6)
-SlayerTableEntry(Ranger_F, MonsterType, 6)
+SlayerTableEntry(Bishop, MonsterType, 4)
+SlayerTableEntry(Bishop_F, MonsterType, 4)
+//SlayerTableEntry(Ranger_F, MonsterType, 6)
 WORD 0 //terminator
 
 //Change existing effective items (class weaknesses are already part of the class data table)
@@ -13,12 +13,14 @@ WORD 0 //terminator
 ItemEffectivenessPtr(Rapier, LordWeaponEffectiveness)
 ItemEffectivenessPtr(Armorslayer, ArmorEffectiveness)
 ItemEffectivenessPtr(Wyrmslayer, DragonEffectiveness)
-ItemEffectivenessPtr(Zanbato, HorseEffectiveness)
+ItemEffectivenessPtr(Claymore, HorseEffectiveness)
 ItemEffectivenessPtr(Horseslayer, HorseEffectiveness)
 //ItemEffectivenessPtr(Halberd, HorseEffectiveness)
 ItemEffectivenessPtr(Hammer, ArmorEffectiveness)
 ItemEffectivenessPtr(Swordslayer, SwordEffectiveness)
 ItemEffectivenessPtr(IronBow, FlierEffectiveness)
+ItemEffectivenessPtr(IronWarbow, FlierEffectiveness)
+ItemEffectivenessPtr(SlimBow, FlierEffectiveness)
 ItemEffectivenessPtr(SteelBow, FlierEffectiveness)
 ItemEffectivenessPtr(SilverBow, FlierEffectiveness)
 ItemEffectivenessPtr(PoisonBow, FlierEffectiveness)
@@ -73,7 +75,10 @@ SwordEffectiveness:
 SetWeaponEffectiveness(SwordType, 6)
 WORD 0
 MonsterEffectiveness:
-SetWeaponEffectiveness(MonsterType, 6)
+SetWeaponEffectiveness(MonsterType, 4)
+WORD 0
+MonsterEffectiveness2:
+SetWeaponEffectiveness(MonsterType,6)
 WORD 0
 SacredWeaponEffectiveness:
 SetWeaponEffectiveness(MonsterType, 4)

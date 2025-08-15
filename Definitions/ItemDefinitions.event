@@ -127,15 +127,38 @@ Key: A = W Assets, S = Spell Anims, T = Tested In-Game, U = Used In-Game
 Iron Sword - AST
 Slim Sword - AST
 Iron Blade - AST
+Steel Sword -
+Steel Blade -
+Claymore - AST
+Armourslayer - AS
+Shadowkiller - AST
+Poison Sword - AST
+Killing Edge - AST
+Swift Sword* -
+Light Brand - AST
+Lancereaver - AST
 Iron Lance - AST
 Slim Lance - AST
 Iron Halberd - AST
+Javelin - AST
 Iron Axe - AST
 Slim Axe - AST
 Iron Poleaxe - AST
+Steel Axe - AST
+Steel Poleaxe - AST
+Hand Axe - AST
+Short Axe - AST
+Hammer - AST
+Fiendcleaver - AST
+Poison Axe - AST
+Killer Axe - AST
+Swift Axe* - 
+Swordreaver -AST
+Devil Axe - AS
 Iron Bow - AST
 Slim Bow - AST
 Iron Warbow - AST
+Shortbow - AST
 Longbow - AST
 Wind - AT
 Fire - AST
@@ -145,42 +168,12 @@ Shine - AST
 Flux - AST
 Dusk - AST
 Luna - AS*T
+Heal - AST
+Mend - AST
+
+Iron Dagger* - AS*T
 
 Rotten Claw - AST
 Sharp Claw - AST
 Fiery Fang - AST
-Evil Eye - AST
-
-
-
-Old List:
-Iron Sword - AS
-Slim Sword - AS
-Iron Blade - AS
-Iron Lance - AS
-Slim Lance - AS
-Iron Halberd - AS
-Javelin - AS
-Iron Axe - AS
-Slim Axe - A
-Iron Poleaxe - A
-Hand Axe - AS
-Devil Axe - AS
-Iron Bow - AS
-Iron Warbow - A
-Shortbow - AS
-Longbow - AS
-Fire - AS
-Thunder - AS
-Lightning - AS
-Shine - AS
-Flux - AS
-Dusk - AS
-Luna - A
-Heal - AS
-Mend - AS
-Rotten Claw - AS
-Evil Eye - AS
-Slim Bow - AS
-Iron Dagger - A
-*/
+Evil Eye - AST */
