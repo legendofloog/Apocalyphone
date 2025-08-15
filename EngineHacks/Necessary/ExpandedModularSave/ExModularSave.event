@@ -143,7 +143,7 @@ gGameSaveChunks:
 	// $0680
 
 	// Save 62 blue units (62 * 0x2C = $0AA8)
-	DeclSaveChunk($0680, $0AA8, ESU_SaveGameUnits, ESU_LoadGameUnits, EMS_CHUNK_SAVEUNITS)
+	DeclSaveChunk($0680, $0C98, ESU_SaveGameUnits, ESU_LoadGameUnits, EMS_CHUNK_SAVEUNITS)
 
 	// $1128
 

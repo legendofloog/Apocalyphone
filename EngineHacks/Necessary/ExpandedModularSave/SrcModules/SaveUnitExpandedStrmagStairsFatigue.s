@@ -27,7 +27,7 @@
 	@   +28 | u32 state
 	@   +2C | (end)
 
-	GameSaveUnit.size = 0x30
+	GameSaveUnit.size = 0x34
 
 	@ SuspendSaveUnit (Common):
 	@   +00 | <GameSaveUnit>
@@ -239,6 +239,10 @@ PackGameSaveUnit.lop_items:
 	
 	ldrb r2, [r4]
 	strb r2, [r5]
+
+	ldrb r2, [r1,#0x13] @ r2 Unit->curhp
+	mov r3, #0x30
+	strb r2, [r0, r3] @GameSaveUnit->curhp = Unit->curhp
 	
 	@ END
 
@@ -418,22 +422,26 @@ UnpackGameSaveUnit.lop_items:
 	ldr r2, [r5, #0x28] @ r2 = GameSaveUnit->state
 	str r2, [r4, #0x0C] @ Unit->state = GameSaveUnit->state
 
+	mov r3, #0x30
+	ldrb r2, [r5, r3] @ r2 = GameSaveUnit->curhp
+	strb r2, [r4, #0x13] @  = GameSaveUnit->curhp
+
 	@ MISC
 
 	@ Set current hp to max
 
-	ldr r3, =GetUnitMaxHp
+	@ldr r3, =GetUnitMaxHp
 
-	mov r0, r4 @ GetUnitMaxHp arg r0 = Unit
+	@mov r0, r4 @ GetUnitMaxHp arg r0 = Unit
 
-	bl  BXR3
+	@bl  BXR3
 
-	ldr r3, =SetUnitHp
+	@ldr r3, =SetUnitHp
 
-	mov r1, r0 @ SetUnitHp arg r1 = Hp
-	mov r0, r4 @ SetUnitHp arg r0 = Unit
+	@mov r1, r0 @ SetUnitHp arg r1 = Hp
+	@mov r0, r4 @ SetUnitHp arg r0 = Unit
 
-	bl  BXR3
+	@bl  BXR3
 
 	@ END
 

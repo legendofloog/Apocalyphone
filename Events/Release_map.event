@@ -108,6 +108,7 @@ ENUN
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
 NoFade
+GoToPrepScreen2
 ENDA
 
 EndingScene:

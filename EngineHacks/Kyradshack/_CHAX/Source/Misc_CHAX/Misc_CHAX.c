@@ -78,3 +78,21 @@ void BeginUnitPoisonDamageAnim(struct Unit* unit, int damage) {
 
     return;
 }
+
+/*void ExecVulneraryItem(ProcPtr proc, int amount) {
+    BattleInitItemEffect(GetUnit(gActionData.subjectIndex),
+        gActionData.itemSlotIndex);
+
+    AddUnitHp(GetUnit(gActionData.subjectIndex), amount);
+
+    gBattleHitIterator->hpChange = gBattleActor.unit.curHP - GetUnitCurrentHp(GetUnit(gActionData.subjectIndex));
+
+    gBattleActor.unit.curHP = GetUnitCurrentHp(GetUnit(gActionData.subjectIndex));
+
+    gBattleActor.weaponBefore = ITEM_VULNERARY;
+
+    BattleApplyItemEffect(proc);
+    BeginBattleAnimations();
+
+    return;
+}*/
