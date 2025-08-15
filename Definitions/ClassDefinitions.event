@@ -8,8 +8,8 @@
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Valkyrie (M), Horseman/Ranger (F)
 //Anything after 0x7F will need the table expanded
-//ID's up to 0x84 are used
-//73-76 are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
+//ID's up to 0x8C are used
+//73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 
 //Player Classes
 
@@ -53,22 +53,22 @@
 #define Dracoknight Dracoknight_SL
 #define WyvernKnight_S 0x24
 #define WyvernKnight_L 0x23 //WyvernKnight Def
-#define WyvernKnight_A 0x86 //unimplemented
+#define WyvernKnight_A 0x87 //unimplemented
 
 #undef Manakete
 #define Manakete 0x3B //unimplemented
-#define Manakete_F 0x80 //unimplemented
+#define Manakete_F 0x7B //unimplemented
 #define ManaketeChild 0x3C//unimplemented
-#define ManaketeChild_M 0x81 //unimplemented
+#define ManaketeChild_M 0x82 //unimplemented
 
 #define Horseman 0x1E
 
-#define Fighter_F 0x87 //unimplemented*
-#define Warrior_F 0x88 //unimplemented*
+#define Fighter_F 0x88 //unimplemented*
+#define Warrior_F 0x89 //unimplemented*
 
-#define Brigand_F 0x7A //unimplemented
+#define Brigand_F 0x80 //unimplemented
 #define Pirate_F 0x50 //unimplemented
-#define Berserker_F 0x7B //unimplemented
+#define Berserker_F 0x81 //unimplemented
 
 #define Soldier_F 0x4F //unimplemented*
 //Halberdier is gender neutral
@@ -80,9 +80,17 @@
 #define Champion_F 0x7F
 
 #define Troubadour_M 0x71 //unimplemented
-#define Monk_F 0x82 //unimplemented
-#define Valkyrie_M 0x83 //unimplemented
-#define Rogue_F 0x84 //unimplemented
+#define Monk_F 0x83 //unimplemented
+#define Valkyrie_M 0x84 //unimplemented
+#define Rogue_F 0x85 //unimplemented
+
+/*
+#define WarMonk 0x8A
+#define WarMonk_F 0x8B
+#define Spellblade 0x8C
+#define Spellblade_F 0x8D
+
+*/
 
 //Nicknames/Altnames
 #define Cav_S Cavalier_S
@@ -155,14 +163,16 @@ Priest G M
 Peg SLA M
 Wyvern SLA -MM
 Thief G M
+Troubadour M
 
 Revenant M
 Bonewalker SLB M
-//No Magic
-Mogall M
-Gargoyle M
-Bael M
-Tarvos M
-Gorgon M
+//No Magic except mogall
+Mogall MA
+Gargoyle MA
+Bael MA
+Tarvos MA
+Gorgon MA
+Phantom M
 
 

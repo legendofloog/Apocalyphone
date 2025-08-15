@@ -2,12 +2,10 @@ This text file is purely for documenting purposes
 
 Immediate To-Do's
 - Autolevel Code
-- Sort out Manaketes
 - Effectiveness Table Stuff
 - Item Table
 - Undo Bow Descs
 - Adjust Stats
-- Test and Compile Shadowkiller change
 
 Major Bugs:
 
