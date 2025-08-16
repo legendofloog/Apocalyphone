@@ -10,6 +10,8 @@
 
 #include "ClassDefinitions.event"
 
+#include "ChapterDefinitions.event"
+
 #include "PortraitDefinitions.event"
 
 #include "ItemDefinitions.event"

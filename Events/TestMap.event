@@ -1,0 +1,81 @@
+EventPointerTable(Chapter1Events, PointerList)
+
+setText(0x160, NewChName)
+
+ALIGN 4
+NewChName:
+String("Test Map")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Eirika Survivor Eirika Level(1,Ally,True) [5,2] 0x0 0x0 0x0 0x0 [IronSword] [0x0,0x0,0x0,0x0]
+UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [4,4] 0x0 [IronLance] StationaryAI
+UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [6,3] 0x0 [IronLance] StationaryAI
+UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [4,1] 0x0 [IronLance] StationaryAI
+UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [3,2] 0x0 [IronLance] StationaryAI
+UNIT
+
+EnemyUnits:
+UNIT TestEnemy Knight Breguet Level(5,Enemy,True) [13,4] 0x0 [IronHalberd,Javelin] StationaryAI
+UNIT TestEnemy Bonewalker_S Breguet Level(1,Enemy,True) [5,7] 0x0 [IronSword] DefaultAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+ENUT 0xEF //Fixed growths
+LOAD1 0x1 EnemyUnits
+ENUN
+LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MNC2 0
+NoFade
+ENDA

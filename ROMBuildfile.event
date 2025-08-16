@@ -27,6 +27,9 @@
     #include "EngineHacks/Kyradshack/_MasterASMInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
+    #include "Events/EventsInstaller.event"
+    #include "Maps/MasterMapInstaller.event"
+
 	#ifdef USE_TEST_MAP
     //Events
     #include "Events/Release_map.event"
