@@ -147,7 +147,7 @@
 
 //LegendofLoog, Pikmin1211
 //Break
-	//#include "Break/Installer.event"
+	#include "Break/Installer.event"
 
 
 //A whole bunch of edits by various people, see Edits.event for more info

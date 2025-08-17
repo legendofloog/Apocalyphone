@@ -19,6 +19,8 @@
   #define ChapterDataTableEntSize 148
 #endif
 
+#define RoundCountRAM 0x02026e30 //Where debug printing area is, should be free
+
 #define LunarBrace MoonBracelet
 #define SolarBrace SunBracelet
 

@@ -56,7 +56,7 @@ UNIT
 EnemyUnits:
 UNIT TestEnemy Revenant Breguet Level(5,Enemy,True) [13,4] 0x0 [RottenClaw] StationaryAI
 UNIT TestEnemy Revenant Breguet Level(1,Enemy,True) [5,6] 0x0 [RottenClaw] StationaryAI
-UNIT TestEnemy Bonewalker_S Breguet Level(1,Enemy,True) [6,7] 0x0 [IronSword] StationaryAI
+UNIT TestEnemy Fighter Breguet Level(1,Enemy,True) [6,7] 0x0 [IronAxe] StationaryAI
 UNIT TestEnemy Bonewalker_B Breguet Level(1,Enemy,True) [9,4] 0x0 [IronBow] StationaryAI
 UNIT TestEnemy Cyclops Breguet Level(1,Enemy,True) [13,2] 0x0 [IronPoleaxe] StationaryAI
 UNIT TestEnemy Mogall Breguet Level(1,Enemy,True) [1,8] 0x0 [EvilEye] StationaryAI
