@@ -145,6 +145,11 @@
 //HP Persisting Through Chapters
 	#include "HpBetweenChapterHack/Installer.event"
 
+//LegendofLoog, Pikmin1211
+//Break
+	//#include "Break/Installer.event"
+
+
 //A whole bunch of edits by various people, see Edits.event for more info
 	#include "Edits.event"
 

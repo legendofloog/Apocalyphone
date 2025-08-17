@@ -1,10 +1,8 @@
 This text file is purely for documenting purposes
 
 Immediate To-Do's
-- Effectiveness Table Stuff
 - Item Table
-- Undo Bow Descs
-- Adjust Stats
+- Break
 
 Major Bugs:
 

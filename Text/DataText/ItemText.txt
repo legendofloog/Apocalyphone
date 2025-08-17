@@ -612,3 +612,6 @@ Spirit Dust[X]
 
 ## SpiritDustUseText
  [X]
+
+## EvilEyeDesc
+A cursed, un-blinking eye.[X]

@@ -87,7 +87,6 @@
 #define FieryFang FireFang
 #define RabidFang 0xD1 //unimplemented
 #define GazingEye 0xD2 //unimplemented
-#define GigantAxe 0xD3 //unimplemented
 
 #define PhantomAxe 0xCB //unimplemented
 
@@ -140,7 +139,16 @@ Lancereaver - AST
 Iron Lance - AST
 Slim Lance - AST
 Iron Halberd - AST
+Steel Lance - AST
+Steel Halberd - AST
 Javelin - AST
+Horseslayer - AST
+Bright Lance - AST
+Toxin Lance - AST
+Killer Lance - AST
+Swift Lance*
+Short Spear - AST
+Axereaver - AST
 Iron Axe - AST
 Slim Axe - AST
 Iron Poleaxe - AST

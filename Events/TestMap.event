@@ -46,16 +46,20 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika Survivor Eirika Level(1,Ally,True) [5,2] 0x0 0x0 0x0 0x0 [IronSword] [0x0,0x0,0x0,0x0]
-UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [4,4] 0x0 [IronLance] StationaryAI
-UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [6,3] 0x0 [IronLance] StationaryAI
-UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [4,1] 0x0 [IronLance] StationaryAI
-UNIT TestEnemy Soldier Eirika Level(1,Enemy,True) [3,2] 0x0 [IronLance] StationaryAI
+UNIT Eirika Survivor Eirika Level(1,Ally,True) [5,2] 0x0 0x0 0x0 0x0 [IronSword,Vulnerary] [0x0,0x0,0x0,0x0]
+UNIT Seth Archer Eirika Level(1,Ally,False) [4,4] 0x0 [IronBow, Vulnerary] StationaryAI
+UNIT Gilliam Soldier Eirika Level(1,Ally,False) [6,3] 0x0 [SteelHalberd] StationaryAI
+UNIT Franz Fighter Eirika Level(1,Ally,False) [4,1] 0x0 [IronAxe,Vulnerary] StationaryAI
+UNIT Moulder Thief Eirika Level(1,Ally,False) [3,2] 0x0 [SlimSword,IronDagger] StationaryAI
 UNIT
 
 EnemyUnits:
-UNIT TestEnemy Knight Breguet Level(5,Enemy,True) [13,4] 0x0 [IronHalberd,Javelin] StationaryAI
-UNIT TestEnemy Bonewalker_S Breguet Level(1,Enemy,True) [5,7] 0x0 [IronSword] DefaultAI
+UNIT TestEnemy Revenant Breguet Level(5,Enemy,True) [13,4] 0x0 [RottenClaw] StationaryAI
+UNIT TestEnemy Revenant Breguet Level(1,Enemy,True) [5,6] 0x0 [RottenClaw] StationaryAI
+UNIT TestEnemy Bonewalker_S Breguet Level(1,Enemy,True) [6,7] 0x0 [IronSword] StationaryAI
+UNIT TestEnemy Bonewalker_B Breguet Level(1,Enemy,True) [9,4] 0x0 [IronBow] StationaryAI
+UNIT TestEnemy Cyclops Breguet Level(1,Enemy,True) [13,2] 0x0 [IronPoleaxe] StationaryAI
+UNIT TestEnemy Mogall Breguet Level(1,Enemy,True) [1,8] 0x0 [EvilEye] StationaryAI
 UNIT
 
 Traps1:

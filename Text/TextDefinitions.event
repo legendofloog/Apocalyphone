@@ -760,11 +760,12 @@
 #define SpiritDustName $101F
 #define SpiritDustDesc $1020
 #define SpiritDustUseText $1021
-#define WeaponText $1022
-#define SupplyViewCommand $1023
-#define SupplyViewCommandHelpText $1024
-#define SupplyConvoyResponse_View $1025
-#define EmptyDesc $1026
-#define MessageFatigueRestored $1027
+#define EvilEyeDesc $1022
+#define WeaponText $1023
+#define SupplyViewCommand $1024
+#define SupplyViewCommandHelpText $1025
+#define SupplyConvoyResponse_View $1026
+#define EmptyDesc $1027
+#define MessageFatigueRestored $1028
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT
