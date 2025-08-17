@@ -2,7 +2,9 @@ This text file is purely for documenting purposes
 
 Immediate To-Do's
 - Item Table
-- Break
+- Extend Spell Anim Table
+- Demo Map
+- Sound Setup
 
 Major Bugs:
 

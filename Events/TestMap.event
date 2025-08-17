@@ -47,19 +47,21 @@ END_MAIN
 
 Units1:
 UNIT Eirika Survivor Eirika Level(1,Ally,True) [5,2] 0x0 0x0 0x0 0x0 [IronSword,Vulnerary] [0x0,0x0,0x0,0x0]
-UNIT Seth Archer Eirika Level(1,Ally,False) [4,4] 0x0 [IronBow, Vulnerary] StationaryAI
-UNIT Gilliam Soldier Eirika Level(1,Ally,False) [6,3] 0x0 [SteelHalberd] StationaryAI
+UNIT Seth Archer Eirika Level(1,Ally,False) [4,4] 0x0 [IronBow, SteelBow, SteelWarbow] StationaryAI
+UNIT Gilliam Soldier Eirika Level(1,Ally,False) [6,3] 0x0 [IronLance] StationaryAI
 UNIT Franz Fighter Eirika Level(1,Ally,False) [4,1] 0x0 [IronAxe,Vulnerary] StationaryAI
 UNIT Moulder Thief Eirika Level(1,Ally,False) [3,2] 0x0 [SlimSword,IronDagger] StationaryAI
 UNIT
 
 EnemyUnits:
-UNIT TestEnemy Revenant Breguet Level(5,Enemy,True) [13,4] 0x0 [RottenClaw] StationaryAI
-UNIT TestEnemy Revenant Breguet Level(1,Enemy,True) [5,6] 0x0 [RottenClaw] StationaryAI
-UNIT TestEnemy Fighter Breguet Level(1,Enemy,True) [6,7] 0x0 [IronAxe] StationaryAI
-UNIT TestEnemy Bonewalker_B Breguet Level(1,Enemy,True) [9,4] 0x0 [IronBow] StationaryAI
-UNIT TestEnemy Cyclops Breguet Level(1,Enemy,True) [13,2] 0x0 [IronPoleaxe] StationaryAI
-UNIT TestEnemy Mogall Breguet Level(1,Enemy,True) [1,8] 0x0 [EvilEye] StationaryAI
+UNIT ONeill Revenant ONeill Level(5,Enemy,True) [13,4] 0x0 [RottenClaw] StationaryAI
+UNIT TestEnemy Revenant ONeill Level(1,Enemy,True) [5,6] 0x0 [RottenClaw] StationaryAI
+UNIT TestEnemy Tarvos ONeill Level(1,Enemy,True) [6,7] 0x0 [IronAxe] StationaryAI
+UNIT TestEnemy Bael ONeill Level(1,Enemy,True) [9,4] 0x0 [SharpClaw] StationaryAI
+UNIT TestEnemy Cyclops ONeill Level(1,Enemy,False) [6,15] 0x0 [IronPoleaxe] StationaryAI
+UNIT TestEnemy Mogall ONeill Level(1,Enemy,True) [1,8] 0x0 [EvilEye] StationaryAI
+UNIT TestEnemy Myrmidon ONeill Level(1,Enemy,False) [6,11] 0x0 [IronSword] StationaryAI
+UNIT TestEnemy Knight_S ONeill Level(1,Enemy,False) [10,12] 0x0 [IronBlade] StationaryAI
 UNIT
 
 Traps1:

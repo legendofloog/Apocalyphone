@@ -364,6 +364,9 @@ Venin Dagger[X]
 Ignore defence in melee. Inflicts[N]
 Poison. Strike twice per attack.[X]
 
+## VeninBowName
+Venin Bow[X]
+
 ## SteelDaggerName
 Steel Dagger[X]
 
