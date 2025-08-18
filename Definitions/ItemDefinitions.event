@@ -1,5 +1,5 @@
 //Double check defs
-//Current ID: 0xE1
+//Current ID: 0xE2
 //Current items: 223/250
 //Will need to expand items list, 205 items currently, 50 more allowed, could compress gems and rings?
 //Anything marked //unimplemented are things i *plan* not to implement for initial build 
@@ -7,7 +7,7 @@
 //Swords //all swords defined
 #define LordPrf 0x09
 #define SwiftSword 0x0A
-#define RubySword 0xDB
+#define RubySword 0xDA
 #define Claymore Zanbato
 //#define ??? 0x85 //Legendary ID Sieg //unimplemented
 #define FlameBlade 0x9B
@@ -18,7 +18,7 @@
 #define IronHalberd 0x25
 #define SteelHalberd 0x95
 #define SwiftLance 0x9D
-#define SapphireLance 0xDC
+#define SapphireLance 0xDB
 #define Pike 0x9E //unimplemented
 #define Glaive 0x92 //unimplemented //LegendaryID Sieg
 #define SilverHalberd 0xA0
@@ -30,7 +30,7 @@
 #define SlimAxe 0x9C
 #define SteelPoleaxe 0x8F //Legendary ID?
 #define SwiftAxe 0x9F
-#define EmeraldAxe 0xDD
+#define EmeraldAxe 0xDC
 #define ShortAxe 0x2C
 #define ImposingAxe 0x86 //unimplemented
 #define Labrys 0xA4 //unimplemented
@@ -43,13 +43,13 @@
 #define Shortbow ShortBow
 #define SteelWarbow 0x9B
 #define SwiftBow 0xBE
-#define TrickBow 0xDE
+#define TrickBow 0xDD
 #define Spellbane 0xE0 //unimplemented
 #define Yabusame 0xBF //unimplemented
 #define HeavyBow 0xB7 //juna fruit //unimplemented
 #define SilverWarbow 0xC0
 #define Greatbow 0xC1
-//#define GaleBow 0xCE //unimplemented
+#define GaleBow 0xCE //unimplemented
 #define LegendaryBow 0x94 //Legendary ID
 
 //Anima //all anima defined
@@ -92,12 +92,12 @@
 
 //Misc
 #define IronDagger 0xC2
-#define VeninDagger 0xE1
+#define VeninDagger 0xDE
 #define SteelDagger 0xC3
-#define MainGauche 0xD4 //unimplemented
-#define Wingclipper 0xE2 //unimplemented
-#define Silencer 0xD5 //unimplemented
-#define SilverDagger 0xD6 //unimplemented
+#define MainGauche 0xD3 //unimplemented
+#define Wingclipper 0xE1 //unimplemented
+#define Silencer 0xD4 //unimplemented
+#define SilverDagger 0xD5 //unimplemented
 #define LongBallista IronBallista
 #define Arbalest KillerBallista
 #define RainBallista 0xB6 //unimplemented
@@ -106,7 +106,7 @@
 #define SpiritDust 0xA3
 #define SecretSeal 0x8A //unimplemented
 #define Rations 0xA2
-#define EnergyHerbs 0xE3
+#define EnergyHerbs 0xE2
 #define GreenGem 0xBB
 #define TseScroll MetissTome
 #define Might 0x7D //unimplemented
@@ -115,10 +115,10 @@
 #define Litany 0x80 //unimplemented
 //#define TonicSlot 0x9A //unimplemented, just booking the definition
 #define IronRune 0xC7
-#define HoplonGuard 0xD7 //unimplemented
-/*#define BaliusWard 0xD8 //unimplemented
-#define GlaedrCharm 0xD9 //unimplemented
-#define DarkIdol 0xDA //Don't bother defining til someone uses it if they even want to use it*/
+#define HoplonGuard 0xD6 //unimplemented
+/*#define BaliusWard 0xD7 //unimplemented
+#define GlaedrCharm 0xD8 //unimplemented
+#define DarkIdol 0xD9 //Don't bother defining til someone uses it if they even want to use it*/
 
 /*Items Implemented
 Key: A = W Assets, S = Spell Anims, T = Tested In-Game, U = Used In-Game

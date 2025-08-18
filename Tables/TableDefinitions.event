@@ -10,7 +10,7 @@
   #define ClassTable 0x807110
 #endif
 #ifndef ItemTable
-  #define ItemTable 0x809B10
+  #define ItemTable NewItemTable
 #endif
 #ifndef DebuffTableRam
   #define DebuffTableRam 0x203f100

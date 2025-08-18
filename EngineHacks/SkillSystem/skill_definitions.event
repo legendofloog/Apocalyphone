@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //This is currently unused and the original skillsys event is used. This will replace it eventually.
 
-//Skills Used: 1-14
+//Skills Used: 1-17
 
 #include "skill_definitions_old.event"
 
@@ -72,6 +72,10 @@
 
 
 //Weapon Skills
+
+	//Galeforce: Move again after attacking and defeating an enemy.
+	//Author Unknown (Initial Commit)
+	#define GaleForceID 17
 
 
 //Misc Skills
