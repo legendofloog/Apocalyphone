@@ -1,6 +1,5 @@
-//Here you can choose which skills to install. You can only install up to 254, ranging from IDs 1 - 254. Make sure you don't use the same ID more than once.
-//To disable a skill, define it as 255.
-//Skills are categorized broadly by where their effect is applied, in no particular order within each category.
+//All base skillsys skills are set here to 255, when you use them, define them in
+//skill definitions.event and comment them out here.
 
 //AI Skills
 
@@ -368,7 +367,7 @@
 
 //Galeforce: Move again after attacking and defeating an enemy.
 //Author Unknown (Initial Commit)
-#define GaleforceID 255
+//#define GaleforceID 255
 
 //Lifetaker: Restore up to 25% HP after attacking and defeating an enemy.
 //Author Unknown (Initial Commit)
