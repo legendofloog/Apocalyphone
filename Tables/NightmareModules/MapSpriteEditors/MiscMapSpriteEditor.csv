@@ -125,3 +125,5 @@ Dead Peer,0x82051c0,0x82055a8
 Freelancer,IsPointer|LancerWalk,0x81f49b8
 Freelancer (F),IsPointer|LancerWalk,0x81f3fa0
 Champion,0x81e0f98,0x81e173c
+Champion (F),0x81e0f98,0x81e173c
+Brigand (F),0x81e4ffc,0x81e582c

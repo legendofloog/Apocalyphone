@@ -2,13 +2,13 @@
 //Add unimplemented classes only if you choose to use them. If you implement a T1, implement its T2.
 //Unimplemented class ID's lose priority if you need to add an undefined class.
 //Just remember to comment them out
+//If you want me to implement a class for you just ask
 
 //Unimplemented* - Must stay defined as highly likely to be used
 //Classes 133/255
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Valkyrie (M), Horseman/Ranger (F)
-//Anything after 0x7F will need the table expanded
-//ID's up to 0x8C are used
+//ID's up to 0x8D are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 
 //Player Classes
@@ -66,7 +66,7 @@
 #define Fighter_F 0x88 //unimplemented*
 #define Warrior_F 0x89 //unimplemented*
 
-#define Brigand_F 0x80 //unimplemented
+#define Brigand_F 0x80
 #define Pirate_F 0x50 //unimplemented
 #define Berserker_F 0x81 //unimplemented
 
@@ -79,7 +79,7 @@
 #define Champion 0x7E
 #define Champion_F 0x7F
 
-#define Troubadour_M 0x71 //unimplemented
+#define Troubadour_M 0x86 //unimplemented
 #define Monk_F 0x83 //unimplemented
 #define Valkyrie_M 0x84 //unimplemented
 #define Rogue_F 0x85 //unimplemented
