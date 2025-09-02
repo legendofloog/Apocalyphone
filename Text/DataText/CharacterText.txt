@@ -2,4 +2,5 @@
 Monster[X]
 
 ## MonsterDesc
-Evil monsters.[X]
+A grotesque creature created by.[N]
+magic and born in darkness.[X]

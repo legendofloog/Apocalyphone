@@ -923,7 +923,7 @@
 
 //Resolve: When HP < 50%, gain 1.5x Str, Skl, & Spd.
 //By Sme
-#define ResolveID 255
+//#define ResolveID 255
 
 //Fortress Defense: +5 Def, -3 Str/Mag
 //By Leonarth
@@ -1179,7 +1179,7 @@
 //Display-Only Skills
 
 //#define CunningID 255
-#define NiceThighsID 255
+//#define NiceThighsID 255
 //#define PersonalityID 255
 
 

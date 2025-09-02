@@ -910,7 +910,7 @@ and attacker does not double.[X]
 
 ## SD_Resolve
 Resolve: When HP < 50%,[N]
-gain 1.5x Str, Skl, & Spd.[X]
+gain 1.25x Str, Skl, & Spd.[X]
 
 ## SD_Insight
 Insight: Hit +20.[X]

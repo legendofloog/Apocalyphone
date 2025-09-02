@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //This is currently unused and the original skillsys event is used. This will replace it eventually.
 
-//Skills Used: 1-17
+//Skills Used: 1-19
 
 #include "skill_definitions_old.event"
 
@@ -59,7 +59,7 @@
 	//By Sme
 	#define SummonID 11
 
-	//Personality: This unit has a big personality
+	//Personality: This unit has a big personality //To be repurposed as heavy armour.
 	//By Sme
 	#define PersonalityID 12
 
@@ -67,9 +67,15 @@
 	//By Darrman
 	#define CharismaID 13
 
+	//Nice Thighs: This unit has nice thighs //to be repurposed as thick skin.
+	#define NiceThighsID 19
+
 
 //Personal Skills
 
+//Resolve: When HP < 50%, gain 1.5x Str, Skl, & Spd.
+//By Sme
+#define ResolveID 18
 
 //Weapon Skills
 

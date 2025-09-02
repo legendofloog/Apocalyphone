@@ -126,14 +126,14 @@ Key: A = W Assets, S = Spell Anims, T = Tested In-Game, U = Used In-Game
 Iron Sword - AST
 Slim Sword - AST
 Iron Blade - AST
-Steel Sword -
-Steel Blade -
+Steel Sword - AST
+Steel Blade - AST
 Claymore - AST
 Armourslayer - AS
 Shadowkiller - AST
 Poison Sword - AST
 Killing Edge - AST
-Swift Sword* -
+Swift Sword* - S
 Light Brand - AST
 Lancereaver - AST
 Iron Lance - AST
@@ -146,7 +146,7 @@ Horseslayer - AST
 Bright Lance - AST
 Toxin Lance - AST
 Killer Lance - AST
-Swift Lance*
+Swift Lance - S
 Short Spear - AST
 Axereaver - AST
 Iron Axe - AST
@@ -160,12 +160,12 @@ Hammer - AST
 Fiendcleaver - AST
 Poison Axe - AST
 Killer Axe - AST
-Swift Axe* - 
+Swift Axe - S
 Swordreaver -AST
 Devil Axe - AS
 Iron Bow - AST
 Slim Bow - AST
-Iron Warbow - AST#
+Iron Warbow - AST
 Steel Bow - AST
 Steel Warbow - AT
 Shortbow - AST

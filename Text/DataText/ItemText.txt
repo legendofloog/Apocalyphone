@@ -616,5 +616,8 @@ Spirit Dust[X]
 ## SpiritDustUseText
  [X]
 
+## BroadswordName
+Broadsword[X]
+
 ## EvilEyeDesc
 A cursed, un-blinking eye.[X]

@@ -1,255 +1,255 @@
-INLINE ClassLevelUpSkillTable,Skill Pointer
-None,0x0
-Cavalier (A),CavalierSkillList|IsPointer
-Survivor,EirikaLordSkillList|IsPointer
-Paladin (SA),PaladinSkillList|IsPointer
-Vagabond,EirikaGreatLordSkillList|IsPointer
-Cavalier (L),CavalierSkillList|IsPointer
-Cavalier (S),CavalierSkillList|IsPointer
-Paladin (SL),PaladinSkillList|IsPointer
-Paladin (LA),PaladinSkillList|IsPointer
-Knight (L),KnightSkillList|IsPointer
-Knight (S),KnightSkillList|IsPointer
-General,GeneralSkillList|IsPointer
-Knight (A),KnightSkillList|IsPointer
-Thief,ThiefSkillList|IsPointer
-Thief (F),ThiefSkillList|IsPointer
-Mercenary,MercenarySkillList|IsPointer
-Mercenary (F),MercenarySkillList|IsPointer
-Hero,HeroSkillList|IsPointer
-Hero (F),HeroSkillList|IsPointer
-Myrmidon,MyrmidonSkillList|IsPointer
-Myrmidon (F),MyrmidonSkillList|IsPointer
-Swordmaster,SwordmasterSkillList|IsPointer
-Swordmaster (F),SwordmasterSkillList|IsPointer
-Assassin,AssassinSkillList|IsPointer
-Assassin (F),AssassinSkillList|IsPointer
-Archer,ArcherSkillList|IsPointer
-Archer (F),ArcherSkillList|IsPointer
-Sniper,SniperSkillList|IsPointer
-Sniper (F),SniperSkillList|IsPointer
-Ranger,RangerSkillList|IsPointer
-Horseman,HorsemanSkillList|IsPointer
-Wyvern Rider (L),WyvernRiderSkillList|IsPointer
-Wyvern Rider (S),WyvernRiderSkillList|IsPointer
-Dracoknight (SL),WyvernLordSkillList|IsPointer
-Dracoknight (LA),WyvernLordSkillList|IsPointer
-Wyvern Knight (L),WyvernKnightSkillList|IsPointer
-Wyvern Knight (S),WyvernKnightSkillList|IsPointer
-Mage,MageSkillList|IsPointer
-Mage (F),MageSkillList|IsPointer
-Sage,SageSkillList|IsPointer
-Sage (F),SageSkillList|IsPointer
-Mage Knight,MageKnightSkillList|IsPointer
-Mage Knight (F),MageKnightSkillList|IsPointer
-Bishop,BishopSkillList|IsPointer
-Bishop (F),BishopSkillList|IsPointer
-Shaman,ShamanSkillList|IsPointer
-Shaman (F),ShamanSkillList|IsPointer
-Druid,DruidSkillList|IsPointer
-Druid (F),DruidSkillList|IsPointer
-Summoner,SummonerSkillList|IsPointer
-Bonewalker (S),0x0
-Rogue,RogueSkillList|IsPointer
-Gorgon Egg,0x0
-Great Knight,GreatKnightSkillList|IsPointer
-Knight (B),KnightSkillList|IsPointer
-Pegasus Knight (S),PegKnightSkillList|IsPointer
-Journeyman (3),0x0
-Pupil (3),0x0
-Wyvern Rider (A),WyvernRiderSkillList|IsPointer
-Manakete,ManaketeSkillList|IsPointer
-Manakete (F),ManaketeSkillList|IsPointer
-Journeyman (1),0x0
-Pupil (1),0x0
-Fighter,FighterSkillList|IsPointer
-Warrior,WarriorSkillList|IsPointer
-Brigand,BrigandSkillList|IsPointer
-Pirate,PirateSkillList|IsPointer
-Berserker,BerserkerSkillList|IsPointer
-Monk,MonkSkillList|IsPointer
-Priest,PriestSkillList|IsPointer
-Bard,0x0
-Recruit (1),0x0
-Pegasus Knight (L),PegKnightSkillList|IsPointer
-Falcoknight (SL),FalcoknightSkillList|IsPointer
-Cleric,ClericSkillList|IsPointer
-Troubadour,TroubadourSkillList|IsPointer
-Valkyrie,ValkyrieSkillList|IsPointer
-Dancer,DancerSkillList|IsPointer
-Soldier,SoldierSkillList|IsPointer
-Necromancer,NecromancerSkillList|IsPointer
-Fleet,FleetSkillList|IsPointer
-Phantom,PhantomSkillList|IsPointer
-Revenant,0x0
-Entombed,0x0
-Bonewalker (L),0x0
-Bonewalker (B),0x0
-Wight,0x0
-Wight (Bow),0x0
-Bael,0x0
-Elder Bael,0x0
-Cyclops,0x0
-Mauthe Doog,0x0
-Gwyllgi,0x0
-Tarvos,0x0
-Maelduin,0x0
-Mogall,0x0
-Balor,0x0
-Gorgon,0x0
-Gorgon Egg,0x0
-Gargoyle,0x0
-Deathgoyle,0x0
-Dracozombie,0x0
-Demon King,0x0
-Archer on Ballista,0x0
-Archer on Long Ballista,0x0
-Archer on Arbalest,0x0
-Ballista,0x0
-Long Ballista,0x0
-Arbalest,0x0
-Civilian,0x0
-Civilian (F),0x0
-Civilian,0x0
-Civilian (F),0x0
-Civilian,0x0
-Pegasus Knight (A),0x0
-Dracoknight (SA),0x0
-Queen,0x0
-Prince,0x0
-Queen,0x0
-(empty),0x0
-Fallen Prince,0x0
-Tent,0x0
-Pontifex,0x0
-Dead Peer,0x0
-Freelancer,FreelancerSkillList|IsPointer
-Freelancer (F),FreelancerSkillList|IsPointer
-Champion,ChampionSkillList|IsPointer
-Champion (F),ChampionSkillList|IsPointer
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
--,0x0
+INLINE ClassLevelUpSkillTable,Skill Pointer,,
+None,0x0,,
+Cavalier (A),CavalierSkillList|IsPointer,,
+Survivor,EirikaLordSkillList|IsPointer,,
+Paladin (SA),PaladinSkillList|IsPointer,,
+Vagabond,EirikaGreatLordSkillList|IsPointer,,
+Cavalier (L),CavalierSkillList|IsPointer,,
+Cavalier (S),CavalierSkillList|IsPointer,,
+Paladin (SL),PaladinSkillList|IsPointer,,
+Paladin (LA),PaladinSkillList|IsPointer,,
+Knight (L),KnightSkillList|IsPointer,,
+Knight (S),KnightSkillList|IsPointer,,l
+General,GeneralSkillList|IsPointer,,
+Knight (A),KnightSkillList|IsPointer,,
+Thief,ThiefSkillList|IsPointer,,
+Thief (F),ThiefSkillList|IsPointer,,
+Mercenary,MercenarySkillList|IsPointer,,
+Mercenary (F),MercenarySkillList|IsPointer,,
+Hero,HeroSkillList|IsPointer,,
+Hero (F),HeroSkillList|IsPointer,,
+Myrmidon,MyrmidonSkillList|IsPointer,,
+Myrmidon (F),MyrmidonSkillList|IsPointer,,
+Swordmaster,SwordmasterSkillList|IsPointer,,
+Swordmaster (F),SwordmasterSkillList|IsPointer,,
+Assassin,AssassinSkillList|IsPointer,,
+Assassin (F),AssassinSkillList|IsPointer,,
+Archer,ArcherSkillList|IsPointer,,
+Archer (F),ArcherSkillList|IsPointer,,
+Sniper,SniperSkillList|IsPointer,,
+Sniper (F),SniperSkillList|IsPointer,,
+Ranger,RangerSkillList|IsPointer,,
+Horseman,HorsemanSkillList|IsPointer,,
+Wyvern Rider (L),WyvernRiderSkillList|IsPointer,,
+Wyvern Rider (S),WyvernRiderSkillList|IsPointer,,
+Dracoknight (SL),WyvernLordSkillList|IsPointer,,
+Dracoknight (LA),WyvernLordSkillList|IsPointer,,
+Wyvern Knight (L),WyvernKnightSkillList|IsPointer,,
+Wyvern Knight (S),WyvernKnightSkillList|IsPointer,,
+Mage,MageSkillList|IsPointer,,
+Mage (F),MageSkillList|IsPointer,,
+Sage,SageSkillList|IsPointer,,
+Sage (F),SageSkillList|IsPointer,,
+Mage Knight,MageKnightSkillList|IsPointer,,
+Mage Knight (F),MageKnightSkillList|IsPointer,,
+Bishop,BishopSkillList|IsPointer,,
+Bishop (F),BishopSkillList|IsPointer,,
+Shaman,ShamanSkillList|IsPointer,,
+Shaman (F),ShamanSkillList|IsPointer,,
+Druid,DruidSkillList|IsPointer,,
+Druid (F),DruidSkillList|IsPointer,,
+Summoner,SummonerSkillList|IsPointer,,
+Bonewalker (S),0x0,,
+Rogue,RogueSkillList|IsPointer,,
+Gorgon Egg,0x0,,
+Great Knight,GreatKnightSkillList|IsPointer,,
+Knight (B),KnightSkillList|IsPointer,,
+Pegasus Knight (S),PegKnightSkillList|IsPointer,,
+Journeyman (3),0x0,,
+Pupil (3),0x0,,
+Wyvern Rider (A),WyvernRiderSkillList|IsPointer,,
+Manakete,ManaketeSkillList|IsPointer,,
+Manakete (F),ManaketeSkillList|IsPointer,,
+Journeyman (1),0x0,,
+Pupil (1),0x0,,
+Fighter,FighterSkillList|IsPointer,,
+Warrior,WarriorSkillList|IsPointer,,
+Brigand,BrigandSkillList|IsPointer,,
+Pirate,PirateSkillList|IsPointer,,
+Berserker,BerserkerSkillList|IsPointer,,
+Monk,MonkSkillList|IsPointer,,
+Priest,PriestSkillList|IsPointer,,
+Bard,0x0,,
+Recruit (1),0x0,,
+Pegasus Knight (L),PegKnightSkillList|IsPointer,,
+Falcoknight (SL),FalcoknightSkillList|IsPointer,,
+Cleric,ClericSkillList|IsPointer,,
+Troubadour,TroubadourSkillList|IsPointer,,
+Valkyrie,ValkyrieSkillList|IsPointer,,
+Dancer,DancerSkillList|IsPointer,,
+Soldier,SoldierSkillList|IsPointer,,
+Necromancer,NecromancerSkillList|IsPointer,,
+Fleet,FleetSkillList|IsPointer,,
+Phantom,PhantomSkillList|IsPointer,,
+Revenant,0x0,,
+Entombed,0x0,,
+Bonewalker (L),0x0,,
+Bonewalker (B),0x0,,
+Wight,0x0,,
+Wight (Bow),0x0,,
+Bael,0x0,,
+Elder Bael,0x0,,
+Cyclops,CyclopsSkillList|IsPointer,,
+Mauthe Doog,0x0,,
+Gwyllgi,0x0,,
+Tarvos,0x0,,
+Maelduin,0x0,,
+Mogall,0x0,,
+Balor,0x0,,
+Gorgon,0x0,,
+Gorgon Egg,0x0,,
+Gargoyle,0x0,,
+Deathgoyle,0x0,,
+Dracozombie,0x0,,
+Demon King,0x0,,
+Archer on Ballista,0x0,,
+Archer on Long Ballista,0x0,,
+Archer on Arbalest,0x0,,
+Ballista,0x0,,
+Long Ballista,0x0,,
+Arbalest,0x0,,
+Civilian,0x0,,
+Civilian (F),0x0,,
+Civilian,0x0,,
+Civilian (F),0x0,,
+Civilian,0x0,,
+Pegasus Knight (A),0x0,,
+Dracoknight (SA),0x0,,
+Queen,0x0,,
+Prince,0x0,,
+Queen,0x0,,
+(empty),0x0,,
+Fallen Prince,0x0,,
+Tent,0x0,,
+Pontifex,0x0,,
+Dead Peer,0x0,,
+Freelancer,FreelancerSkillList|IsPointer,,
+Freelancer (F),FreelancerSkillList|IsPointer,,
+Champion,ChampionSkillList|IsPointer,,
+Champion (F),ChampionSkillList|IsPointer,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,
+-,0x0,,

@@ -1,0 +1,9 @@
+//Character Mugs
+#define LordMug 0x02
+
+//Boss Mugs
+
+//NPC Mugs
+
+//Generic/Misc Mugs
+#define FSoldierMug 0x57

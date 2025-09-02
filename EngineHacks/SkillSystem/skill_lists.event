@@ -230,3 +230,8 @@ ALIGN 4
 ChampionSkillList:
 BYTE 00 00
 ALIGN 4
+
+CyclopsSkillList:
+BYTE 255 NiceThighsID
+BYTE 00 00
+ALIGN 4
