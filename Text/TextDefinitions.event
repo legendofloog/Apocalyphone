@@ -769,7 +769,8 @@
 #define SupplyViewCommand $1028
 #define SupplyViewCommandHelpText $1029
 #define SupplyConvoyResponse_View $102A
-#define EmptyDesc $102B
-#define MessageFatigueRestored $102C
+#define DummyName $102B
+#define EmptyDesc $102C
+#define MessageFatigueRestored $102D
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

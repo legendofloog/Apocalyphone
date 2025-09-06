@@ -8,6 +8,9 @@
 
 #include "MenuText.txt"
 
+## DummyName
+Dummy[X]
+
 ## EmptyDesc
  [X]
 

@@ -1114,8 +1114,8 @@
 
 //Triangle Adept+: Doubles weapon triangle effects.
 //By Sme
-#define TriAdeptPlusID 255
-#define TriangleAdeptPlusID TriAdeptPlusID //Alias
+//#define TriAdeptPlusID 255
+//#define TriangleAdeptPlusID TriAdeptPlusID //Alias
 
 //Inspiring Tune: Refreshing a unit grants them +2 Pow/Def until the next turn.
 //By Leonarth

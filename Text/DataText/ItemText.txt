@@ -81,7 +81,7 @@ Steel Halberd[X]
 ## SwiftLanceName
 Swift Lance[X]
 
-## SapphireLanceName
+## SapphireLanceName^
 Sapphire Lance[X]
 
 ## PikeName
@@ -122,7 +122,7 @@ Stl Poleaxe[X]
 Swift Axe[X]
 
 ## EmeraldAxeName
-EmeraldAxe[X]
+Emerald Axe[X]
 
 ## ShortAxeName
 Short Axe[X]

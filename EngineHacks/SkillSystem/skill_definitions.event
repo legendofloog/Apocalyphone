@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //This is currently unused and the original skillsys event is used. This will replace it eventually.
 
-//Skills Used: 1-19
+//Skills Used: 1-20
 
 #include "skill_definitions_old.event"
 
@@ -59,7 +59,7 @@
 	//By Sme
 	#define SummonID 11
 
-	//Personality: This unit has a big personality //To be repurposed as heavy armour.
+	//Personality: This unit has a big personality //To be repurposed as 'Heavy Armour'.
 	//By Sme
 	#define PersonalityID 12
 
@@ -67,7 +67,7 @@
 	//By Darrman
 	#define CharismaID 13
 
-	//Nice Thighs: This unit has nice thighs //to be repurposed as thick skin.
+	//Nice Thighs: This unit has nice thighs //to be repurposed as 'Thick Skin'.
 	#define NiceThighsID 19
 
 
@@ -78,6 +78,11 @@
 #define ResolveID 18
 
 //Weapon Skills
+
+	//Triangle Adept+: Doubles weapon triangle effects.
+	//By Sme
+	#define TriAdeptPlusID 20
+	#define TriangleAdeptPlusID TriAdeptPlusID //Alias
 
 	//Galeforce: Move again after attacking and defeating an enemy.
 	//Author Unknown (Initial Commit)

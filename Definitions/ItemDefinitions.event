@@ -6,6 +6,7 @@
 
 //Swords //all swords defined
 #define LordPrf 0x09
+#define Broadsword LordPrf
 #define SwiftSword 0x0A
 #define RubySword 0xDA
 #define Claymore Zanbato
