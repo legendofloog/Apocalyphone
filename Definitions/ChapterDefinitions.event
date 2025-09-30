@@ -1,3 +1,15 @@
-//Events ID
+//ChapterIDs
+#define Chapter1 0x0
 
-#define Chapter1Events 0x7
+//Chapter Map/Map Changes/Events ID
+
+#define Chapter1MapID 0x4
+#define Chapter1MapChangesID 0x6
+#define Chapter1EventsID 0x7
+
+//Tileset IDs (Start from 0x88 when replacing stuff)
+
+#define N426VillageObjectID 0x88
+#define N426VillagePaletteID 0x89
+#define N426VillageConfigID 0x8A
+//#define N426VillageTileAnimationsID 0x8B

@@ -1,0 +1,20 @@
+//N426 Village
+
+	ALIGN 4
+	N426VillageObject:
+	#incbin "Dmp/Object/N426Village.dmp"
+
+	ALIGN 4
+	N426VillagePalette:
+	#incbin "Dmp/Palette/N426Village_pal.dmp"
+
+	ALIGN 4
+	N426VillageMapchipConfig:
+	#incbin "Dmp/Config/N426Village_comp.dmp"
+
+	EventPointerTable(N426VillageObjectID,N426VillageObject)
+	EventPointerTable(N426VillagePaletteID,N426VillagePalette)
+	EventPointerTable(N426VillageConfigID,N426VillageMapchipConfig)
+
+//Blank
+

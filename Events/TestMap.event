@@ -1,4 +1,4 @@
-EventPointerTable(Chapter1Events, PointerList)
+EventPointerTable(Chapter1EventsID, PointerList)
 
 setText(0x160, NewChName)
 

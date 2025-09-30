@@ -15,6 +15,10 @@
 
 #include "MapSprites/_MapSpriteInstaller.event"
 
+#include "Tilesets/_TilesetInstaller.event"
+
+#include "Tilesets/_MapAnimationsInstaller.event"
+
 //Graphics To Do List
 //Battle Frame Isn't Done
 //Tilesets & Palettes
