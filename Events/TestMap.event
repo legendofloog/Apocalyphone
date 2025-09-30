@@ -4,7 +4,7 @@ setText(0x160, NewChName)
 
 ALIGN 4
 NewChName:
-String("Test Map")
+String("Ch1 Ruin")
 BYTE 0
 
 ALIGN 4
@@ -84,8 +84,8 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 0xEF //Fixed growths
-LOAD1 0x1 EnemyUnits
+//ENUT 0xEF //Fixed growths
+LOAD1 0x1 EnemyUnitsTest
 ENUN
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
