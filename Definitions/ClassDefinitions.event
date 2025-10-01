@@ -7,7 +7,7 @@
 //Unimplemented* - Must stay defined as highly likely to be used
 //Classes 133/255
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
-//Summoner (F), Valkyrie (M), Horseman/Ranger (F)
+//Summoner (F), Valkyrie (M), Scout/Ranger (F)
 //ID's up to 0x8D are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 
@@ -61,7 +61,7 @@
 #define ManaketeChild 0x3C//unimplemented
 #define ManaketeChild_M 0x82 //unimplemented
 
-#define Horseman 0x1E
+#define Scout 0x1E
 
 #define Fighter_F 0x88 //unimplemented*
 #define Warrior_F 0x89 //unimplemented*
@@ -153,7 +153,7 @@ Fighter M
 Brigand M
 Pirate M
 Archer G M
-Horseman
+Scout
 Cavalier SLA M
 Knight SLAB M
 Mage G M

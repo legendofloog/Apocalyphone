@@ -76,7 +76,7 @@ Falcoknight (SL),CantoPlusID
 Cleric,SwapID
 Troubadour,CantoPlusID
 Valkyrie,CantoPlusID
-Dancer,RepositionID
+Dancer,PivotID
 Soldier,SwapID
 Necromancer,0x0
 Fleet,0x0

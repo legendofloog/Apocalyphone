@@ -6,7 +6,6 @@ BYTE 00 00
 ALIGN 4
 
 EirikaLordSkillList:
-BYTE 255 CharismaID
 BYTE 00 00
 ALIGN 4
 

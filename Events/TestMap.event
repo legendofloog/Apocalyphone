@@ -46,10 +46,10 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika Survivor Eirika Level(1,Ally,True) [5,2] 0x0 [LordPrf,RubySword,Vulnerary] NoAI
+UNIT Eirika Survivor Eirika Level(1,Ally,True) [5,2] 0x0 [LordPrf,IronSword,Vulnerary] NoAI
 UNIT Seth Archer_F Eirika Level(1,Ally,False) [4,4] 0x0 [IronBow,Vulnerary] NoAI
-UNIT Gilliam Knight_L Eirika Level(1,Ally,False) [6,3] 0x0 [SapphireLance] NoAI
-UNIT Franz Fighter Eirika Level(1,Ally,False) [4,1] 0x0 [EmeraldAxe,Vulnerary] NoAI
+UNIT Gilliam Soldier Eirika Level(1,Ally,False) [6,3] 0x0 [IronLance] NoAI
+UNIT Franz Knight_A Eirika Level(1,Ally,False) [4,1] 0x0 [IronPoleaxe,Vulnerary] NoAI
 UNIT Moulder Thief_F Eirika Level(1,Ally,False) [3,2] 0x0 [SlimSword,IronDagger] NoAI
 UNIT
 
@@ -60,7 +60,7 @@ UNIT TestEnemy Bonewalker_S ONeill Level(1,Enemy,True) [6,7] 0x0 [IronSword] NoA
 UNIT TestEnemy Bael ONeill Level(1,Enemy,True) [9,4] 0x0 [SharpClaw] NoAI
 UNIT TestEnemy Cyclops ONeill Level(1,Enemy,False) [6,15] 0x0 [IronPoleaxe] NoAI
 UNIT TestEnemy Mogall ONeill Level(1,Enemy,True) [1,8] 0x0 [EvilEye] NoAI
-UNIT TestEnemy Myrmidon ONeill Level(1,Enemy,True) [6,11] 0x0 [IronSword] NoAI
+UNIT TestEnemy Cavalier_S ONeill Level(1,Enemy,True) [6,11] 0x0 [IronSword] NoAI
 UNIT TestEnemy Knight_S ONeill Level(1,Enemy,True) [10,12] 0x0 [IronBlade] NoAI
 UNIT TestEnemy Gorgon ONeill Level(1,Enemy,False) [0,9] 0x0 [DemonSurge] NoAI
 UNIT

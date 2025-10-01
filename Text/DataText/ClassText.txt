@@ -75,10 +75,10 @@ peerless strength in battle.[X]
 ## SniperDesc
  [X]
 
-## HorsemanName
-Horseman[X]
+## ScoutName
+Scout[X]
 
-## HorsemanDesc
+## ScoutDesc
  [X]
 
 ## RangerDesc

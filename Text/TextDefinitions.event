@@ -528,8 +528,8 @@
 #define BerserkerDesc $F37
 #define ArcherDesc $F38
 #define SniperDesc $F39
-#define HorsemanName $F3A
-#define HorsemanDesc $F3B
+#define ScoutName $F3A
+#define ScoutDesc $F3B
 #define RangerDesc $F3C
 #define CavalierDesc $F3D
 #define PaladinDesc $F3E
