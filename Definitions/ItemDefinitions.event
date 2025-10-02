@@ -12,7 +12,7 @@
 #define Claymore Zanbato
 //#define ??? 0x85 //Legendary ID Sieg //unimplemented
 #define FlameBlade 0x9B
-#define LunarBlade 0x00 //unimplemented
+#define LunarBlade 0xE3 //unimplemented
 #define LegendarySword 0x91 //Legendary ID
 
 //Lances //all lances defined

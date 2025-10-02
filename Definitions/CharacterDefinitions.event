@@ -8,3 +8,4 @@
 // Enemies
 
 #define TestEnemy 0xD0
+#define Monster 0xAA
