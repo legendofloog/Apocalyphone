@@ -772,5 +772,9 @@
 #define DummyName $102B
 #define EmptyDesc $102C
 #define MessageFatigueRestored $102D
+#define Chapter1StatusObjective $102E
+#define Chapter1GoalWindow $102F
+#define Chapter1BeginningSceneA $1030
+#define Chapter1WarningText $1031
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

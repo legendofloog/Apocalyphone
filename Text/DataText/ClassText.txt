@@ -53,11 +53,11 @@ Exceptional warriors who wield blades[N]
 and polearms with strength.[X]
 
 ## FighterDesc
-Militiamen who attack using[N]
+Militiamen who strike using[N]
 strength above all else.[X]
 
 ## WarriorDesc
-Honoured warriors who have attained[N]
+Honoured fighters who have attained[N]
 peerless strength in battle.[X]
 
 ## BrigandDesc

@@ -7,3 +7,8 @@
 
 //Generic/Misc Mugs
 #define FSoldierMug 0x57
+
+//Class Cards
+#define KnightLanceClassCard 0x76
+#define BonewalkerLanceClassCard 0x4F
+#define BonewalkerBowClassCard 0x85

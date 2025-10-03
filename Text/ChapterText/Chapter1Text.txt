@@ -1,0 +1,18 @@
+## Chapter1StatusObjective
+Rout the monsters.[X]
+
+## Chapter1GoalWindow
+Rout monsters[X]
+
+## Chapter1BeginningSceneA
+
+[MidRight][LoadLord]
+[MidRight][OneLineBox]
+Ruins and shops have items.[A][X]
+
+## Chapter1WarningText
+
+[MidRight][LoadLord]
+[MidRight][TwoLineBox]
+They're going to[N]
+charge next turn.[A][X]

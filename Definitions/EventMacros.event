@@ -5,7 +5,7 @@
 #define EraseBackgroundSlow "FADI 3; CLEAN; STAL 60; FADU 2"
 #define SpawnReinforcements(UnitGroup) "CamOn; LOAD1 0x1 UnitGroup; ENUN; CamOff; STAL 30"
 #define VillageDialogue(Background,TextId,Item) "SetBackground(Background); Text(TextId); CALL $9EE2C4; GiveItem(Item,0xFFFF); NoFade; ENDA"
-#define SetAI(unitid,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI unitid"
+#define SetAI(unitid,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI unitid" //Doesn't work?
 #define GoToPrepScreen2 "CALL $591FD8" //Prep screen without ENDA
 #define GiveItem(Item,Character) "CALL $591F40; SMOV 0x3 Item ; GIVEITEMTO Character"
 #define SilentGiveItem(item,unit) "BYTE 0x40 0x0D unit item; POIN SilentGiveItemFunc|1"
@@ -115,8 +115,8 @@
 #define NoAI 				[0x6,0x3,0x4,0x0]
 #define InRangeAI        	[0x0,0x3,0x4,0x0]
 #define InRangeHealAI     	[0x0,0x3,0x1,0x0]
-#define InTwoAI				[0x0,0x0,0x4,0x0]
-#define InTwoHealAI			[0x0,0x0,0x1,0x0]
+#define InTwoAI				[0x0,0x6,0x4,0x0]
+#define InTwoHealAI			[0x0,0x6,0x1,0x0]
 #define StationaryAI		[0x0,0x3,0x4,0x20]
 #define StationaryHealAI	[0x0,0x3,0x1,0x20]
 #define ChargeAI 			[0x0,0x0,0x4,0x0]

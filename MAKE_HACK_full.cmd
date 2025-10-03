@@ -10,9 +10,9 @@ set "source_rom=%~dp0FE8_clean.gba"
 
 set "main_event=%~dp0ROMBuildfile.event"
 
-set "target_rom=%~dp0SkillsTest.gba"
-set "target_ups=%~dp0SkillsTest.ups"
-set "target_sym=%~dp0SkillsTest.sym"
+set "target_rom=%~dp0Teleshack-IV.gba"
+set "target_ups=%~dp0Teleshack-IV.ups"
+set "target_sym=%~dp0Teleshack-IV.sym"
 
 @rem defining tools
 
