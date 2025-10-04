@@ -47,8 +47,8 @@ MiscBasedEvents:
 CauseGameOverIfLordDies
 DefeatAll(EndingScene)
 AREA 7 Ruin1 [13,9][15,10] //Vulnerary
-AREA 8 Ruin2 [4,12][6,13] //Iron Sword
-AREA 9 Ruin3 [14,16][16,17] //Antitoxin
+AREA 8 Ruin2 [4,12][6,13] //Antitoxin
+AREA 9 Ruin3 [14,16][16,17] //Iron Sword
 AREA $A ShopRuin [1,10][1,10] //Green Gem
 END_MAIN
 
@@ -78,8 +78,8 @@ UNIT TestEnemy Knight_S ONeill Level(1,Enemy,True) [10,12] 0x0 [IronBlade] NoAI
 UNIT
 
 EnemyUnits:
-UNIT ONeill Revenant ONeill Level(5,Enemy,True) [2,21] 0x0 [RottenClaw] GroupTwoAI
-UNIT Monster Revenant ONeill Level(2,Enemy,True) [0,19] 0x0 [RottenClaw] GroupTwoAI
+UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] GroupTwoAI
+UNIT Monster Bonewalker_L ONeill Level(2,Enemy,True) [0,19] 0x0 [IronLance] GroupTwoAI
 UNIT Monster Revenant ONeill Level(2,Enemy,True) [4,20] 0x0 [PoisonClaw] GroupTwoAI
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [7,7] 0x0 [RottenClaw] ChargeAI
 UNIT Monster Bonewalker_L ONeill Level(1,Enemy,True) [10,9] 0x0 [IronLance] ChargeAI
@@ -88,10 +88,10 @@ UNIT Monster Revenant ONeill Level(1,Enemy,True) [10,17] 0x0 [RottenClaw] InTwoA
 UNIT Monster Bonewalker_S ONeill Level(1,Enemy,True) [6,16] 0x0 [IronSword] GroupOneAI
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [9,15] 0x0 [RottenClaw] GroupOneAI
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [2,15] 0x0 [PoisonClaw] InTwoAI
-UNIT Monster Revenant ONeill Level(1,Enemy,True) [12,20] 0x0 [RottenClaw] InTwoAI
+//UNIT Monster Revenant ONeill Level(1,Enemy,True) [12,20] 0x0 [RottenClaw] InTwoAI
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [1,13] 0x0 [RottenClaw] InRangeAI
 UNIT Monster Bonewalker_B ONeill Level(1,Enemy,True) [0,16] 0x0 [SlimBow] InRangeAI
-UNIT Monster Revenant ONeill Level(1,Enemy,True) [9,21] 0x0 [RottenClaw] InRangeAI
+//UNIT Monster Revenant ONeill Level(1,Enemy,True) [9,21] 0x0 [RottenClaw] InRangeAI
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [14,18] 0x0 [RottenClaw] InRangeAI
 UNIT Monster Revenant ONeill Level(2,Enemy,True) [2,8] 0x0 [RottenClaw] InRangeAI
 UNIT Monster Revenant ONeill Level(2,Enemy,True) [15,14] 0x0 [RottenClaw] InRangeAI
@@ -114,6 +114,7 @@ ENDA
 WarningText:
 CAMERA_CENTERED Eirika
 Text(Chapter1WarningText)
+NoFade
 ENDA
 
 Ruin1:
@@ -122,12 +123,12 @@ NoFade
 ENDA
 
 Ruin2:
-GiveItem(IronSword,0xFFFF)
+GiveItem(Antitoxin,0xFFFF)
 NoFade
 ENDA
 
 Ruin3:
-GiveItem(Antitoxin,0xFFFF)
+GiveItem(IronSword,0xFFFF)
 NoFade
 ENDA
 
@@ -142,9 +143,9 @@ LOAD1 0x1 EnemyUnits
 ENUN
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
-NoFade
 //GoToPrepScreen2
 Text(Chapter1BeginningSceneA)
+NoFade
 ENDA
 
 EndingScene:
