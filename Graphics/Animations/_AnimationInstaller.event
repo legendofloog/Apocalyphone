@@ -9,3 +9,9 @@
 	#include "Anims/Knight/HandaxeInstaller.event"
 	#include "Anims/Knight/BowInstaller.event"
 }
+
+{
+	#include "Anims/Fighter/AxeInstaller.event"
+	#include "Anims/Fighter/HandaxeInstaller.event"
+
+}

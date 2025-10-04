@@ -27,7 +27,7 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 //Survivor Animations
-#define SurvivorSwordAnim 0x1 //Eirika Sword
+	#define SurvivorSwordAnim 0x1 //Eirika Sword
 
 ALIGN 4
 SurvivorAnims:
@@ -51,6 +51,20 @@ KnightAnims:
 	AxeAnim(KnightAxeAnim)
 	HandAxeAnim(KnightHandaxeAnim)
 	BowAnim(KnightBowAnim)
+EndAnim
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Survivor Animations
+	#undef FighterAxeAnim
+	#define FighterAxeAnim 0x19 //Fighter Axe
+	#undef FighterHandaxeAnim
+	#define FighterHandaxeAnim 0x1A
+
+ALIGN 4
+FighterAnims:
+	AxeAnim(FighterAxeAnim)
+	HandAxeAnim(FighterHandaxeAnim)
 EndAnim
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
