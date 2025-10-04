@@ -371,5 +371,9 @@ SkillDescription(AirRaidResID,SD_AirRaidRes)
 SkillDescription(ChaosStyleID,SD_ChaosStyle)
 SkillDescription(DragonskinID,SD_Dragonskin)
 SkillDescription(StunningSmileID,SD_StunningSmile)
+SkillDescription(CoverShooterID,SD_CoverShooter)
+SkillDescription(GrapplerID,SD_Grappler)
+SkillDescription(FollowUpID,SD_FollowUp)
+SkillDescription(ScavengerID,SD_Scavenger)
  
  

@@ -1552,3 +1552,19 @@ Dragonskin: Halves damage taken.[X]
 ## SD_StunningSmile
 Stunning Smile: If foe is male, inflicts[N]
 Avo -20 on that foe during combat.[X]
+
+## SD_CoverShooter
+Cover Shooter: Gain +15 crit and[N]
++4 attack when on terrain.[X]
+
+## SD_Grappler
+Grappler: Unit suffers no stat penalties[N]
+when attempting to capture.[X]
+
+## SD_FollowUp
+Follow Up: When attacking a foe who is[N]
+broken, deal 50% extra damage.[X]
+
+## SD_Scavenger
+Scavenger: Unit has Lck/2% chance to[N]
+find an item when using wait command.[X]
