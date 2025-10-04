@@ -102,3 +102,9 @@
 	//By Kao
 	#define LockTouchID 16
 	#define LocktouchID LockTouchID //Alias
+
+	//Apocalypse Skills
+	#define CoverShooterID 21
+	#define GrapplerID 22
+	#define FollowUpID 23
+	#define ScavengerID 24

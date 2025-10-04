@@ -15,6 +15,7 @@ POIN MiscIncrementFatigue
 #ifdef GAIDEN_MAGIC
 	POIN GaidenZeroOutSpellVariables
 #endif // GAIDEN_MAGIC
+POIN TryDoScavenger
 
 
 

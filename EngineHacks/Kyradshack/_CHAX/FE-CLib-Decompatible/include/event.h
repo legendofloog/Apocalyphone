@@ -60,6 +60,9 @@ enum EventStateFlags {
     // I don't think there's more, but I could be wrong
 };
 
+#define EVENT_SLOT_COUNT 0xE
+extern u32 gEventSlots[EVENT_SLOT_COUNT];
+
 // This will probably be used in evtcmd_gmap/evtscr for defining the event code handler arrays or something
 typedef u8(*EventFuncType)(struct EventEngineProc*);
 

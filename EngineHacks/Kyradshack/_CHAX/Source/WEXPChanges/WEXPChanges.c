@@ -30,7 +30,7 @@ int GetBattleUnitUpdatedWeaponExp(struct BattleUnit* bu) {
 
     result = bu->unit.ranks[bu->weaponType];
     result += GetItemAwardedExp(bu->weapon);
-    if(gSkillTester(&bu->unit, DisciplineIDLink)){
+    if(SkillTester(&bu->unit, DisciplineID)){
        result += GetItemAwardedExp(bu->weapon); 
     }
 

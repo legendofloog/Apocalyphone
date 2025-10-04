@@ -1,14 +1,13 @@
 ALIGN 4
-gSkillTester:
-POIN SkillTester
-
-ALIGN 4
 gprGotoConGetter:
 POIN prGotoConGetter+1
 
 ALIGN 4
-DisciplineIDLink:
-BYTE DisciplineID
+GiveItemEvent:
+CALL $591F40
+GIVEITEMTO 0xFFFF
+NoFade
+ENDA
 
 //All of these were made with major help from Pikmin1211
 #include "Event/Formulachanges/Formulachanges.lyn.event" //Formula changes includes EXP changes written by LegendofLoog
@@ -18,3 +17,4 @@ BYTE DisciplineID
 #include "Event/ClassBasedAid/ClassBasedAid.lyn.event" //Also prevents mounted units being rescued
 #include "Event/StaffHeals/StaffHeals.lyn.event"
 #include "Event/Misc_CHAX/Misc_CHAX.lyn.event"
+#include "Event/Skills/Skills.lyn.event"
