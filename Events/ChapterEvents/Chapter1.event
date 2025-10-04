@@ -9,14 +9,15 @@ BYTE 0
 
 //To-Do:
 //Rout Objective -
-//Items
+//Items -
 //Enemy AI Change -
-//Playtest Patch
+//Playtest Patch -
 //Writing
 //Music
-//Unit Skills
+//Unit Skills -
 
 //Flags Used:
+//07-0A - Item events
 
 ALIGN 4
 PointerList:

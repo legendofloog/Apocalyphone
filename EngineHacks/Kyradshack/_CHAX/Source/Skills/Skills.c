@@ -48,15 +48,25 @@ struct WeightedItem {
 };
 
 const struct WeightedItem ScavengerLevel1[] = {
-	{ITEM_SWORD_IRON, 70},
-	{ITEM_SWORD_STEEL, 25},
-	{ITEM_VULNERARY, 5}
+	{ITEM_SWORD_IRON, 12},
+	{ITEM_LANCE_IRON, 12},
+	{ITEM_AXE_IRON, 12},
+	{ITEM_BOW_IRON, 12},
+	{ITEM_VULNERARY, 52},
 };
 
 const struct WeightedItem ScavengerLevel5[] = {
-	{ITEM_SWORD_IRON, 50},
-	{ITEM_SWORD_STEEL, 40},
-	{ITEM_SWORD_SILVER, 10}
+	{ITEM_SWORD_IRON, 6},
+	{ITEM_BLADE_IRON, 6},
+	{ITEM_LANCE_IRON, 6},
+	{0x25, 6}, //Iron Halberd
+	{ITEM_AXE_IRON, 6},
+	{0x77, 6}, //Iron Poleaxe
+	{ITEM_BOW_IRON, 6},
+	{0x7A, 6}, //Iron Warbow
+	{ITEM_VULNERARY, 42},
+	{ITEM_ANTITOXIN, 5},
+	{ITEM_PUREWATER, 5}
 };
 
 const struct WeightedItem* GetItemList(int level){
