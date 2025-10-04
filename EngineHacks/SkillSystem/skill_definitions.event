@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //This is currently unused and the original skillsys event is used. This will replace it eventually.
 
-//Skills Used: 1-20
+//Skills Used: 1-24
 
 #include "skill_definitions_old.event"
 
@@ -77,6 +77,22 @@
 //By Sme
 #define ResolveID 18
 
+//Cover Shooter: Grants +15 crit and +4 atk when on terrain.
+//By Pikmin1211
+#define CoverShooterID 21
+
+//Grappler: Suffers no stat penalties when attempting to capture.
+//By Pikmin1211
+#define GrapplerID 22
+
+//Follow Up: When attacking a foe who is broken, deal 50% extra damage.
+//By Pikmin1211
+#define FollowUpID 23
+
+//Scavenger: Unit has a Lck/2% to find an item whenever using the wait command.
+//By Pikmin1211
+#define ScavengerID 24
+
 //Weapon Skills
 
 	//Triangle Adept+: Doubles weapon triangle effects.
@@ -103,8 +119,3 @@
 	#define LockTouchID 16
 	#define LocktouchID LockTouchID //Alias
 
-	//Apocalypse Skills
-	#define CoverShooterID 21
-	#define GrapplerID 22
-	#define FollowUpID 23
-	#define ScavengerID 24
