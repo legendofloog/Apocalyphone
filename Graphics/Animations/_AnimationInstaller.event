@@ -15,3 +15,12 @@
 	#include "Anims/Fighter/HandaxeInstaller.event"
 
 }
+
+{
+
+	#include "Anims/Freelancer/LanceInstaller.event"
+}
+
+{
+	#include "Anims/Soldier/LanceInstaller.event"
+}

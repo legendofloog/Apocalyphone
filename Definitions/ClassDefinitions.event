@@ -8,8 +8,9 @@
 //Classes 133/255
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Valkyrie (M), Scout/Ranger (F)
-//ID's up to 0x8D are used
+//ID's up to 0x8E are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
+//50 is left free for fleet but it will need to have stats created for it
 
 //Player Classes
 

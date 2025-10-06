@@ -12,4 +12,4 @@
 #define N426VillageObjectID 0x88
 #define N426VillagePaletteID 0x89
 #define N426VillageConfigID 0x8A
-//#define N426VillageTileAnimationsID 0x8B
+#define N426VillageTileAnimationsID 0x8B

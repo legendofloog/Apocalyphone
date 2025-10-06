@@ -21,13 +21,11 @@
 
 #define SoldierStandID 0x3F
 
-#define KnightSwordStandID 0x41
+#define KnightSwordStandID 0x76
 
 #define KnightAxeStandID 0x67
 
 #define KnightBowStandID 0x6A
-
-#define FighterFStandID 0x69
 
 #define PegKnightSwordStandID 0x6B
 
@@ -50,3 +48,5 @@
 #define HalberdierStandID 0x74
 
 #define BonewalkerLanceStandID 0x75
+
+#define FighterFStandID 0x77

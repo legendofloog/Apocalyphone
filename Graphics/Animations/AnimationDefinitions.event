@@ -55,16 +55,37 @@ EndAnim
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-//Survivor Animations
+//Fighter Animations
 	#undef FighterAxeAnim
 	#define FighterAxeAnim 0x19 //Fighter Axe
 	#undef FighterHandaxeAnim
-	#define FighterHandaxeAnim 0x1A
+	#define FighterHandaxeAnim 0x1A //Fighter Hand Axe
 
 ALIGN 4
 FighterAnims:
 	AxeAnim(FighterAxeAnim)
 	HandAxeAnim(FighterHandaxeAnim)
+EndAnim
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Freelancer Animations
+	#define FreelancerLanceAnim 0x02 //Ephraim Item
+
+ALIGN 4
+FreelancerAnims:
+	LanceAnim(FreelancerLanceAnim)
+EndAnim
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Soldier Animations
+	#undef SoldierLanceAnim
+	#define SoldierLanceAnim 0x98 //Soldier Lance
+
+ALIGN 4
+SoldierAnims:
+	LanceAnim(SoldierLanceAnim)
 EndAnim
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////

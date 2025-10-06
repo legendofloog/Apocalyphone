@@ -1,0 +1,72 @@
+#define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+
+EventPointerTable(N426VillageTileAnimationsID, N426VillageTileAnimations)
+
+ALIGN 4
+N426VillageTileAnimations0:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_000.dmp"
+ALIGN 4
+N426VillageTileAnimations1:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_001.dmp"
+ALIGN 4
+N426VillageTileAnimations2:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_002.dmp"
+ALIGN 4
+N426VillageTileAnimations3:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_003.dmp"
+ALIGN 4
+N426VillageTileAnimations4:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_004.dmp"
+ALIGN 4
+N426VillageTileAnimations5:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_005.dmp"
+ALIGN 4
+N426VillageTileAnimations6:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_006.dmp"
+ALIGN 4
+N426VillageTileAnimations7:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_007.dmp"
+ALIGN 4
+N426VillageTileAnimations8:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_008.dmp"
+ALIGN 4
+N426VillageTileAnimations9:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_009.dmp"
+ALIGN 4
+N426VillageTileAnimations10:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_010.dmp"
+ALIGN 4
+N426VillageTileAnimations11:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_011.dmp"
+ALIGN 4
+N426VillageTileAnimations12:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_012.dmp"
+ALIGN 4
+N426VillageTileAnimations13:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_013.dmp"
+ALIGN 4
+N426VillageTileAnimations14:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_014.dmp"
+ALIGN 4
+N426VillageTileAnimations15:
+#incbin "TilesetAnimations/N426Village/Anim.mapanime1_015.dmp"
+
+ALIGN 4
+N426VillageTileAnimations:
+tilesetAnimation(28, 4096, N426VillageTileAnimations0) //May be incorrect? honestly unsure?
+tilesetAnimation(28, 4096, N426VillageTileAnimations1)
+tilesetAnimation(28, 4096, N426VillageTileAnimations2)
+tilesetAnimation(28, 4096, N426VillageTileAnimations3)
+tilesetAnimation(28, 4096, N426VillageTileAnimations4)
+tilesetAnimation(28, 4096, N426VillageTileAnimations5)
+tilesetAnimation(28, 4096, N426VillageTileAnimations6)
+tilesetAnimation(28, 4096, N426VillageTileAnimations7)
+tilesetAnimation(28, 4096, N426VillageTileAnimations8)
+tilesetAnimation(28, 4096, N426VillageTileAnimations9)
+tilesetAnimation(28, 4096, N426VillageTileAnimations10)
+tilesetAnimation(28, 4096, N426VillageTileAnimations11)
+tilesetAnimation(28, 4096, N426VillageTileAnimations12)
+tilesetAnimation(28, 4096, N426VillageTileAnimations13)
+tilesetAnimation(28, 4096, N426VillageTileAnimations14)
+tilesetAnimation(28, 4096, N426VillageTileAnimations15)
+WORD 0 0
