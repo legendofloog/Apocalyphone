@@ -712,7 +712,7 @@
 #define PiercingTalonName $FEF
 #define RabidFangName $FF0
 #define RabidFangDesc $FF1
-#define GazingEyeName $FF2
+#define HypnnoticEyeName $FF2
 #define GazingEyeDesc $FF3
 #define StoneDesc $FF4
 #define DragonstoneDesc $FF5

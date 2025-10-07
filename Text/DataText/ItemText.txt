@@ -409,12 +409,12 @@ Rabid Fang[X]
 ## RabidFangDesc
 Inflicts berserk on contact[X]
 
-## GazingEyeName
-Gazing Eye[X]
+## HypnnoticEyeName
+Hypnotic Eye[X]
 
 ## GazingEyeDesc
-Inflicts silence on contact.[N]
-Cannot double[X]
+Inflicts sleep on contact.[N]
+Cannot double.[X]
 
 ## StoneDesc
 Petrifies foe. Cannot double.[X]

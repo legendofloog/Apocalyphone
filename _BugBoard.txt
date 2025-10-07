@@ -1,5 +1,5 @@
 Major Bugs:
-- Broadsword seems to be effective against armoured units. Also seems to be dealing x4 damage?
+- Broadsword seems to be effective against armoured and cavalry units. Also seems to be dealing x4 damage?
 
 Minor Bugs:
 - Droppable/Stealable Graphic appears when silencing a unit.
@@ -7,3 +7,4 @@ Minor Bugs:
 - Summon (and possibly other actions) giving too much exp in fatigue state when a 1HP unit so the logic somewhere in my CHAX is probably bad.
 - Bow Knight anim hangs when using the shortbow at 1 range.
 - HP resets when escaping, this is inherent to Ysor's hack but may be worth trying to fix.
+- Enemies with -10 autolevels at level 1 seem to be randomly underflowing to cap 15 magic despite code flooring at 0. Not a major issue but implies code is broken somewhere.

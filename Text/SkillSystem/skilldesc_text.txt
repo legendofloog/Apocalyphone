@@ -452,9 +452,8 @@ Dragon's Blood: Unit is able[N]
 to activate Dragon Veins.[X]
 
 ## SD_Personality
-Nice Personality: This unit has[N]
-a deep and engaging character,[N]
-bursting at the seams with development.[X]
+Heavy Armour: This unit is[N]
+immune to being broken.[X]
 
 ## SD_QuickDraw
 Quick Draw: +4 Damage[N]
