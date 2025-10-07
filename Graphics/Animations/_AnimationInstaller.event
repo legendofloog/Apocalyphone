@@ -24,3 +24,8 @@
 {
 	#include "Anims/Soldier/LanceInstaller.event"
 }
+
+{
+	#include "Anims/ThiefF/SwordInstaller.event"
+	#include "Anims/ThiefF/KnifeInstaller.event"
+}

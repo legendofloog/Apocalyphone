@@ -89,3 +89,21 @@ SoldierAnims:
 EndAnim
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Thief (F) Animations
+	#define ThiefFSwordAnim 0x4B //Replaces F_General Axe
+	#define ThiefFKnifeAnim 0x4C //Replaces F_General HandAxe
+
+ALIGN 4
+ThiefFAnims:
+	SwordAnim(ThiefFSwordAnim)
+	SpecialAnim(ThiefFKnifeAnim,IronDagger)
+	SpecialAnim(ThiefFKnifeAnim,SteelDagger)
+	SpecialAnim(ThiefFKnifeAnim,VeninDagger)
+	SpecialAnim(ThiefFKnifeAnim,MainGauche)
+	SpecialAnim(ThiefFKnifeAnim,Wingclipper)
+	SpecialAnim(ThiefFKnifeAnim,Silencer)
+	SpecialAnim(ThiefFKnifeAnim,SilverDagger)
+EndAnim
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////

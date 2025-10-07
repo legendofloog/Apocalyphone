@@ -1,5 +1,4 @@
 Major Bugs:
-- Broadsword seems to be effective against armoured and cavalry units. Also seems to be dealing x4 damage?
 
 Minor Bugs:
 - Droppable/Stealable Graphic appears when silencing a unit.
