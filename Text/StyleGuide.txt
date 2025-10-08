@@ -1,3 +1,3 @@
 - Do we brit english or american english?
-- Use [..] for periods, [.,] for commas, [.?] for question marks etc for brief pauses after punctuation.
+- Use [..] for periods, [.,] for commas, [.?] for question marks etc for brief pauses after punctuation that doesn't occur on an A press.
 - Make sure your [A]'s are on periods ideally, though commas are okay.

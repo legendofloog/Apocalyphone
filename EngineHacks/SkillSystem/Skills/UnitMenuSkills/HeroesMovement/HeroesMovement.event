@@ -113,7 +113,7 @@ prSwap_TargetLegality:
 		rIfUnitHasNotGuardAI
 			//rWithSubject
 				//rForActiveUnit
-					//rIfUnitsAreAllied
+					rIfUnitsAreAllied
 							rConstant(True)
 
 prShove_TargetLegality:

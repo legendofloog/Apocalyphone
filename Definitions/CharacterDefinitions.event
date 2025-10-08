@@ -9,3 +9,5 @@
 
 #define TestEnemy 0xD0
 #define Monster 0xAA
+#define Monster_A 0xAB
+#define Monster_B 0xAC

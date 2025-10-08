@@ -12,9 +12,11 @@ BYTE 0
 //Items -
 //Enemy AI Change -
 //Playtest Patch -
-//Writing
+//End Event
 //Music
 //Unit Skills -
+//Death Quotes
+//Map Polish
 
 //Flags Used:
 //07-0A - Item events
@@ -69,11 +71,11 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Eirika Survivor Eirika Level(1,Ally,False) [11,6] 0x0 [LordPrf,Vulnerary] NoAI
-UNIT Seth Archer_F Eirika Level(1,Ally,False) [10,5] 0x0 [IronBow,Vulnerary] NoAI
-UNIT Gilliam Soldier Eirika Level(1,Ally,False) [12,5] 0x0 [IronLance] NoAI
-UNIT Franz Fighter Eirika Level(1,Ally,False) [10,3] 0x0 [IronAxe,Vulnerary] NoAI
-UNIT Moulder Thief_F Eirika Level(1,Ally,False) [13,7] 0x0 [SlimSword,IronDagger] NoAI
+UNIT Eirika Survivor Eirika Level(1,Ally,False) [15,1] 0x0 0x0 0x1 REDA11R6 [LordPrf,Vulnerary] NoAI
+UNIT Seth Archer_F Eirika Level(1,Ally,False) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
+UNIT Gilliam Soldier Eirika Level(1,Ally,False) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
+UNIT Franz Fighter Eirika Level(1,Ally,False) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
+UNIT Moulder Thief_F Eirika Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
 UNIT
 
 EnemyUnitsTest:
@@ -85,8 +87,8 @@ EnemyUnits:
 UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] GroupTwoAI
 UNIT Monster Bonewalker_L ONeill Level(2,Enemy,True) [0,19] 0x0 [IronLance] GroupTwoAI
 UNIT Monster Revenant ONeill Level(2,Enemy,True) [4,20] 0x0 [PoisonClaw] GroupTwoAI
-UNIT Monster Revenant ONeill Level(1,Enemy,True) [7,7] 0x0 [RottenClaw] ChargeAI
-UNIT Monster Bonewalker_L ONeill Level(1,Enemy,True) [10,9] 0x0 [IronLance] ChargeAI
+UNIT Monster_A Revenant ONeill Level(1,Enemy,True) [8,12] 0x0 [RottenClaw] ChargeAI //move to 7,7
+UNIT Monster_B Bonewalker_L ONeill Level(1,Enemy,True) [10,14] 0x0 [IronLance] ChargeAI //move to 10,9
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [7,13] 0x0 [RottenClaw] InTwoAI
 UNIT Monster Revenant ONeill Level(1,Enemy,True) [10,17] 0x0 [RottenClaw] InTwoAI
 UNIT Monster Bonewalker_S ONeill Level(1,Enemy,True) [6,16] 0x0 [IronSword] GroupOneAI
@@ -153,16 +155,30 @@ FADU 5
 Text(Chapter1BeginningSceneA)
 FADI 5
 CLEAN
+STAL 60
 //ENUT 0xEF //Fixed growths
 LOAD1 0x1 EnemyUnits
 ENUN
+CAMERA_CENTERED [14,1]
+EVBIT_F 2
+FADU 5
+CamOn
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
+CamOff
 CAMERA_CENTERED Eirika
-//GoToPrepScreen2
-STAL 60
-FADU 5
-Text(TempText)
+Text(Chapter1BeginningSceneB1)
+CAMERA_CENTERED [7,16]
+STAL 150
+CAMERA_CENTERED Eirika
+Text(Chapter1BeginningSceneB2)
+CamOn
+MOVE 50 Monster_A [7,7]
+MOVE 50 Monster_B [10,9]
+ENUN
+CamOff
+CAMERA_CENTERED Eirika
+Text(Chapter1BeginningSceneB3)
 NoFade
 ENDA
 
@@ -175,3 +191,20 @@ EndingScene:
 MNC2 0
 NoFade
 ENDA
+
+//11R6, 10R5, 12R5, 10R3, 13R7
+
+REDA11R6Slow:
+REDA [11,6] 0x0 0x1 0x0 0x0
+
+REDA10R5Slow:
+REDA [10,5] 0x0 0x1 0x0 0x0
+
+REDA12R5Slow:
+REDA [12,5] 0x0 0x1 0x0 0x0
+
+REDA10R3Slow:
+REDA [10,3] 0x0 0x1 0x0 0x0
+
+REDA13R7Slow:
+REDA [13,7] 0x0 0x1 0x0 0x0
