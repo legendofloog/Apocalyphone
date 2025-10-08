@@ -4,11 +4,74 @@ Rout the monsters.[X]
 ## Chapter1GoalWindow
 Rout Monsters[X]
 
-## Chapter1BeginningSceneA
+## TempText
 
 [MidRight][LoadLord]
 [MidRight][OneLineBox]
-Ruins and shops have items.[A][X]
+Ruins and shops have items[..][A][X]
+
+## Chapter1BeginningSceneA
+
+[OpenRight][LoadGilliam][OpenFarRight][LoadFranz][OpenMidLeft][LoadMoulder]
+[OpenRight][OneLineBox]
+So[.,] find anything Name?[A]
+
+[OpenMidLeft][TwoLineBox]
+We might be in luck[..] I saw[N]
+some old logging hamlet[..][AN]
+There's a few terrors roaming[N]
+around but nothing too serious.[AN]
+Might have some supplies that[N]
+people haven't scrounged yet.[A]
+
+[OpenFarRight][ThreeLineBox]
+At least it isn't bandits[..][N]
+Revenants are predictable[.,][N]
+they always want you dead.[AN]
+People though[.?] You never know[N]
+what they might be thinking[..] And[N]
+it never feels good to fight em'[..][A]
+
+[OpenRight][TwoLineBox]
+Speak for yourself Name[..] You can[N]
+reason with people y'know[.?][AN]
+The monsters just make me wonder[N]
+if the Gods are still alive.[A]
+
+[OpenFarFarRight][TwoLineBox]
+You're sure there's going[N]
+to be supplies Name?[A]
+
+[OpenMidLeft][ClearFace][OpenRight][ClearFace][OpenFarRight][ClearFace]
+[OpenFarLeft][LoadMoulder][OpenLeft][LoadGilliam][OpenRight][LoadSeth][OpenFarRight][LoadLord]
+[OpenFarLeft][TwoLineBox]
+I mean is that ever a guarantee[.?][N]
+But if there is I can find it.[A]
+
+[OpenRight][ThreeLineBox]
+But if there isn't then we'll[N]
+risk getting killed by terrors[N]
+without getting anything.[A]
+
+[OpenFarRight][ThreeLineBox]
+I think we have to try[..] If we[N]
+don't take any risks then we'll[N]
+eventually run out of supplies[..][AN]
+Then the terrors will just hunt[N]
+us down[.,] unless we starve to[N]
+death in the meantime[..][AN]
+You said there wasn't many[N]
+monsters there right[.?][A]
+
+[OpenFarLeft][TwoLineBox]
+Yeah mostly just a pack of[N]
+shamblers[..] Should be easy[..][A]
+
+[OpenFarRight]
+Alright[.,] seems reasonable[..][N]
+Let's make our way there[..][AN]
+Keep your heads down[.,] you never[N]
+know if there's terrors in the woods[..][A][X]
 
 ## Chapter1WarningText
 

@@ -146,13 +146,23 @@ NoFade
 ENDA
 
 BeginningScene:
+COUNTER_SET 0 0
+REMOVEPORTRAITS
+BACG 0x23
+FADU 5
+Text(Chapter1BeginningSceneA)
+FADI 5
+CLEAN
 //ENUT 0xEF //Fixed growths
 LOAD1 0x1 EnemyUnits
 ENUN
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 ENUN
+CAMERA_CENTERED Eirika
 //GoToPrepScreen2
-Text(Chapter1BeginningSceneA)
+STAL 60
+FADU 5
+Text(TempText)
 NoFade
 ENDA
 

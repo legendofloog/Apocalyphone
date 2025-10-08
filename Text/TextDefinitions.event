@@ -778,7 +778,8 @@
 #define MessageFatigueRestored $1031
 #define Chapter1StatusObjective $1032
 #define Chapter1GoalWindow $1033
-#define Chapter1BeginningSceneA $1034
-#define Chapter1WarningText $1035
+#define TempText $1034
+#define Chapter1BeginningSceneA $1035
+#define Chapter1WarningText $1036
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT

@@ -12,6 +12,7 @@
 #define GiveGold(money) "SVAL 3 money; GIVEMONEY Lord"
 #define TakeGold(money) "SVAL 3 money; TAKEMONEY"
 #define CenterTextbox(textid) "CenterTutorialTextBox; TUTORIALTEXTBOXSTART; TEXTSHOW textid; TEXTEND; REMA"
+#define CenterCGText(textid) "CenterTutorialTextBox; SOLOTEXTBOXSTART; TEXTSHOW textid; TEXTEND; REMA"
 #define TutorialYesNoText(textid) "CenterTextbox(textid); EVBIT_MODIFY 0"
 #define RemoveAll "REMOVEALL_BLUE; REMOVEALL_GREEN; REMOVEALL_RED"
 #define TextWithMusicChange(textId,SongId) "TEXTSTART; TEXTSHOW textId; TEXTEND; MUSC songId; TEXTCONT; TEXTEND; REMA"
