@@ -12,10 +12,11 @@ BYTE 0
 //Items -
 //Enemy AI Change -
 //Playtest Patch -
-//End Event
+//End Event -
 //Music
 //Unit Skills -
 //Death Quotes
+//Shop Event
 //Map Polish
 
 //Flags Used:
@@ -38,7 +39,6 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-//Add a warning on turn 6 that the monsters look like they're going to charge
 TurnEventPlayer(0,WarningText,6)
 TurnEventPlayer(0,EnemyCharge,7)
 END_MAIN
@@ -183,11 +183,32 @@ NoFade
 ENDA
 
 EndingScene:
+MUSCFAST 0x7FFF
+CAMERA_CENTERED Eirika
+Text(Chapter1EndingSceneA)
+SetBackground(0x2)
+COUNTER_CHECK 0
+SVAL s2 2
 //If Counter < 2 goto 1 else
-//If counter < 4 Goto 2 else
-//Perfect score, goto 3
-//1 bad score, goto 3
-//2 ok score, goto 3 
+BLT 1 sC s2
+	//If counter < 4 goto 2 else
+	SVAL s2 4
+	BLT 2 sC s2
+		//Perfect score, goto 3
+		GOTO 3
+//1 bad score
+LABEL 1
+	Text(Chapter1EndingSceneBc)
+	GOTO 4
+//2 decent score
+LABEL 2
+	Text(Chapter1EndingSceneBb)
+	GOTO 4
+//3 perfect score
+LABEL 3
+	Text(Chapter1EndingSceneBa)
+LABEL 4
+FADI 5
 MNC2 0
 NoFade
 ENDA

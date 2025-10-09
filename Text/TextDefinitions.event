@@ -786,5 +786,7 @@
 #define Chapter1WarningText $1039
 #define Chapter1EndingSceneA $103A
 #define Chapter1EndingSceneBa $103B
+#define Chapter1EndingSceneBb $103C
+#define Chapter1EndingSceneBc $103D
 
 #endif // TEXT_DEFINITIONS_TEXT_BUILDFILE_TXT
