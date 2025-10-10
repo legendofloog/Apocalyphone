@@ -54,6 +54,7 @@
 
 //Do not put portraits past 0xFF
 
+[LoadActive] = [LoadFace][0xFF][0xFF]
 [LoadLord] = [LoadFace][0x2][0x1]
 [LoadSeth] = [LoadFace][0x4][0x1]
 [LoadGilliam] = [LoadFace][0x5][0x1]

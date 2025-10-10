@@ -96,3 +96,61 @@ void BeginUnitPoisonDamageAnim(struct Unit* unit, int damage) {
 
     return;
 }*/
+
+bool CanUnitUseVisit(void)
+{
+    int ix;
+    int iy;
+
+    if (gActiveUnit->state & US_HAS_MOVED)
+        return false;
+
+    for (iy = gBmMapSize.y - 1; iy >= 0; iy--)
+    {
+        for (ix = gBmMapSize.x - 1; ix >= 0; ix--)
+        {
+            if (gBmMapMovement[iy][ix] > MAP_MOVEMENT_MAX)
+                continue;
+
+            //if (gBmMapTerrain[iy][ix] != TERRAIN_VILLAGE_03 && gBmMapTerrain[iy][ix] != TERRIAN_HOUSE &&
+                //gBmMapTerrain[iy][ix] != TERRAIN_INN && gBmMapTerrain[iy][ix] != TERRAIN_RUINS_37)
+                //continue;
+
+            if (GetAvailableTileEventCommand(ix, iy) == TILE_COMMAND_VISIT)
+                return true;
+        }
+    }
+
+    return false;
+}
+
+u8 VisitCommandUsability(const struct MenuItemDef* def, int number) {
+
+    if (gActiveUnit->pClassData->number == CLASS_PHANTOM) {
+        return MENU_NOTSHOWN;
+    }
+
+    if (gActiveUnit->state & US_HAS_MOVED) {
+        return MENU_NOTSHOWN;
+    }
+
+    /*switch (gBmMapTerrain[gActiveUnit->yPos][gActiveUnit->xPos]) {
+        default:
+            return MENU_NOTSHOWN;
+        case TERRIAN_HOUSE:
+        case TERRAIN_INN:
+        case TERRAIN_RUINS_37:
+        case TERRAIN_VILLAGE_03:
+            break;
+    }*/
+
+    if (GetAvailableTileEventCommand(gActiveUnit->xPos, gActiveUnit->yPos) == TILE_COMMAND_VISIT) {
+        if (IsUnitMagicSealed(gActiveUnit)) {
+            return MENU_DISABLED;
+        }
+
+        return MENU_ENABLED;
+    }
+
+    return MENU_NOTSHOWN;
+}

@@ -4,11 +4,12 @@ Rout the monsters.[X]
 ## Chapter1GoalWindow
 Rout Monsters[X]
 
-## TempText
+## ShopText
 
-[MidRight][LoadLord]
-[MidRight][OneLineBox]
-This is temp text.[A][X]
+[MidRight][LoadActive]
+[MidRight][TwoLineBox]
+Oh[.,] what's this[.?] Surprised[N]
+nobody has looted it.[A][X]
 
 ## Chapter1BeginningSceneA
 
@@ -143,8 +144,8 @@ making a move sooner or later.[A]
 [OpenRight][TwoLineBox]
 I'd rather it didn't come to[N]
 that[.,] but you might be right.[AN]
-Either way[.,] we should probably[N]
-think about getting a move on.[A]
+Either way[.,] we should probably think[N]
+about getting back to the others.[A]
 
 [OpenFarRight][TwoLineBox]
 Yeah[.,] longer we stick around the[N]
@@ -178,8 +179,8 @@ making a move sooner or later.[A]
 [OpenRight][TwoLineBox]
 I'd rather it didn't come to[N]
 that[.,] but you might be right.[AN]
-Either way[.,] we should probably[N]
-think about getting a move on.[A]
+Either way[.,] we should probably think[N]
+about getting back to the others.[A]
 
 [OpenFarRight][TwoLineBox]
 Yeah[.,] longer we stick around the[N]
@@ -213,8 +214,8 @@ making a move sooner or later.[A]
 [OpenRight][TwoLineBox]
 I'd rather it didn't come to[N]
 that[.,] but you might be right.[AN]
-Either way[.,] we should probably[N]
-think about getting a move on.[A]
+Either way[.,] we should probably think[N]
+about getting back to the others.[A]
 
 [OpenFarRight][TwoLineBox]
 Yeah[.,] longer we stick around the[N]

@@ -47,6 +47,7 @@ CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
+LOCA $A ShopRuin [1,10] 0x10 //Green Gem
 END_MAIN
 
 MiscBasedEvents:
@@ -55,7 +56,7 @@ DefeatAll(EndingScene)
 AREA 7 Ruin1 [13,9][15,10] //Vulnerary
 AREA 8 Ruin2 [4,12][6,13] //Antitoxin
 AREA 9 Ruin3 [14,16][16,17] //Iron Sword
-AREA $A ShopRuin [1,10][1,10] //Green Gem
+//AREA $A ShopRuin [1,10][1,10] //Defunct replaced by LOCA event
 END_MAIN
 
 Dunno1:
@@ -142,8 +143,11 @@ NoFade
 ENDA
 
 ShopRuin:
+SetBackground(0x01)
+Text(ShopText)
 GiveItem(GreenGem,0xFFFF)
 COUNTER_INC 0
+EraseBackground
 NoFade
 ENDA
 
