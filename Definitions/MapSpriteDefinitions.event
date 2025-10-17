@@ -50,3 +50,9 @@
 #define BonewalkerLanceStandID 0x75
 
 #define FighterFStandID 0x77
+
+#define LancerFStandID 0x78
+
+#define BrigandFStandID 0x79
+
+#define ScoutStandID 0x7A

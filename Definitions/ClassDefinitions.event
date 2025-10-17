@@ -8,7 +8,7 @@
 //Classes 133/255
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Valkyrie (M), Scout/Ranger (F)
-//ID's up to 0x8E are used
+//ID's up to 0x8F are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 //50 is left free for fleet but it will need to have stats created for it
 
@@ -68,7 +68,7 @@
 #define Warrior_F 0x89 //unimplemented*
 
 #define Brigand_F 0x80
-#define Pirate_F 0x50 //unimplemented
+#define Pirate_F 0x8F //unimplemented
 #define Berserker_F 0x81 //unimplemented
 
 #define Soldier_F 0x4F //unimplemented*
@@ -143,7 +143,7 @@
 Classes Implemented:
 Key: M = With Map Sprites, G = Both Genders, A = With Assets
 
-Survivor M
+Survivor M A
 Vagabond 
 Mercenary G M
 Myrmidon G M

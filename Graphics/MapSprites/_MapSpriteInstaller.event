@@ -141,3 +141,36 @@ BonewalkerLanceStand:
 ALIGN 4
 BonewalkerLanceWalk:
 #incbin "DMP/BonewalkerLanceWalk(Epicer).dmp"
+
+ALIGN 4
+LancerFStand:
+#incbin "DMP/LancerFStand(Alusq,Epicer).dmp"
+
+ALIGN 4
+LancerFWalk:
+#incbin "DMP/LancerFWalk(Alusq,Epicer).dmp"
+
+ALIGN 4
+BrigandFStand:
+#incbin "DMP/BrigandFStand(Skitty).dmp"
+
+ALIGN 4
+BrigandFWalk:
+#incbin "DMP/BrigandFWalk(Skitty).dmp"
+
+ALIGN 4
+ScoutStand:
+#incbin "DMP/ScoutStand(Roxannity).dmp"
+
+ALIGN 4
+ScoutWalk:
+#incbin "DMP/ScoutWalk(Roxannity).dmp"
+
+ALIGN 4
+WyvernRiderSwordStand:
+#incbin "DMP/WyvernRiderSwordStand(SamirPlayz).dmp"
+
+ALIGN 4
+WyvernRiderSwordWalk:
+#incbin "DMP/WyvernRiderSwordWalk(SamirPlayz).dmp"
+
