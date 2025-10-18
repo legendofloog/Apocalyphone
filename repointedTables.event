@@ -87,3 +87,13 @@ ORG 0x26B42
 BYTE 0x00 0x20    
 
 POP
+
+PUSH
+ORG 0x5524
+POIN NewPortraitTable
+// for every pointer this thing has
+POP
+
+ALIGN 4; NewPortraitTable:
+#incbin "Graphics/Portraits/VanillaPortraitTable.bin"
+FILL $80 * 28

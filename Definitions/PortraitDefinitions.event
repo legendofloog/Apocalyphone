@@ -6,9 +6,10 @@
 //NPC Mugs
 
 //Generic/Misc Mugs
-#define FSoldierMug 0x57
+#define FSoldierMug 0x57 //redef as AD
 
 //Class Cards
 #define KnightLanceClassCard 0x76
-#define BonewalkerLanceClassCard 0x4F
+#define BonewalkerLanceClassCard 0x4F //redef as AB
 #define BonewalkerBowClassCard 0x85
+#define FreelancerClassCard 0xAD

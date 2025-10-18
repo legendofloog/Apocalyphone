@@ -24,3 +24,11 @@ ALIGN 4
 BonewalkerBowClassCardPal:
 #incbin "DMP/BonewalkerBow(Spud,Rasdal,Kryads,Brober).png_pal.dmp"
 setCardEntry(BonewalkerBowClassCard, BonewalkerBowClassCardData, BonewalkerBowClassCardPal)
+
+ALIGN 4
+FreelancerClassCardData:
+#incbin "DMP/Lancer(Rasdel).dmp"
+ALIGN 4
+FreelancerClassCardPal:
+#incbin "DMP/Lancer(Rasdel).png_pal.dmp"
+setCardEntry(FreelancerClassCard, FreelancerClassCardData, FreelancerClassCardPal)
