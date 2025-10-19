@@ -21,8 +21,6 @@
 
 //Graphics To Do List
 //Battle Frame Isn't Done
-//Tilesets & Palettes
-//May want to change the item icon installer for that lower effort version
 
 PUSH
 ORG $5A2DDC

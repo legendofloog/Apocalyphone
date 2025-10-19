@@ -36,8 +36,8 @@ Dracoknight (SL),1,5,25,1
 Dracoknight (LA),1,5,25,1
 Wyvern Knight (L),1,5,25,1
 Wyvern Knight (S),1,5,25,1
-Mage,6,40,20,0
-Mage (F),6,40,20,0
+Mage,7,40,20,0
+Mage (F),7,40,20,0
 Sage,8,40,30,1
 Sage (F),8,40,30,1
 Mage Knight,8,40,30,1
@@ -67,7 +67,7 @@ Warrior,1,5,25,1
 Brigand,0,5,15,0
 Pirate,0,5,15,0
 Berserker,1,5,25,1
-Monk,5,40,20,0
+Monk,6,40,20,0
 Priest,7,45,20,0
 Bard,1,45,20,0
 Recruit (1),0,0,20,0
@@ -94,9 +94,9 @@ Mauthe Doog,0,5,15,0
 Gwyllgi,0,5,23,0
 Tarvos,0,5,15,0
 Maelduin,0,0,21,0
-Mogall,6,45,20,0
-Balor,9,45,30,0
-Gorgon,8,60,29,0
+Mogall,7,45,20,0
+Balor,10,45,30,0
+Gorgon,9,60,29,0
 Gorgon Egg,0,0,30,0
 Gargoyle,0,5,15,0
 Deathgoyle,0,0,22,0

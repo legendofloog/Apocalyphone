@@ -96,4 +96,4 @@ POP
 
 ALIGN 4; NewPortraitTable:
 #incbin "Graphics/Portraits/VanillaPortraitTable.bin"
-FILL $80 * 28
+FILL 50 * 28
