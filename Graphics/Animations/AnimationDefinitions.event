@@ -107,3 +107,41 @@ ThiefFAnims:
 EndAnim
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Scout Animations
+	#define ScoutBowAnim 0x30 //Replaces Ranger Unarmed
+
+ALIGN 4
+ScoutAnims:
+	BowAnim(ScoutBowAnim)
+EndAnim
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//Cavalier Animations
+	#undef CavalierSwordAnim
+	#define CavalierSwordAnim 0x34 //Cavalier Sword
+	#undef CavalierLanceAnim
+	#define CavalierLanceAnim 0x35 //Cavalier Lance
+	#define CavalierAxeAnim 0x36 //Cavalier Unarmed
+	#define CavalierHandaxeAnim 0x43 //Replaces Knight_F Unarmed
+
+ALIGN 4
+CavalierAnims:
+	SwordAnim(CavalierSwordAnim)
+	LanceAnim(CavalierLanceAnim)
+	AxeAnim(CavalierAxeAnim)
+	HandAxeAnim(CavalierHandaxeAnim)
+EndAnim
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Removing Unarmed Animations
+//Ranger Anims
+RangerAnims:
+	SwordAnim(0x2E)
+	BowAnim(0x2F)
+EndAnim
+
+//Next
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////

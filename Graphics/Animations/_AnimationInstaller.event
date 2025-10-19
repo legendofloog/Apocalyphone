@@ -29,3 +29,12 @@
 	#include "Anims/ThiefF/SwordInstaller.event"
 	#include "Anims/ThiefF/KnifeInstaller.event"
 }
+{
+	#include "Anims/Scout/BowInstaller.event"
+}
+{
+	#include "Anims/Cavalier/SwordInstaller.event"
+	#include "Anims/Cavalier/LanceInstaller.event"
+	#include "Anims/Cavalier/AxeInstaller.event"
+	#include "Anims/Cavalier/HandaxeInstaller.event"
+}

@@ -1,4 +1,5 @@
 Major Bugs:
+- Noticed an interaction where an axe pegasus attacking at wta against a solider or freelancer is countered and then broken. Even though the opponent is supposed to double after the miss it doesnt.
 
 Minor Bugs:
 - Droppable/Stealable Graphic appears when silencing a unit.
