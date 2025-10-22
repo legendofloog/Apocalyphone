@@ -168,7 +168,7 @@ blh SkillTester, r3
 
 mov r1, #4
 ldrsh r1, [r7, r1]
-lsl r2, r1, #1
+mov r2, r1
 cmp r0,#0
 bne StoreDamage
 add r2, r1 @damagex3
