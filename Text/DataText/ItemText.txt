@@ -97,7 +97,7 @@ Glaive[X]
 Strikes foes surrounding wielder.[X]
 
 ## SilverHalberdName
-SilverHalberd[X]
+Slv. Halberd[X]
 
 ## AhlspeissName
 Pierces opponent's defence.[X]
@@ -133,11 +133,8 @@ Imposing Axe[X]
 ## ImposingAxeDesc
 Cannot be countered or counter.[X]
 
-## LabrysName
-Labrys[X]
-
-## LabrysDesc
-Sends opponents flying.[X]
+## SilverPoleaxeName
+Slv. Poleaxe[X]
 
 ## DevilAxeDesc
  [X]
