@@ -31,7 +31,7 @@ Rogue_Robbery:
 #incbin "FE8-Rogue_Robbery.dmp"
 POIN prConGetter
 POIN SkillTester
-WORD StealPlusID
+WORD CunningID
 WORD WatchfulID
 
 //#ifndef prConGetter
