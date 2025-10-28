@@ -36,7 +36,7 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningSceneTest EndingScene
+POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,WarningText,6)
@@ -73,7 +73,7 @@ END_MAIN
 
 Units1:
 UNIT Eirika Survivor Eirika Level(1,Ally,False) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
-UNIT Seth Archer_F Eirika Level(1,Ally,False) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
+UNIT Seth Archer_F Eirika Level(1,Ally,False) [14,1] 0x0 0x0 0x1 REDA10R5 [SilverBow,SilverWarbow,Vulnerary] NoAI
 UNIT Gilliam Soldier Eirika Level(1,Ally,False) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
 UNIT Franz Fighter Eirika Level(1,Ally,False) [13,0] 0x0 0x0 0x1 REDA10R3 [SilverAxe,SilverPoleaxe,Vulnerary] NoAI
 UNIT Moulder Thief_F Eirika Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
