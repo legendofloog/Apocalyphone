@@ -101,7 +101,8 @@
 
 
   ST_Name:
-    RMenu(0,ST_Class,0,ST_Luck,0x18,0x50,0x0,NameDescGetter)
+    RMenu(0,ST_Class,0,ST_Affin2,0x18,0x50,0x0,NameDescGetter)
+
 
   ST_Class:
     RMenu(ST_Name,ST_Level,0,ST_Res,0x6,0x68,0x6E8,ClassDescGetter)
@@ -198,7 +199,10 @@
 
 
   ST_Name:
-    RMenu(0,ST_Class,0,ST_Luck,0x18,0x50,0x0,NameDescGetter)
+    RMenu(0,ST_Class,0,ST_Affin2,0x18,0x50,0x0,NameDescGetter)
+
+  ST_Affin2:
+    RMenu(0,ST_Class,ST_Name,ST_Luck,0x4F,0x50,0x551)
 
   ST_Class:
     RMenu(ST_Name,ST_Level,0,ST_Def,0x6,0x68,0x6E8,ClassDescGetter)
@@ -215,19 +219,19 @@
 
 
   ST_Str:
-    RMenu(PersonalDataRText,ST_Mag,ST_Name,ST_Con,0x66,0x18,0x546)
+    RMenu(PersonalDataRText,ST_Mag,ST_Affin2,ST_Con,0x66,0x18,0x546)
 
   ST_Mag:
-    RMenu(ST_Str,ST_Skl,ST_Name,ST_Aid,0x66,0x28,0x547)
+    RMenu(ST_Str,ST_Skl,ST_Affin2,ST_Aid,0x66,0x28,0x547)
 
   ST_Skl:
-    RMenu(ST_Mag,ST_Spd,ST_Name,ST_Cond,0x66,0x38,0x548)
+    RMenu(ST_Mag,ST_Spd,ST_Affin2,ST_Cond,0x66,0x38,0x548)
 
   ST_Spd:
-    RMenu(ST_Skl,ST_Luck,ST_Name,ST_Affin,0x66,0x48,0x549)
+    RMenu(ST_Skl,ST_Luck,ST_Affin2,ST_Affin,0x66,0x48,0x549)
 
   ST_Luck:
-    RMenu(ST_Spd,ST_Def,ST_Name,ST_Talk,0x66,0x58,0x54a)
+    RMenu(ST_Spd,ST_Def,ST_Affin2,ST_Talk,0x66,0x58,0x54a)
 
   ST_Def:
     RMenu(ST_Luck,ST_Res,ST_Class,ST_End,0x66,0x68,0x54b)
@@ -251,14 +255,14 @@
     #ifdef LEADERSHIP_STARS
       RMenu(ST_Cond,ST_Talk,ST_Spd,0,0xa6,0x48,LeadRText)
     #else
-      RMenu(ST_Cond,ST_Talk,ST_Spd,0,0xa6,0x48,0x551)
+      RMenu(ST_Cond,ST_Talk,ST_Spd,0,0xa6,0x48,SS_TalkRText)
     #endif
 
   //ST_Cond:
     //RMenu(ST_Affin,ST_Talk,ST_Spd,0,0xA6,0x48,0x552,ConditionGetter)
 
   ST_Talk:
-    RMenu(ST_Affin,ST_End,ST_Luck,0,0xA6,0x58,SS_TalkRText)
+    RMenu(ST_Affin,ST_End,ST_Luck,0,0xA6,0x58,SS_FatigueRText)
 
   ST_End:
     RMenu(ST_Talk,ST_Skill1,ST_Def,0,0xA6,0x68,SS_EndRText)
@@ -295,19 +299,19 @@
 
 
   ST_Inventory1: 
-  RMenu(0,ST_Inventory2,ST_Name2,0,0x68,0x18,0,ItemDescLooper,ItemDescGetter)
+  RMenu(0,ST_Inventory2,ST_Affin2_2,0,0x68,0x18,0,ItemDescLooper,ItemDescGetter)
 
   ST_Inventory2: 
-  RMenu(ST_Inventory1,ST_Inventory3,ST_Name2,0,0x68,0x28,1,ItemDescLooper,ItemDescGetter)
+  RMenu(ST_Inventory1,ST_Inventory3,ST_Affin2_2,0,0x68,0x28,1,ItemDescLooper,ItemDescGetter)
 
   ST_Inventory3: 
-  RMenu(ST_Inventory2,ST_Inventory4,ST_Name2,0,0x68,0x38,2,ItemDescLooper,ItemDescGetter)
+  RMenu(ST_Inventory2,ST_Inventory4,ST_Affin2_2,0,0x68,0x38,2,ItemDescLooper,ItemDescGetter)
 
   ST_Inventory4: 
-  RMenu(ST_Inventory3,ST_Inventory5,ST_Name2,0,0x68,0x48,3,ItemDescLooper,ItemDescGetter)
+  RMenu(ST_Inventory3,ST_Inventory5,ST_Affin2_2,0,0x68,0x48,3,ItemDescLooper,ItemDescGetter)
 
   ST_Inventory5: 
-  RMenu(ST_Inventory4,ST_Atk,ST_Name2,ST_Rng,0x68,0x58,4,ItemDescLooper,ItemDescGetter)
+  RMenu(ST_Inventory4,ST_Atk,ST_Affin2_2,ST_Rng,0x68,0x58,4,ItemDescLooper,ItemDescGetter)
 
   ST_Atk: 
   RMenu(ST_Inventory5,ST_Hit,ST_Exp2,ST_Crit,0x76,0x78,0x55C)
@@ -326,7 +330,10 @@
 
   
   ST_Name2: 
-  RMenu(0,ST_Class2,0,ST_Inventory4,0x18,0x50,0,NameDescGetter)
+  RMenu(0,ST_Class2,0,ST_Affin2_2,0x18,0x50,0,NameDescGetter)
+
+  ST_Affin2_2:
+  RMenu(0,ST_Class2,ST_Name2,ST_Inventory4,0x4F,0x50,0x551)
 
   ST_Class2: 
   RMenu(ST_Name2,ST_Level2,0,ST_Atk,0x6,0x68,0x6E8,ClassDescGetter)
@@ -365,10 +372,10 @@
 #else // ONLY_SHOW_USED_RANKS
 
   ST_WRank1:
-  RMenu(0,ST_WRank2,ST_Name3,ST_WRank3,0x68,0x18,0,WeaponDescLooper,WeaponDescGetter)
+  RMenu(0,ST_WRank2,ST_Affin2_3,ST_WRank3,0x68,0x18,0,WeaponDescLooper,WeaponDescGetter)
 
   ST_WRank2:
-  RMenu(ST_WRank1,ST_Supports,ST_Name3,ST_WRank4,0x68,0x28,1,WeaponDescLooper,WeaponDescGetter)
+  RMenu(ST_WRank1,ST_Supports,ST_Affin2_3,ST_WRank4,0x68,0x28,1,WeaponDescLooper,WeaponDescGetter)
 
   ST_WRank3:
   RMenu(0,ST_WRank4,ST_WRank1,0,0xA8,0x18,2,WeaponDescLooper,WeaponDescGetter)
@@ -383,7 +390,10 @@
 
 
   ST_Name3:
-  RMenu(0,ST_Class3,0,ST_Supports,0x18,0x50,0,NameDescGetter)
+  RMenu(0,ST_Class3,0,ST_Affin2_3,0x18,0x50,0,NameDescGetter)
+
+  ST_Affin2_3:
+  RMenu(0,ST_Class3,ST_Name3,ST_Supports,0x4F,0x50,0x551)
 
   ST_Class3:
   RMenu(ST_Name3,ST_Level3,0,ST_Supports,0x6,0x68,0x6E8,ClassDescGetter)

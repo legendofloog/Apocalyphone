@@ -11,8 +11,13 @@ Skills[X]
 Character with whom this unit[N]
 may talk on the battlefield.[X]
 
+## SS_FatigueRText
+This unit's level of fatigue. Unit[N]
+stats are lowered when fatigued.[X]
+
 ## SS_EndRText
-This unit's level of fatigue.[X]
+Special abilities that can do[N]
+many different things.[X]
 
 ## SS_SkillsDefaultRText
 No skill description found.[X]

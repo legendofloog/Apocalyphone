@@ -96,7 +96,7 @@ b		ShowStats3
 NextColumn:
 
 draw_textID_at 21, 3, textID=0x4f7 @con
-draw_con_bar_with_getter_at 24, 3
+draw_con_number_at 25, 3
 
 
 draw_textID_at 21, 5, textID=0x4f8 @aid
@@ -105,14 +105,30 @@ draw_aid_icon_at 26, 5
 
 draw_status_text_at 21, 7
 
-draw_textID_at 21, 9, textID=0x4f1 @affin
+@draw_textID_at 21, 9, textID=0x4f1 @affin
 
-draw_affinity_icon_at 24, 9
+@draw_affinity_icon_at 24, 9
 
 
 ldr r0,=TalkTextIDLink
 ldrh r0,[r0]
-draw_talk_text_at 21, 11
+draw_talk_text_at 21, 9
+
+ldr r0,=EndTextIDLink
+ldrh r0, [r0]
+draw_textID_at 21, 11, colour=Yellow @skills
+ldr r0,=MSSFatigueGetter
+mov r14,r0
+.short 0xF800 @returns # in r0
+@mov r0, #99
+draw_number_at 24, 11
+draw_textID_at 25, 11, textID=0x539
+ldr r0,=MSSEnduranceGetter
+mov r14,r0
+.short 0xF800 @returns # in r0
+@mov r0, #99
+draw_number_at 27, 11
+
 
 ldr r0,=SkillsTextIDLink
 ldrh r0, [r0]
@@ -132,7 +148,7 @@ draw_luck_bar_at 16, 11
 draw_def_bar_at 16, 13
 draw_res_bar_at 16, 15
 draw_textID_at 13, 17, 0x4f6 @move
-draw_move_bar_with_getter_at 16, 17
+draw_move_number_at 17, 17
 
 b		NextColumn
 .ltorg

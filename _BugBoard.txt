@@ -8,3 +8,4 @@ Minor Bugs:
 - Bow Knight anim hangs when using the shortbow at 1 range.
 - HP resets when escaping, this is inherent to Ysor's hack but may be worth trying to fix.
 - Enemies with -10 autolevels at level 1 seem to be randomly underflowing to cap 15 magic despite code flooring at 0. Not a major issue but implies code is broken somewhere.
+- Everyone can use stupid flippin iron dagger

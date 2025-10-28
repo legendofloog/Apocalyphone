@@ -221,7 +221,7 @@ NoFade
 ENDA
 
 EnemyUnitsTestA:
-UNIT ONeill Revenant ONeill Level(7,Enemy,True) [0,11] 0x0 [RottenClaw,IronDagger] NoAI
+UNIT ONeill General ONeill Level(7,Enemy,True) [0,11] 0x0 [RottenClaw,IronDagger] NoAI
 UNIT TestEnemy Mercenary ONeill Level(1,Enemy,True) [1,11] 0x0 [IronSword] NoAI
 UNIT TestEnemy Mercenary_F ONeill Level(1,Enemy,True) [2,11] 0x0 [IronSword] NoAI
 UNIT TestEnemy Myrmidon ONeill Level(1,Enemy,True) [3,11] 0x0 [IronSword] NoAI

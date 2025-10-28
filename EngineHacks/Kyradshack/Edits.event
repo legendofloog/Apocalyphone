@@ -605,4 +605,16 @@ POP
     ORG $09E00
     SHORT $4770*/
 
+//BWL Display regardless of game clear
+//Dragz
+PUSH
+ORG 0x86FE6
+SHORT 0x0 0x0 // makes bwl display regardless of game clear
+POP
+
+PUSH
+ORG 0x870B8
+WORD 0x020040B4 // I can't entirely explain it but the last two bytes here determine position
+POP
+
 //  https://www.youtube.com/shorts/LfSZesGiOkg
