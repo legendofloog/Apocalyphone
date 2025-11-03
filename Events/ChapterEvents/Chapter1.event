@@ -36,7 +36,7 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningScene EndingScene
+POIN BeginningSceneTest EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,WarningText,6)
@@ -214,8 +214,8 @@ ENDA
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
 BeginningSceneTest:
-LOAD1 0x1 EnemyUnitsTestA
-//LOAD1 0x1 EnemyUnitsTestB
+LOAD1 0x1 EnemyUnitsTestB
+//LOAD1 0x1 EnemyUnitsTestA
 LOAD1 0x0 Units1
 NoFade
 ENDA
@@ -270,6 +270,7 @@ UNIT TestEnemy Troubadour_M ONeill Level(1,Enemy,True) [9,15] 0x0 [Heal] NoAI
 UNIT TestEnemy Revenant ONeill Level(1,Enemy,True) [10,15] 0x0 [RottenClaw] NoAI
 UNIT TestEnemy Bonewalker_S ONeill Level(1,Enemy,True) [11,15] 0x0 [IronSword] NoAI
 UNIT TestEnemy Bonewalker_L ONeill Level(1,Enemy,True) [12,15] 0x0 [IronLance] NoAI
+UNIT TestEnemy Bonewalker_B ONeill Level(1,Enemy,True) [13,15] 0x0 [IronBow] NoAI
 UNIT TestEnemy Mogall ONeill Level(1,Enemy,True) [14,15] 0x0 [EvilEye] NoAI
 UNIT TestEnemy MautheDoog ONeill Level(1,Enemy,True) [15,15] 0x0 [FieryFang] NoAI
 UNIT TestEnemy Tarvos ONeill Level(1,Enemy,True) [16,15] 0x0 [IronAxe] NoAI

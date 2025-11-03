@@ -28,3 +28,4 @@
 #define WyvernRiderSwordClassCard 0xB8
 #define WyvernRiderLanceClassCard 0x88
 #define WyvernRiderAxeClassCard 0xB9
+#define MonkClassCard 0xBA

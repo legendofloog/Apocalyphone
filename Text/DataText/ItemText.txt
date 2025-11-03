@@ -198,7 +198,7 @@ Heavy Bow[X]
 Inflicts break on opponents.[X]
 
 ## SilverWarbowName
-Silver Warbow[X]
+Slv. Warbow[X]
 
 ## GreatbowName
 Greatbow[X]

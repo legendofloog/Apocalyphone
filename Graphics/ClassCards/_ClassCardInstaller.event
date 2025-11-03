@@ -144,3 +144,11 @@ ALIGN 4
 ScoutClassCardPal:
 #incbin "DMP/Scout(Roxannity).png_pal.dmp"
 setCardEntry(ScoutClassCard, ScoutClassCardData, ScoutClassCardPal)
+
+ALIGN 4
+MonkClassCardData:
+#incbin "DMP/Monk(Blademaster,ltranc).dmp"
+ALIGN 4
+MonkClassCardPal:
+#incbin "DMP/Monk(Blademaster,ltranc).png_pal.dmp"
+setCardEntry(MonkClassCard, MonkClassCardData, MonkClassCardPal)
