@@ -33,8 +33,8 @@
 #define SwiftAxe 0x9F
 #define EmeraldAxe 0xDC
 #define ShortAxe 0x2C
-#define ImposingAxe 0x86 //unimplemented
-#define Labrys 0xA4 //unimplemented
+//#define ImposingAxe 0x86 //unimplemented
+//#define BerserkerAxe 0xA4 //unimplemented
 #define SilverPoleaxe 0xB8
 #define LegendaryAxe 0x93 //Legendary ID
 
@@ -45,8 +45,8 @@
 #define SteelWarbow 0x9B
 #define SwiftBow 0xBE
 #define TrickBow 0xDD
-#define Spellbane 0xE0 //unimplemented
-#define Yabusame 0xBF //unimplemented
+//#define Spellbane 0xE0 //unimplemented
+//#define Yabusame 0xBF //unimplemented
 #define HeavyBow 0xB7 //juna fruit //unimplemented
 #define SilverWarbow 0xC0
 #define Greatbow 0xC1

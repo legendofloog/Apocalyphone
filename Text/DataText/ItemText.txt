@@ -50,7 +50,7 @@ Greatly improves critical[N]
 hit rate.[X]
 
 ## BraveDesc
-Strikes twice per attack.[X]
+Can strike consecutively.[X]
 
 ## FlameBladeName
 Flame Blade[X]
