@@ -149,6 +149,11 @@
 //Break
 	#include "Break/Installer.event"
 
+//Huichelaar
+//Preps Augury
+//Using as a base for preps heal all
+MESSAGE ello guvnah
+	#include "FE8U_PrepsAugury-main/PrepsAugury.event"
 
 //A whole bunch of edits by various people, see Edits.event for more info
 	#include "Edits.event"

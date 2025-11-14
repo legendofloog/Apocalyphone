@@ -36,7 +36,7 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningScene EndingScene
+POIN BeginningSceneTest EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,WarningText,6)
@@ -81,7 +81,7 @@ UNIT
 
 EnemyUnits:
 UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] GroupTwoAI
-UNIT Monster Knight_L ONeill Level(2,Enemy,True) [0,19] 0x0 [IronLance] GroupTwoAI
+UNIT Monster Bonewalker_L ONeill Level(2,Enemy,True) [0,19] 0x0 [IronLance] GroupTwoAI
 UNIT Monster Revenant ONeill Level(2,Enemy,True) [4,20] 0x0 [PoisonClaw] GroupTwoAI
 UNIT Monster_A Revenant ONeill Level(1,Enemy,True) [8,12] 0x0 [RottenClaw] ChargeAI //move to 7,7
 UNIT Monster_B Bonewalker_L ONeill Level(1,Enemy,True) [10,14] 0x0 [IronLance] ChargeAI //move to 10,9
@@ -217,6 +217,7 @@ BeginningSceneTest:
 LOAD1 0x1 EnemyUnitsTestA
 //LOAD1 0x1 EnemyUnitsTestB
 LOAD1 0x0 Units1
+GoToPrepScreen2
 NoFade
 ENDA
 
@@ -274,22 +275,22 @@ UNIT TestEnemy Berserker ONeill Level(1,Enemy,True) [13,11] 0x0 [IronAxe] NoAI
 UNIT TestEnemy Berserker_F ONeill Level(1,Enemy,True) [14,11] 0x0 [IronAxe] NoAI
 //UNIT TestEnemy Pirate ONeill Level(1,Enemy,True) [15,11] 0x0 [IronAxe] NoAI
 //UNIT TestEnemy Pirate_F ONeill Level(1,Enemy,True) [16,11] 0x0 [IronAxe] NoAI
-UNIT TestEnemy Archer ONeill Level(1,Enemy,True) [0,13] 0x0 [IronBow] NoAI
-UNIT TestEnemy Archer_F ONeill Level(1,Enemy,True) [1,13] 0x0 [IronBow] NoAI
-UNIT TestEnemy Scout ONeill Level(1,Enemy,True) [2,13] 0x0 [IronBow] NoAI
-UNIT TestEnemy Cav_S ONeill Level(1,Enemy,True) [3,13] 0x0 [IronSword] NoAI
-UNIT TestEnemy Cav_L ONeill Level(1,Enemy,True) [4,13] 0x0 [IronLance] NoAI
-UNIT TestEnemy Cav_A ONeill Level(1,Enemy,True) [5,13] 0x0 [IronAxe] NoAI
-UNIT TestEnemy Knight_S ONeill Level(1,Enemy,True) [6,13] 0x0 [IronSword] NoAI
-UNIT TestEnemy Knight_L ONeill Level(1,Enemy,True) [7,13] 0x0 [IronLance] NoAI
-UNIT TestEnemy Knight_A ONeill Level(1,Enemy,True) [8,13] 0x0 [IronAxe] NoAI
-UNIT TestEnemy Knight_B ONeill Level(1,Enemy,True) [9,13] 0x0 [IronBow] NoAI
-UNIT TestEnemy Peg_S ONeill Level(1,Enemy,True) [10,13] 0x0 [IronSword] NoAI
-UNIT TestEnemy Peg_L ONeill Level(1,Enemy,True) [11,13] 0x0 [IronLance] NoAI
-UNIT TestEnemy Peg_A ONeill Level(1,Enemy,True) [12,13] 0x0 [IronAxe,SteelPoleaxe] NoAI
-UNIT TestEnemy Wyvern_S ONeill Level(1,Enemy,True) [13,13] 0x0 [IronSword] NoAI
-UNIT TestEnemy Wyvern_L ONeill Level(1,Enemy,True) [14,13] 0x0 [IronLance] NoAI
-UNIT TestEnemy Wyvern_A ONeill Level(1,Enemy,True) [15,13] 0x0 [IronAxe] NoAI
+UNIT TestEnemy Sniper ONeill Level(1,Enemy,True) [0,13] 0x0 [IronBow] NoAI
+UNIT TestEnemy Sniper_F ONeill Level(1,Enemy,True) [1,13] 0x0 [IronBow] NoAI
+UNIT TestEnemy Ranger ONeill Level(1,Enemy,True) [2,13] 0x0 [IronBow] NoAI
+UNIT TestEnemy Paladin_SA ONeill Level(1,Enemy,True) [3,13] 0x0 [IronSword] NoAI
+UNIT TestEnemy Paladin_SL ONeill Level(1,Enemy,True) [4,13] 0x0 [IronLance] NoAI
+UNIT TestEnemy Paladin_LA ONeill Level(1,Enemy,True) [5,13] 0x0 [IronAxe] NoAI
+UNIT TestEnemy General ONeill Level(1,Enemy,True) [6,13] 0x0 [IronSword] NoAI
+UNIT TestEnemy General ONeill Level(1,Enemy,True) [7,13] 0x0 [IronLance] NoAI
+UNIT TestEnemy GreatKnight ONeill Level(1,Enemy,True) [8,13] 0x0 [IronAxe] NoAI
+UNIT TestEnemy General ONeill Level(1,Enemy,True) [9,13] 0x0 [IronBow] NoAI
+UNIT TestEnemy Falcoknight_SA ONeill Level(1,Enemy,True) [10,13] 0x0 [IronSword] NoAI
+UNIT TestEnemy Falcoknight_SL ONeill Level(1,Enemy,True) [11,13] 0x0 [IronLance] NoAI
+UNIT TestEnemy Falcoknight_LA ONeill Level(1,Enemy,True) [12,13] 0x0 [IronAxe,SteelPoleaxe] NoAI
+UNIT TestEnemy Dracoknight_SA ONeill Level(1,Enemy,True) [13,13] 0x0 [IronSword] NoAI
+UNIT TestEnemy Dracoknight_SL ONeill Level(1,Enemy,True) [14,13] 0x0 [IronLance] NoAI
+UNIT TestEnemy Dracoknight_LA ONeill Level(1,Enemy,True) [15,13] 0x0 [IronAxe] NoAI
 UNIT
 
 EnemyUnitsTestB:
