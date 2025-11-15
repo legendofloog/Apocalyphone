@@ -1,11 +1,14 @@
+.macro blh to, reg=r3
+    ldr \reg, =\to
+    mov lr, \reg
+    .short 0xF800
+.endm
+
 @ Starts the proc related to the extra entry.
 @ Replaces stat screen proc start in 0x96350 switch.
 .thumb
 
-ldr   r0, =PREEXT_ExtraEntryProc
-mov   r1, r4                          @ AtMenu proc.
-ldr   r2, =NewBlocking6C
-bl    GOTO_R2
+blh HealAll
 
 
 ldr   r0, =0x8096384

@@ -1,3 +1,10 @@
+.macro blh to, reg=r3
+    ldr \reg, =\to
+    mov lr, \reg
+    .short 0xF800
+.endm
+
+
 @ Hooked at 0x955B0.
 @ Adds an extra entry to prep screen.
 .thumb
@@ -17,15 +24,7 @@ bl    GOTO_R4
 
 @ New entry.
 @ Disable entry if TextID == 0.
-mov   r4, #0x0
-sub   r5, r4, #0x1
-Loop:
-  mov   r0, r4
-  bl    PREEXT_GetAuguryText
-  add   r4, #0x1
-  cmp   r0, r5
-  beq   Loop
-
+blh HealAllCheck
 cmp   r0, #0x0
 bne   L1
   mov   r2, #0x1

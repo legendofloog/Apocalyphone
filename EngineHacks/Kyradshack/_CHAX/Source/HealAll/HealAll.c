@@ -1,3 +1,4 @@
+#include "gbafe.h"
 //Menu Stuff
 //Heal All
 
@@ -7,6 +8,39 @@
 
 //Functionality
 //Heal All
+int HealAllCheck(){
+	for(int i = 0; i < 62; i++){
+		struct Unit unit = gUnitArrayBlue[i];
+		if(unit.index == 0){
+			continue;
+		}
+		if(unit.state & US_DEAD){
+			continue;
+		}
+		if(unit.curHP < unit.maxHP){
+			return true;
+		}
+	}
+	return false;
+}
+
+void HealAll(){
+	for(int i = 0; i < 62; i++){
+		struct Unit unit = gUnitArrayBlue[i];
+		if(unit.index == 0){
+			continue;
+		}
+		if(unit.state & US_DEAD){
+			continue;
+		}
+		if(unit.curHP < unit.maxHP){
+			struct Unit* unitPointer = GetUnit(unit.index);
+			unitPointer->curHP = unit.maxHP;
+		}
+	}
+}
+
+
 //Find units who need healing, for loop or something? Store all their missing HP
 //Calculate all missing HP, multiply for gold value
 //When button pressed check gold

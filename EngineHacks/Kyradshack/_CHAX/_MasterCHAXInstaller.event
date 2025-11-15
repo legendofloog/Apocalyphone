@@ -18,3 +18,4 @@ ENDA
 #include "Event/StaffHeals/StaffHeals.lyn.event"
 #include "Event/Misc_CHAX/Misc_CHAX.lyn.event"
 #include "Event/Skills/Skills.lyn.event"
+#include "Event/HealAll/HealAll.lyn.event"
