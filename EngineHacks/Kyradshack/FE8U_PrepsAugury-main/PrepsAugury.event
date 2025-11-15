@@ -14,8 +14,8 @@ MESSAGE somethingdoesntmatterwhat currentOffset
 #endif
 
 // Definitions & variables
-#define PREEXT_MenuOptionTextID 0x58A
-#define PREEXT_MenuHelpTextID 0x57E
+#define PREEXT_MenuOptionTextID HealAllText
+#define PREEXT_MenuHelpTextID HealAllHelpText
 #define PREEXT_ExtraEntryProc PREEXT_Procs_Augury
 
 #include "Defs/ProcDefinitions.event"

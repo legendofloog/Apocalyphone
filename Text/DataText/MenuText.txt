@@ -11,3 +11,10 @@ to this unit having too many items.[X]
 
 ## SupplyConvoyResponse_View
 Take a look.[X]
+
+## HealAllText
+Heal All[X]
+
+## HealAllHelpText
+Spend gold to heal[N]
+your injured units.[X]

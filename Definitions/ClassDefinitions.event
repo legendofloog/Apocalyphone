@@ -124,6 +124,7 @@
 #define Balor ArchMogall
 
 #define Necrodragon DracoZombie
+#define NecroDragon Necrodragon
 
 //Nicknames/Altnames Enemy
 #define MautheDoog Mauthedoog
