@@ -7,8 +7,28 @@
 //After starting fight have a popup 'do you want to heal your units?' if any units below max
 
 //Functionality
-//Heal All
+//Gold Check
+int GetHealAllGoldCost(){
+	int cost = 0;
+	for(int i = 0; i < 62; i++){
+		struct Unit unit = gUnitArrayBlue[i];
+		if(unit.index == 0){
+			continue;
+		}
+		if(unit.state & US_DEAD){
+			continue;
+		}
+		if(unit.curHP < unit.maxHP){
+			cost += (unit.maxHP - unit.curHP) * 4;
+		}
+	}
+	return cost;
+}
+//Healable unit check
 int HealAllCheck(){
+	if(GetHealAllGoldCost() > GetPartyGoldAmount()){
+		return false;
+	}
 	for(int i = 0; i < 62; i++){
 		struct Unit unit = gUnitArrayBlue[i];
 		if(unit.index == 0){
@@ -24,7 +44,9 @@ int HealAllCheck(){
 	return false;
 }
 
+//HealAll + Deduct Gold
 void HealAll(){
+	SetPartyGoldAmount(GetPartyGoldAmount() - GetHealAllGoldCost());
 	for(int i = 0; i < 62; i++){
 		struct Unit unit = gUnitArrayBlue[i];
 		if(unit.index == 0){

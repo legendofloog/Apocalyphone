@@ -217,6 +217,7 @@ BeginningSceneTest:
 LOAD1 0x1 EnemyUnitsTestA
 //LOAD1 0x1 EnemyUnitsTestB
 LOAD1 0x0 Units1
+//GiveGold(10000)
 GoToPrepScreen2
 NoFade
 ENDA

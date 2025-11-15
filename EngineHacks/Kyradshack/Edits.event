@@ -345,8 +345,7 @@ ORG $AB944
 POP
 
 //Skip to Hard (Difficulty Selection Skip)
-//by StanH
-{
+/*{
 PUSH; ORG 0xA20164
     POIN (prFixedDifficulty+1)
 POP
@@ -361,7 +360,7 @@ prFixedDifficulty:
     SHORT 0x5443
     SHORT 0x4770
     ALIGN 4
-}
+}*/
 
 //Thracia rescue trading
 //by MinN
