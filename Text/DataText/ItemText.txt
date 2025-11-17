@@ -50,7 +50,7 @@ Greatly improves critical[N]
 hit rate.[X]
 
 ## BraveDesc
-Can strike consecutively.[X]
+Strikes consecutively when initiating.[X]
 
 ## FlameBladeName
 Flame Blade[X]
@@ -147,7 +147,7 @@ An axe for breaking swordsmen.[X]
 Grants +5 Strength.[X]
 
 ## SlimBowName
-SlimBow[X]
+Slim Bow[X]
 
 ## IronWarbowName
 Iron Warbow[X]
@@ -348,8 +348,7 @@ Rain Ballista[X]
 Arbalest[X]
 
 ## DaggerDesc
-Ignore defence in melee.[N]
-Strike twice per attack.[X]
+Ignore defence in melee.[X]
 
 ## IronDaggerName
 Iron Dagger[X]
@@ -357,9 +356,9 @@ Iron Dagger[X]
 ## VeninDaggerName
 Venin Dagger[X]
 
-## VeninDaggerDesc*
-Ignore defence in melee. Inflicts[N]
-Poison. Strike twice per attack.[X]
+## VeninDaggerDesc
+Ignore defence in melee.[N]
+Inflicts poison.[X]
 
 ## VeninBowName
 Venin Bow[X]
@@ -370,23 +369,22 @@ Steel Dagger[X]
 ## MainGaucheName
 Main Gauche[X]
 
-## MainGaucheDesc*
-Ignore defence in melee. +25[N]
-avoid. Strike twice per attack.[X]
+## MainGaucheDesc
+Ignore defence in[N]
+melee. +25 avoid.[X]
 
 ## WingclipperName
 Wingclipper[X]
 
 ## WingclipperDesc
 Ignore defence in melee. 3x effective[N]
-against flying units. Strike twice per attack.[X]
+against flying units.[X]
 
 ## SilencerName
 Silencer[X]
 
 ## SilencerDesc
-Ignore defence. Silences foe.[N]
-Strike twice per attack.[X]
+Ignore defence. Silences foe.[X]
 
 ## SilverDaggerName
 Silver Dagger[X]
