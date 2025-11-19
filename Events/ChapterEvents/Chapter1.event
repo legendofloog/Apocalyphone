@@ -99,6 +99,12 @@ EnemyUnits:
 	UNIT Monster Revenant ONeill Level(2,Enemy,True) [15,14] 0x0 [RottenClaw] InRangeAI
 	UNIT
 
+EnemyUnitsTest:
+	UNIT ONeill Fighter ONeill Level(7,Enemy,True) [2,21] 0x0 [IronAxe] NoAI
+	UNIT Monster Bael ONeill Level(1,Enemy,True) [8,12] 0x0 [SharpClaw] NoAI
+	UNIT
+
+
 Traps1:
 ENDTRAP
 ALIGN 4
@@ -212,12 +218,11 @@ EndingScene:
 	NoFade
 	ENDA
 
+////////////////////////////////////////////////////////////////////////////////////////////////////
+//Everything below is for testing purposes!
 
-	////////////////////////////////////////////////////////////////////////////////////////////////////
-	//Everything below is for testing purposes!
-
-	BeginningSceneTest:
-	LOAD1 0x1 EnemyUnitsTestA
+BeginningSceneTest:
+	LOAD1 0x1 EnemyUnitsTestA2
 	LOAD1 0x0 Units1
 	//GiveGold(10000)
 	GoToPrepScreen2
@@ -373,10 +378,6 @@ EnemyUnitsTestC:
 	//Wyvern Rider SLA, Assassin, Mage Knight, War Monk/Cleric, Manakete, Phantom
 	UNIT
 
-EnemyUnitsTestD:
-	UNIT ONeill Fighter ONeill Level(7,Enemy,True) [2,21] 0x0 [IronAxe] NoAI
-	UNIT Monster Soldier ONeill Level(2,Enemy,True) [8,12] 0x0 [IronLance] NoAI
-	UNIT
 
 //11R6, 10R5, 12R5, 10R3, 13R7
 
