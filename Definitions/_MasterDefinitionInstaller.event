@@ -18,7 +18,7 @@
 
 #include "StatBonuses.event"
 
-#include "SongDefinitions.event"
+#include "MusicDefinitions.event"
 
 #include "TilesetDefinitions.event"
 

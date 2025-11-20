@@ -22,7 +22,10 @@ BYTE Knight_S
 BYTE Knight_A
 BYTE General
 BYTE GreatKnight
+BYTE Bael
+BYTE ElderBael
 BYTE Cyclops
+BYTE Necrodragon
 BYTE 0
 
 //skillsys stuff; comment out if you have it elsewhere

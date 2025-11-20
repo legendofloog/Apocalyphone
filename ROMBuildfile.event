@@ -39,6 +39,9 @@
     #include "Maps/MasterMapInstaller.event"
     #endif // USE_TEST_MAP
 
+    //Music
+    #include "Music/MusicInstaller.event"
+
     // CRC Correction
     ALIGN 16
     WORD 0 0 0 0

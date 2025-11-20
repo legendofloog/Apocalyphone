@@ -1,0 +1,154 @@
+#ifdef _FE8_
+
+//macro definitions for setting the song table
+  #define SongTableOffset  0x224470
+  #define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
+#define BattleMusicGroup 0
+#define MapMusicGroup 1
+#define SFXGroup 6
+
+PUSH
+ORG $d01cc
+POIN SoundMixer
+ORG $d01d0
+SHORT $6cb0 $0300 $0218
+ORG $cf53c
+SHORT $6cb1 $0300
+POP
+ALIGN 4
+
+SoundMixer:
+#incbin SoundMixerNew.bin
+
+
+// --------------- SONGS: MUSIC ---------------
+
+// --------------- SONGS: GUI AND SFX ---------------
+
+	// "GUI" refers to in-game jingles such as Level Up!
+
+	// Break Hit
+	{
+	SongTable(0x26e,xse622,6)
+	#include "Songs/se/xse622.event"
+	}
+
+	// Break Hit Light
+	{
+	SongTable(0x26f,xse623,6)
+	#include "Songs/se/xse623.event"
+	}
+
+	// Break Hit Heavy
+	{
+	SongTable(0x270,xse624,6)
+	#include "Songs/se/xse624.event"
+	}
+
+	// Break Hit Kill
+	{
+	SongTable(0x271,xse625,6)
+	#include "Songs/se/xse625.event"
+	}
+
+// --------------- TABLE ENTRY DEFINITIONS ---------------
+
+	  #define VoiceDirect(VoiceTable,VoiceIndex,BaseNote,Address,FixedFreq,IsForcedPan,Pan,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $00+FixedFreq*0x8 BaseNote $00 IsForcedPan*0x80+Pan; POIN Address; BYTE EnvAtk EnvDec EnvSus EnvRel"
+	  #define VoiceSquare1(VoiceTable,VoiceIndex,DutyCycle,NoteOffWithNoise,SweepTime,SweepShift,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $01+NoteOffWithNoise*8 $3c $00 SweepTime*10+SweepShift DutyCycle $00 $00 $00 EnvAtk EnvDec EnvSus EnvRel" 
+	  #define VoiceSquare2(VoiceTable,VoiceIndex,DutyCycle,NoteOffWithNoise,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $02+NoteOffWithNoise*8 $3c $00 $00 DutyCycle $00 $00 $00 EnvAtk EnvDec EnvSus EnvRel" 
+	  #define VoiceWave(VoiceTable,VoiceIndex,WaveData,NoteOffWithNoise,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $03+NoteOffWithNoise*8 $3c $00 $00; POIN WaveData; BYTE EnvAtk EnvDec EnvSus EnvRel"
+	  #define VoiceNoise(VoiceTable,VoiceIndex,NoisePattern,NoteOffWithNoise,EnvAtk,EnvDec,EnvSus,EnvRel) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $04+NoteOffWithNoise*8 $3c $00 $00 NoisePattern  $00 $00 $00 EnvAtk EnvDec EnvSus EnvRel"
+	  #define VoiceMulti(VoiceTable,VoiceIndex,MultiSampleTable,NoteChart) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $40 $3c $00 $00; POIN MultiSampleTable; POIN NoteChart"
+	  #define VoiceDrum(VoiceTable,VoiceIndex,DrumTable) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $80 $3c $00 $00; POIN DrumTable; BYTE $00 $00 $00 $00"
+	  #define VoiceDummy(VoiceTable,VoiceIndex) "ORG VoiceTable+VoiceIndex*0x0c; BYTE $01 $3c $00 $00 $02 $00 $00 $00 $00 $00 $0f $00"
+
+// --------------- VOICE TABLES ---------------
+
+	MESSAGE music main voice table begins at CURRENTOFFSET
+
+	ALIGN 4
+	GUIVoices: //voice table for GUI effects, e.g. menu beeps or jingles such as "Level Up!"
+	// 0 square 50pct (map cursor moving)
+	VoiceSquare1(GUIVoices,0x0,0x2,0x0,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 1 square 25pct (menu cursor moving)
+	VoiceSquare1(GUIVoices,0x1,0x1,0x0,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 2 square 75pct (used for menus)
+	VoiceSquare1(GUIVoices,0x2,0x3,0x0,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 3 square 12,5pct (invalid option selected)
+	VoiceSquare1(GUIVoices,0x3,0x0,0x0,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 4 square2 50pct (map cursor moving) (NOTE: remember, only one square1 and one square2 may play at once!)
+	VoiceSquare2(GUIVoices,0x4,0x2,0x0,0x0,0x1,0x0,0x0)
+	// 5 square2 25pct (menu cursor moving)
+	VoiceSquare2(GUIVoices,0x5,0x1,0x0,0x0,0x1,0x0,0x0)
+	// 6 square2 75pct (used for menus)
+	VoiceSquare2(GUIVoices,0x6,0x3,0x0,0x0,0x1,0x0,0x0)
+	// 7 square2 12,5pct (invalid option selected)
+	VoiceSquare2(GUIVoices,0x7,0x0,0x0,0x0,0x1,0xb,0x0)
+	// 8 GUI brass (Level Up!)
+	VoiceMulti(GUIVoices,0x8,0x0,0x0)
+	// 9 GUI strings (Weapon Broke)
+	VoiceMulti(GUIVoices,0x9,0x0,0x0)
+	// 10 GUI flute (Item Get)
+	VoiceMulti(GUIVoices,0xa,0x0,0x0)
+	// 11 GUI oboe (Item Get)
+	VoiceDirect(GUIVoices,0xb,0x3c,0x0,0x0,0x0,0x0,0x80,0xf0,0x70,0x80)
+	// 12 noise (32768 samples)
+	VoiceNoise(GUIVoices,0xc,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 13 noise (256 samples)
+	VoiceNoise(GUIVoices,0xd,0x1,0x0,0x0,0x0,0xf,0x0)
+	// 14 wave: quiet, triangle-like; usually used in addition to a square (game saved and save file flips over; start button pressed on title screen; Info box expands after pressing R button; Info box clears after pressing R button)
+	VoiceWave(GUIVoices,0xe,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 15 wave: saw-like (mini-map opened after start button pressed)
+	VoiceWave(GUIVoices,0xf,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 16 wave: mesa-like (sound effect 124 in song table)
+	VoiceWave(GUIVoices,0x10,0x0,0x0,0x0,0x0,0xf,0x0)
+	// 17 square1 12p5pct for song 114
+	VoiceSquare1(GUIVoices,0x11,0x0,0x0,0x0,0x0,0x0,0x1,0x0,0x0)
+	// 18 square1 50pct for song 117 (HP replenishing)
+	VoiceSquare1(GUIVoices,0x12,0x2,0x0,0x0,0x0,0x0,0x1,0x1,0x1)
+	// 19 square1 50pct no sus for song 110 (dialogue printing) and 118
+	VoiceSquare1(GUIVoices,0x13,0x2,0x0,0x0,0x0,0x0,0x1,0x0,0x0)
+	// 20 square1 25pct for song 119 (unit says "!" in fog)
+	VoiceSquare1(GUIVoices,0x14,0x1,0x0,0x0,0x0,0x0,0x1,0x0,0x1)
+	// 21 square 50pct fast dec to mid-hi sus (for GUI songs)
+	VoiceSquare1(GUIVoices,0x15,0x2,0x0,0x0,0x0,0x0,0x1,0xc,0x0)
+	// 22 square 25pct fast dec to mid-hi sus (for GUI songs)
+	VoiceSquare1(GUIVoices,0x16,0x1,0x0,0x0,0x0,0x0,0x1,0xc,0x0)
+	// 23 square 12,5pct fast dec to mid-hi sus (for GUI songs)
+	VoiceSquare1(GUIVoices,0x17,0x0,0x0,0x0,0x0,0x0,0x1,0xc,0x0)
+	// 24 tromb single (for Level Up!)
+	VoiceMulti(GUIVoices,0x18,0x0,0x0)
+	// 25 glass
+	VoiceDirect(GUIVoices,0x19,0x3c,se_break,0x0,0x0,0x0,0xff,0x0,0xff,0x80)
+	// 26 stepping sfx (for Break sound) 0x0385F48 ***NOTE: POINTS TO DATA ALREADY IN GAME
+	VoiceDirect(GUIVoices,0x1a,0x3c,0x0385F48,0x0,0x0,0x0,0xff,0x0,0xff,0x80)
+	// 27 spectrum noise (for Break sound)
+	VoiceDirect(GUIVoices,0x1b,0x3c,i126n11,0x0,0x0,0x0,0x80,0x0,0xff,0x80)
+	// 28 hit ***
+	VoiceDirect(GUIVoices,0x1c,0x3c,0x0330AFC,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
+	// 29 hit light
+	VoiceDirect(GUIVoices,0x1d,0x3c,0x0331584,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
+	// 30 hit heavy
+	VoiceDirect(GUIVoices,0x1e,0x3c,0x0331EAC,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
+	// 31 hit kill
+	VoiceDirect(GUIVoices,0x1f,0x3c,0x03328AC,0x0,0x0,0x0,0xff,0x0,0xff,0x0)
+	ORG GUIVoices+0xc*32
+
+
+// ---------- SAMPLES: SFX ----------
+
+se_break:
+#incbin "Samples/se/se_break.dmp"
+ALIGN 4
+
+i126n11:
+#incbin "Samples/i126n11.dmp"
+ALIGN 4
+
+//
+
+#include "SoundRoomInstaller.event"
+
+#else
+ERROR You are not assembling FE8 events!
+#endif
