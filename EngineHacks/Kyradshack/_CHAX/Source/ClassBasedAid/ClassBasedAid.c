@@ -11,6 +11,18 @@ int GetAidFromUnit(struct Unit* unit){
 	return gprGotoConGetter(unit)-1;
 	}
 
+s8 CanUnitRescue(struct Unit* actor, struct Unit* target) {
+    int actorAid  = GetUnitAid(actor);
+    int targetCon = UNIT_CON(target);
+
+    if(UNIT_CATTRIBUTES(target) & (CA_MOUNTED | CA_PEGASUS | CA_WYVERN)){
+        return FALSE;
+    }
+
+    return (actorAid >= targetCon) ? TRUE : FALSE;
+}
+
+/*
 void TryAddUnitToRescueTargetList(struct Unit* unit) {
 
     if (!AreUnitsAllied(gSubjectUnit->index, unit->index)) {
@@ -33,11 +45,8 @@ void TryAddUnitToRescueTargetList(struct Unit* unit) {
         return;
     }
 
-    if(UNIT_CATTRIBUTES(unit) & (CA_MOUNTED | CA_PEGASUS | CA_WYVERN)){
-    	return;
-    }
-
     AddTarget(unit->xPos, unit->yPos, unit->index, 0);
 
     return;
 }
+*/

@@ -36,7 +36,7 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningSceneTest EndingScene
+POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,WarningText,6)
@@ -222,7 +222,7 @@ EndingScene:
 //Everything below is for testing purposes!
 
 BeginningSceneTest:
-	LOAD1 0x1 EnemyUnitsTestA2
+	LOAD1 0x1 EnemyUnitsTestA
 	LOAD1 0x0 Units1
 	GiveGold(99999)
 	GoToPrepScreen2

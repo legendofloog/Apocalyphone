@@ -18,3 +18,12 @@ Heal All[X]
 ## HealAllHelpText
 Spend gold to heal[N]
 your injured units.[X]
+
+## BargainItemSoldOut
+Sorry, that's out of stock.[A][X]
+
+## BargainItemSoldOutVendor
+Sorry, that's out of stock.[A][X]
+
+## BargainItemSoldOutSecret
+Sorry, that's out of stock.[A][X]

@@ -83,3 +83,27 @@ WORD 0xFFFFFFFF 0xFFFFFFFF // For FEBuilder to show no further data with
 	ThrowablesList:
 	BYTE Javelin ShortSpear HandAxe ShortAxe Spear Tomahawk 0
 
+//Affinity Table
+#define AffinityEntry(id, atk, def, hit, avo, crit, ddg) "BYTE id atk def hit avo crit ddg 0;"
+
+PUSH
+ORG 0x28534
+POIN NewAffinityTable
+POP
+
+ALIGN 4
+
+//Affinity defs in characterdefs
+NewAffinityTable:
+AffinityEntry(1, 0, 0, 0, 0, 0, 0) //Fire
+AffinityEntry(2, 0, 0, 0, 0, 0, 0) //Thunder
+AffinityEntry(3, 0, 0, 0, 0, 0, 0) //Wind
+AffinityEntry(4, 0, 0, 0, 0, 0, 0) //Ice
+AffinityEntry(5, 0, 0, 0, 0, 0, 0) //Dark
+AffinityEntry(6, 0, 0, 0, 0, 0, 0) //Light
+AffinityEntry(7, 0, 0, 0, 0, 0, 0) //Earth
+AffinityEntry(8, 0, 0, 0, 0, 0, 0) //Water
+AffinityEntry(9, 0, 0, 0, 0, 0, 0) //Metal
+AffinityEntry(10, 0, 0, 0, 0, 0, 0) //Luna
+AffinityEntry(11, 0, 0, 0, 0, 0, 0) //Sol
+AffinityEntry(0, 0, 0, 0, 0, 0, 0) //Terminator

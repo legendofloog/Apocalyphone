@@ -11,3 +11,10 @@
 #define Monster 0xAA
 #define Monster_A 0xAB
 #define Monster_B 0xAC
+
+// Affinities
+#define EarthAffinity 7
+#define WaterAffinity 8
+#define MetalAffinity 9
+#define LunaAffinity 10
+#define SolAffinity 11

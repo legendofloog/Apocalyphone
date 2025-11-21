@@ -7,6 +7,7 @@
 	
 	#ifdef USE_BARGAINS
 		
+		/*
 		#define BargainItemSoldOut 0x0F30
 		#define BargainItemSoldOutVendor 0x0F31
 		#define BargainItemSoldOutSecret 0x0F32
@@ -18,8 +19,9 @@
 		BargainItemSoldOutText:
 		String("Sorry, that's out of stock.")
 		BYTE 3 0 //[A][X]
-		
+		*/
 		ALIGN 4
+
 
 	#endif
 	
