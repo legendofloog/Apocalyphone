@@ -36,7 +36,7 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningScene EndingScene
+POIN BeginningSceneTest EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,WarningText,6)
@@ -100,8 +100,9 @@ EnemyUnits:
 	UNIT
 
 EnemyUnitsTest:
-	UNIT ONeill Fighter ONeill Level(7,Enemy,True) [2,21] 0x0 [IronAxe] NoAI
-	UNIT Monster Bael ONeill Level(1,Enemy,True) [8,12] 0x0 [SharpClaw] NoAI
+	UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] NoAI
+	UNIT Monster Mercenary ONeill Level(1,Enemy,True) [8,12] 0x0 [IronSword] NoAI
+	UNIT Monster Hero ONeill Level(1,Enemy,True) [9,13] 0x0 [IronSword] NoAI
 	UNIT
 
 
@@ -222,18 +223,13 @@ EndingScene:
 //Everything below is for testing purposes!
 
 BeginningSceneTest:
-	LOAD1 0x1 EnemyUnitsTestA
+	LOAD1 0x1 EnemyUnitsTest
 	LOAD1 0x0 Units1
-	GiveGold(99999)
-	GoToPrepScreen2
+	//GiveGold(99999)
+	//GoToPrepScreen2
 	NoFade
 	ENDA
 
-//Map Sprites Complete
-//Stats Not Complete (FSoldier Mag)
-//Skills Complete
-//Class Cards Complete
-//Animations Not Complete
 EnemyUnitsTestA:
 	UNIT ONeill General ONeill Level(7,Enemy,True) [0,11] 0x0 [RottenClaw,IronDagger] NoAI
 	UNIT TestEnemy Mercenary ONeill Level(1,Enemy,True) [1,11] 0x0 [IronSword] NoAI
@@ -270,11 +266,6 @@ EnemyUnitsTestA:
 	UNIT TestEnemy Wyvern_A ONeill Level(1,Enemy,True) [15,13] 0x0 [IronAxe] NoAI
 	UNIT
 
-//Map Not Sprites Complete
-//Stats Not Complete
-//Skills Not Complete
-//Class Cards Not Complete
-//Animations Not Complete
 EnemyUnitsTestA2:
 	UNIT ONeill General ONeill Level(7,Enemy,True) [0,11] 0x0 [RottenClaw,IronDagger] NoAI
 	UNIT TestEnemy Hero ONeill Level(1,Enemy,True) [1,11] 0x0 [IronSword] NoAI
@@ -311,11 +302,6 @@ EnemyUnitsTestA2:
 	UNIT TestEnemy Dracoknight_LA ONeill Level(1,Enemy,True) [15,13] 0x0 [IronAxe] NoAI
 	UNIT
 
-//Map Sprites Complete
-//Stats Complete
-//Skills Complete
-//Class Cards Complete
-//Animations Not Complete
 EnemyUnitsTestB:
 	UNIT TestEnemy Mage ONeill Level(1,Enemy,True) [0,15] 0x0 [Fire] NoAI
 	UNIT TestEnemy Mage_F ONeill Level(1,Enemy,True) [1,15] 0x0 [Fire] NoAI
@@ -338,12 +324,6 @@ EnemyUnitsTestB:
 	UNIT TestEnemy Bael ONeill Level(1,Enemy,True) [1,17] 0x0 [SharpClaw] NoAI
 	UNIT
 
-
-//Map Sprites Not Complete
-//Stats Not Complete
-//Skills Not Complete
-//Class Cards Not Complete
-//Animations Not Complete
 EnemyUnitsTestB2:
 	UNIT TestEnemy Sage ONeill Level(1,Enemy,True) [0,15] 0x0 [Fire] NoAI
 	UNIT TestEnemy Sage_F ONeill Level(1,Enemy,True) [1,15] 0x0 [Fire] NoAI
@@ -368,11 +348,6 @@ EnemyUnitsTestB2:
 	UNIT TestEnemy Necrodragon ONeill Level(1,Enemy,True) [3,17] 0x0 [WretchedAir] NoAI
 	UNIT
 
-//Map Sprites Not Complete
-//Stats Not Complete
-//Skills Not Complete
-//Class Cards Not Complete
-//Animations Not Complete
 EnemyUnitsTestC:
 	UNIT ONeill General ONeill Level(7,Enemy,True) [0,11] 0x0 [RottenClaw,IronDagger] NoAI
 	//Wyvern Rider SLA, Assassin, Mage Knight, War Monk/Cleric, Manakete, Phantom

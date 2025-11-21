@@ -5,7 +5,6 @@
 //If you want me to implement a class for you just ask
 
 //Unimplemented* - Must stay defined as highly likely to be used
-//Classes 133/255
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Valkyrie (M), Scout/Ranger (F)
 //ID's up to 0x8F are used
@@ -140,41 +139,78 @@
 #define Journeyman 0x3D
 #define Pupil 0x3E*/
 
+//Everything below is personal note-taking
+
 /*
-Classes Implemented:
-Key: M = With Map Sprites, G = Both Genders, A = With Assets
+//Class To-Do List
+	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
+	Group A1:
+	Merc	Y		Y	Y		Vanilla	Y
+	MercF	Y		Y	N/A		N		Y
+	Myrm	Y		Y	Y		Y		Y
+	MyrmF	Y		Y	N/A		Y		Y
+	Thief	Y		Y	Y		Vanilla	Y
+	ThiefF	Y		Y	N/A		Y		Y
+	Sold	Y		Y	Y		Y		Y
+	SoldF	N*		N	N/A		N		N
+	Lncr	Y		Y	Y		Y		Y
+	LncrF	Y		Y	N/A		Y		Y
+	Fgtr	Y		Y	Y*		Y		Y
+	FgtrF	N		Y	N/A		N		N
+	Brig	Y		Y	Y		Y		Y
+	BrigF	Y		Y	N/A		N		N
+	Pirt	Y		Y	Y		Y		Y
+	PirtF	N		N	N		N		N
+	Arch	Y		Y	Y		Vanilla	Y
+	ArchF	Y		Y	Y		Vanilla	Y
+	Scout	Y		Y	Y		Y*		Y
+	CavS	Y		Y	Y		Y		Y
+	CavL	Y		Y	Y		Y		Y
+	CavA	Y		Y	Y		Y		Y
+	KngtS	Y		Y	Y		Y		Y
+	KngtL	Y		Y	Y		Y		Y
+	KngtA	Y		Y	Y		Y		Y
+	KngtB	Y		Y	Y		Y		Y
+	PegS	Y		Y	Y		N		Y
+	PegL	Y		Y	Y		Vanilla	Y
+	PegA	Y		Y*	Y		N		Y
+	WyvS	Y		Y	Y		N		Y
+	WyvL	Y		Y	Y		Vanilla	Y
+	WyvA	Y		Y*	Y		N		Y
 
-Survivor M A
-Vagabond 
-Mercenary G M
-Myrmidon G M
-Soldier M
-Freelancer G M
-Champion G
-Fighter M
-Brigand M
-Pirate M
-Archer G M
-Scout
-Cavalier SLA M
-Knight SLAB M
-Mage G M
-Shaman G M
-Monk M
-Priest G M
-Peg SLA M
-Wyvern SLA -MM
-Thief G M
-Troubadour M
+	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
+	Group A2:
 
-Revenant M
-Bonewalker SLB M
-//No Magic except mogall
-Mogall MA
-Gargoyle MA
-Bael MA
-Tarvos MA
-Gorgon MA
-Phantom M
+	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
+	Group B1:
+	Mage	Y		Y	Y		Vanilla	Y
+	MageF	Y		Y	N/A		Vanilla	Y
+	Monk	Y		Y	Y		Y		Y
+	MonkF	N		N	N		N		N
+	Sham	Y		Y	Y		Y		Y
+	ShamF	Y		Y	N/A		N		Y
+	Priest	Y		Y	Y		Vanilla	Y
+	Cleric	Y		Y	N/A		Vanilla	Y
+	Troub	Y		Y	Y		Y		Y
+	TroubM	N		N	N/A		N		N
+	Rev		Y		Y	Y		Y		Y
+	BoneS	Y		Y	Y		Y		Y
+	BoneL	Y		Y	Y		Y		Y
+	BoneB	Y		Y	Y		Y		Y
+	Mog`	Y		Y	Y		Y		Y
+	Doog	Y		Y	Y		Y		Y
+	Tarv 	Y		Y	Y		Y		Y
+	Goyle	Y		Y	Y		Y		Y
+	Bael	Y		Y	Y		Y		Y
+
+	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
+	Group B2:
+
+	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
+	Group C:
+
+	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
+	Group D:
 
 
+	*/
