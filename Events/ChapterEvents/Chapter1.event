@@ -99,10 +99,19 @@ EnemyUnits:
 	UNIT Monster Revenant ONeill Level(2,Enemy,True) [15,14] 0x0 [RottenClaw] InRangeAI
 	UNIT
 
+Units1Test:
+	UNIT Eirika Survivor Eirika Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
+	UNIT Seth Archer_F Eirika Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
+	UNIT Gilliam Soldier Eirika Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
+	UNIT Franz Fighter Eirika Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
+	UNIT Moulder Thief_F Eirika Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
+	UNIT
+
+
 EnemyUnitsTest:
 	UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] NoAI
-	UNIT Monster Mercenary ONeill Level(1,Enemy,True) [8,12] 0x0 [IronSword] NoAI
-	UNIT Monster Hero ONeill Level(1,Enemy,True) [9,13] 0x0 [IronSword] NoAI
+	UNIT Monster Fighter ONeill Level(1,Enemy,True) [8,12] 0x0 [IronSword] NoAI
+	UNIT Monster Warrior ONeill Level(1,Enemy,True) [9,13] 0x0 [IronSword] NoAI
 	UNIT
 
 
@@ -118,6 +127,7 @@ EnemyCharge:
 	SVAL s1 0x00
 	CHAI Monster
 	CHAI ONeill
+	NoFade
 	ENDA
 
 WarningText:
@@ -224,7 +234,7 @@ EndingScene:
 
 BeginningSceneTest:
 	LOAD1 0x1 EnemyUnitsTest
-	LOAD1 0x0 Units1
+	LOAD1 0x0 Units1Test
 	//GiveGold(99999)
 	//GoToPrepScreen2
 	NoFade

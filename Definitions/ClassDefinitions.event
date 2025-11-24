@@ -180,6 +180,34 @@
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group A2:
+	HeroF   Y
+	HeroF	Y
+	Sword
+	SwordF
+	Rogue
+	RogueF
+	Halb
+	Champ
+	ChampF
+	Warr 	Y
+	WarrF
+	Zerker
+	ZerkerF
+	Sniper
+	SniperF
+	Ranger
+	PalSA
+	PalSL
+	PalLA
+	Gen
+	GreatK
+	FalcSA
+	FalcSL
+	FalcLA
+	DracSA
+	DracSL
+	DracLA
+
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group B1:

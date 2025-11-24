@@ -94,9 +94,11 @@ void UnitAutolevelCore(struct Unit* unit, u8 classId, int levelCount) {
 
 //Allows for units to roll below their averages as well as above them.
 //Additionally, designed to increase the likelihood of a stat being bang on average. Slightly hacky solution though.
-//Commented out but a system in place for random chances for highly deviant stats
+//Currently commented out in favour of fixed enemy growths for testing purposes
 int GetAutoleveledStatIncrease(int growth, int levelCount) {
-  return GetStatIncreaseNPC((growth * levelCount) + (NextRN_N((growth * levelCount) / 4) - (growth * levelCount) / 8));
+  //
+  //return GetStatIncreaseNPC((growth * levelCount) + (NextRN_N((growth * levelCount) / 4) - (growth * levelCount) / 8));
+  return GetStatIncreaseNPC(growth * levelCount);
 
 }
 

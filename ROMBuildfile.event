@@ -24,7 +24,7 @@
 
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"
-    #include "EngineHacks/Kyradshack/_MasterASMInstaller.event"
+    #include "EngineHacks/TelephoneIV/_MasterASMInstaller.event"
     MESSAGE Used hax space ends at currentOffset
 
     #include "Events/EventsInstaller.event"

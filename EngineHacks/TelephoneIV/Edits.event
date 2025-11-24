@@ -616,4 +616,15 @@ ORG 0x870B8
 WORD 0x020040B4 // I can't entirely explain it but the last two bytes here determine position
 POP
 
+//Promoted level bonus
+//7743
+PUSH
+ORG 0x37B52
+BYTE 0x13 //Normal & Easy (19 Autolevels)
+ORG 0x37B5C
+BYTE 0x13 //Hard (19 Autolevels)
+POP
+
+
+
 //  https://www.youtube.com/shorts/LfSZesGiOkg
