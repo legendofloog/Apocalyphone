@@ -1,3 +1,33 @@
+## TrystanName
+Trystan[X]
+
+## TrystanDesc
+ [X]
+
+## EneaName
+Enea[X]
+
+## EneaDesc
+ [X]
+
+## MatteoName
+Matteo[X]
+
+## MatteoDesc
+ [X]
+
+## DaytonName
+Dayton[X]
+
+## DaytonDesc
+ [X]
+
+## IvaName
+Iva[X]
+
+## IvaDesc
+ [X]
+
 ## MonsterName
 Monster[X]
 

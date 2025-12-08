@@ -72,7 +72,7 @@
 
 #define Soldier_F 0x4F //unimplemented*
 //Halberdier is gender neutral
-#define Halberdier 0x46
+#define Halberdier 0x8e
 
 #define Freelancer 0x7C
 #define Freelancer_F 0x7D
@@ -186,21 +186,21 @@
 	SwordF
 	Rogue
 	RogueF
-	Halb
+	Halb 	Y
 	Champ
 	ChampF
 	Warr 	Y
 	WarrF
-	Zerker
-	ZerkerF
+	Zerkr
+	ZerkrF
 	Sniper
-	SniperF
+	SniprF
 	Ranger
 	PalSA
 	PalSL
 	PalLA
-	Gen
-	GreatK
+	Gen 	Y
+	GreatK	Y
 	FalcSA
 	FalcSL
 	FalcLA

@@ -21,6 +21,7 @@ BYTE 0
 
 //Flags Used:
 //07-0A - Item events
+//0B - Iva select quote
 
 //Counters Used:
 //0 - Item Score
@@ -36,9 +37,10 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningSceneTest EndingScene
+POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+//TurnEventPlayer(0,HintText,1) //Defunct
 TurnEventPlayer(0,WarningText,6)
 TurnEventPlayer(0,EnemyCharge,7)
 END_MAIN
@@ -60,6 +62,7 @@ AREA 9 Ruin3 [14,16][16,17] //Iron Sword
 END_MAIN
 
 Dunno1:
+AFEV 0x0B IvaSelect 0
 END_MAIN
 
 Dunno2:
@@ -72,11 +75,11 @@ Tutorial:
 END_MAIN
 
 Units1:
-	UNIT Eirika Survivor Eirika Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
-	UNIT Seth Archer_F Eirika Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
-	UNIT Gilliam Soldier Eirika Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
-	UNIT Franz Fighter Eirika Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
-	UNIT Moulder Thief_F Eirika Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
+	UNIT Trystan Survivor Trystan Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
+	UNIT Enea Archer_F Trystan Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
+	UNIT Dayton Soldier Trystan Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
+	UNIT Matteo Fighter Trystan Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
+	UNIT Iva Thief_F Trystan Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
 	UNIT
 
 EnemyUnits:
@@ -100,18 +103,19 @@ EnemyUnits:
 	UNIT
 
 Units1Test:
-	UNIT Eirika Survivor Eirika Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
-	UNIT Seth Archer_F Eirika Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
-	UNIT Gilliam Soldier Eirika Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
-	UNIT Franz Fighter Eirika Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
-	UNIT Moulder Thief_F Eirika Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
+	UNIT Trystan Survivor Trystan Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
+	UNIT Enea Archer_F Trystan Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
+	UNIT Dayton Soldier Trystan Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
+	UNIT Matteo Fighter Trystan Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
+	UNIT Iva Thief_F Trystan Level(1,Ally,False) [16,1] 0x0 0x0 0x1 REDA13R7 [SlimSword,IronDagger] NoAI
 	UNIT
 
 
 EnemyUnitsTest:
 	UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] NoAI
-	UNIT Monster Fighter ONeill Level(1,Enemy,True) [8,12] 0x0 [IronSword] NoAI
-	UNIT Monster Warrior ONeill Level(1,Enemy,True) [9,13] 0x0 [IronSword] NoAI
+	UNIT Monster Hero ONeill Level(1,Enemy,True) [8,12] 0x0 [IronLance] NoAI
+	UNIT Monster General ONeill Level(1,Enemy,True) [9,13] 0x0 [IronLance] NoAI
+	UNIT Monster Warrior ONeill Level(1,Enemy,True) [8,14] 0x0 [IronSword] NoAI
 	UNIT
 
 
@@ -130,8 +134,33 @@ EnemyCharge:
 	NoFade
 	ENDA
 
+//Defunct
+/*HintText:
+	CameraCursor(14,10)
+	CAMERA_CENTERED Iva
+	Text(Chapter1HintText)
+	NoFade
+	ENDA
+*/
+
+IvaSelect:
+	CHECK_ACTIVE
+	SVAL s1 Iva
+	BEQ 1 s1 sC
+	ENUF 0x0B // unset completion flag if unit selected isn't Iva
+	GOTO 2
+	LABEL 1
+	SOUN 0x69
+	STAL 20
+	CameraCursor2(14,10,90)
+	CAMERA_CENTERED Iva
+	Text(Chapter1HintText)
+	LABEL 2
+	NoFade
+	ENDA	
+
 WarningText:
-	CAMERA_CENTERED Eirika
+	CAMERA_CENTERED Trystan
 	Text(Chapter1WarningText)
 	NoFade
 	ENDA
@@ -182,25 +211,27 @@ BeginningScene:
 	LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 	ENUN
 	CamOff
-	CAMERA_CENTERED Eirika
+	CAMERA_CENTERED Trystan
 	Text(Chapter1BeginningSceneB1)
+	STAL 15
 	CAMERA_CENTERED [7,16]
-	STAL 150
-	CAMERA_CENTERED Eirika
+	STAL 45
+	CAMERA_CENTERED Trystan
 	Text(Chapter1BeginningSceneB2)
+	STAL 30
 	CamOn
 	MOVE 50 Monster_A [7,7]
 	MOVE 50 Monster_B [10,9]
 	ENUN
 	CamOff
-	CAMERA_CENTERED Eirika
+	CAMERA_CENTERED Trystan
 	Text(Chapter1BeginningSceneB3)
 	NoFade
 	ENDA
 
 EndingScene:
 	MUSCFAST 0x7FFF
-	CAMERA_CENTERED Eirika
+	CAMERA_CENTERED Trystan
 	Text(Chapter1EndingSceneA)
 	SetBackground(0x2)
 	COUNTER_CHECK 0
@@ -233,7 +264,7 @@ EndingScene:
 //Everything below is for testing purposes!
 
 BeginningSceneTest:
-	LOAD1 0x1 EnemyUnitsTest
+	LOAD1 0x1 EnemyUnitsTestA
 	LOAD1 0x0 Units1Test
 	//GiveGold(99999)
 	//GoToPrepScreen2

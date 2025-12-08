@@ -14,41 +14,41 @@ FSoldierMugData:
 setMugEntry(FSoldierMug, FSoldierMugData, 3, 6, 3, 4)
 
 ALIGN 16
-LordMugData:
-#incbin "DMP/Lord_mug.dmp"
-#incbin "DMP/Lord_frames.dmp"
-#incbin "DMP/Lord_palette.dmp"
-#incbin "DMP/Lord_minimug.dmp"
-setMugEntry(LordMug, LordMugData, 2, 5, 3, 3)
+TrystanMugData:
+#incbin "DMP/Trystan_mug.dmp"
+#incbin "DMP/Trystan_frames.dmp"
+#incbin "DMP/Trystan_palette.dmp"
+#incbin "DMP/Trystan_minimug.dmp"
+setMugEntry(TrystanMug, TrystanMugData, 2, 5, 3, 3)
 
 ALIGN 16
-OneMugData:
-#incbin "DMP/1_mug.dmp"
-#incbin "DMP/1_frames.dmp"
-#incbin "DMP/1_palette.dmp"
-#incbin "DMP/1_minimug.dmp"
-setMugEntry(OneMug, OneMugData, 3, 6, 3, 4)
+EneaMugData:
+#incbin "DMP/Enea_mug.dmp"
+#incbin "DMP/Enea_frames.dmp"
+#incbin "DMP/Enea_palette.dmp"
+#incbin "DMP/Enea_minimug.dmp"
+setMugEntry(EneaMug, EneaMugData, 3, 6, 3, 4)
 
 ALIGN 16
-TwoMugData:
-#incbin "DMP/2_mug.dmp"
-#incbin "DMP/2_frames.dmp"
-#incbin "DMP/2_palette.dmp"
-#incbin "DMP/2_minimug.dmp"
-setMugEntry(TwoMug, TwoMugData, 2, 5, 3, 3)
+DaytonMugData:
+#incbin "DMP/Dayton_mug.dmp"
+#incbin "DMP/Dayton_frames.dmp"
+#incbin "DMP/Dayton_palette.dmp"
+#incbin "DMP/Dayton_minimug.dmp"
+setMugEntry(DaytonMug, DaytonMugData, 2, 5, 3, 3)
 
 ALIGN 16
-ThreeMugData:
-#incbin "DMP/3_mug.dmp"
-#incbin "DMP/3_frames.dmp"
-#incbin "DMP/3_palette.dmp"
-#incbin "DMP/3_minimug.dmp"
-setMugEntry(ThreeMug, ThreeMugData, 2, 5, 2, 3)
+MatteoMugData:
+#incbin "DMP/Matteo_mug.dmp"
+#incbin "DMP/Matteo_frames.dmp"
+#incbin "DMP/Matteo_palette.dmp"
+#incbin "DMP/Matteo_minimug.dmp"
+setMugEntry(MatteoMug, MatteoMugData, 2, 5, 2, 3)
 
 ALIGN 16
-FourMugData:
-#incbin "DMP/4_mug.dmp"
-#incbin "DMP/4_frames.dmp"
-#incbin "DMP/4_palette.dmp"
-#incbin "DMP/4_minimug.dmp"
-setMugEntry(FourMug, FourMugData, 3, 5, 3, 3)
+IvaMugData:
+#incbin "DMP/Iva_mug.dmp"
+#incbin "DMP/Iva_frames.dmp"
+#incbin "DMP/Iva_palette.dmp"
+#incbin "DMP/Iva_minimug.dmp"
+setMugEntry(IvaMug, IvaMugData, 3, 5, 3, 3)

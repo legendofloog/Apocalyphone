@@ -174,3 +174,13 @@ ALIGN 4
 WyvernRiderSwordWalk:
 #incbin "DMP/WyvernRiderSwordWalk(SamirPlayz).dmp"
 
+ALIGN 4
+HalberdierStand:
+//#incbin "DMP/HalberdierStand(TBA).dmp"
+#incbin "DMP/HalberdierStand(Dei,dondon151).dmp"
+
+
+ALIGN 4
+HalberdierWalk:
+#incbin "DMP/HalberdierWalk(TBA).dmp"
+

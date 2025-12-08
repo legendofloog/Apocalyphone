@@ -1,6 +1,11 @@
 // Characters
 
 #define Lord 0x01
+#define Trystan Lord
+#define Enea 0x02
+#define Dayton 0x03
+#define Matteo 0x04
+#define Iva 0x05
 
 // NPCs
 

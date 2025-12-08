@@ -136,9 +136,9 @@ Brigand (F),IsPointer|BrigandFWalk,0x81e582c
 0x87,IsPointer|SoldierWalk,0x81edbc4
 0x88,IsPointer|FighterFWalk,0x81e4340
 0x89,IsPointer|SoldierWalk,0x81edbc4
-0x8A,IsPointer|SoldierWalk,0x81edbc4
-0x8B,IsPointer|SoldierWalk,0x81edbc4
-0x8C,IsPointer|SoldierWalk,0x81edbc4
-0x8D,IsPointer|SoldierWalk,0x81edbc4
-0x8E,IsPointer|SoldierWalk,0x81edbc4
-0x8F,IsPointer|SoldierWalk,0x81edbc4
+0x8a,IsPointer|SoldierWalk,0x81edbc4
+0x8b,IsPointer|SoldierWalk,0x81edbc4
+0x8c,IsPointer|SoldierWalk,0x81edbc4
+0x8d,IsPointer|SoldierWalk,0x81edbc4
+Halberdier,IsPointer|HalberdierWalk,0x81edbc4
+0x8f,IsPointer|SoldierWalk,0x81edbc4

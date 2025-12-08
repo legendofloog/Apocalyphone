@@ -78,7 +78,7 @@ Troubadour,4,40,20,0
 Valkyrie,4,35,25,2
 Dancer,1,45,20,0
 Soldier,0,10,15,0
-Necromancer,9,55,30,0
+Soldier,0,10,15,0
 Fleet,0,0,15,0
 Phantom,0,5,15,0
 Revenant,0,5,15,0
@@ -125,24 +125,24 @@ Pontifex,0,0,10,0
 Dead Peer,0,0,20,0
 Freelancer,0,5,15,0
 Freelancer (F),0,5,15,0
-Champion,1,5,25,0
+Champion,1,5,25,1
 Champion (F),1,5,25,1
 Brigand (F),0,5,15,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
-Ephraim Lord,1,10,20,0
+0x81,1,10,20,0
+0x82,1,10,20,0
+0x83,1,10,20,0
+0x84,1,10,20,0
+0x85,1,10,20,0
+0x86,1,10,20,0
+0x87,1,10,20,0
+Fighter (F),1,10,20,0
+0x89,1,10,20,0
+0x8A,1,10,20,0
+0x8B,1,10,20,0
+0x8C,1,10,20,0
+0x8D,1,10,20,0
+Halberdier,1,10,25,1
+0x8F,1,10,20,0
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0
 Ephraim Lord,1,10,20,0

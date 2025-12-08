@@ -1,9 +1,9 @@
 //Character Mugs
-#define LordMug 0x02
-#define OneMug 0x04
-#define TwoMug 0x05
-#define ThreeMug 0x06
-#define FourMug 0x07
+#define TrystanMug 0x02
+#define EneaMug 0x04
+#define DaytonMug 0x05
+#define MatteoMug 0x06
+#define IvaMug 0x07
 
 //Boss Mugs
 

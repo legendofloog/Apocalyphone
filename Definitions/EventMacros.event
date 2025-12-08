@@ -21,8 +21,8 @@
 #define TextClose "TEXTCONT; TEXTEND; REMA"
 #define CameraCursor(character) "CAM1 character; STAL 20; FlashCursor(character,60)"
 #define CameraCursor(x,y) "CAM1 [x,y]; STAL 20; FlashCursor(x,y,60)"
-#define CameraCursorFast(character) "CAM1 character; STAL 20; FlashCursor(character,32)"
-#define CameraCursorFast(x,y) "CAM1 [x,y]; STAL 20; FlashCursor(x,y,32)"
+#define CameraCursor2(character,time) "CAM1 character; STAL 20; FlashCursor(character,time)"
+#define CameraCursor2(x,y,time) "CAM1 [x,y]; STAL 20; FlashCursor(x,y,time)"
 #define FadeOutMusic "MUSCMID 0x7FFF"
 
 //Objective Macros
