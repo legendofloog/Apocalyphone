@@ -103,7 +103,7 @@ EnemyUnits:
 	UNIT
 
 Units1Test:
-	UNIT Trystan Survivor Trystan Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary,IronRune] NoAI
+	UNIT Trystan Survivor Trystan Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary,IronShield] NoAI
 	UNIT Enea Archer_F Trystan Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
 	UNIT Dayton Soldier Trystan Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
 	UNIT Matteo Fighter Trystan Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI

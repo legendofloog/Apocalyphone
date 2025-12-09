@@ -1,8 +1,9 @@
 //Double check defs
-//Current ID: 0xE2
-//Current items: 223/250
-//Will need to expand items list, 205 items currently, 50 more allowed, could compress gems and rings?
-//Anything marked //unimplemented are things i *plan* not to implement for initial build 
+//Current ID: 0xE8
+//Current items: 232/250
+//Could compress gems and rings to be a durability item perhaps if lacking for space?
+//Could also condense to master seals only for additional slots, worst comes to worst
+//Anything marked //unimplemented are things i *plan* to leave to be implemented when needed
 
 //Swords //all swords defined
 #define LordPrf 0x09
@@ -80,6 +81,7 @@
 
 //Staves //all staves defined
 #define Sigil 0x7B
+#define Enfeeble 0xE7
 #define LegendaryStaff 0x8C //Legendary ID
 
 //Monster Weapons
@@ -87,7 +89,7 @@
 #define PiercingTalon 0xD0 //unimplemented
 #define FieryFang FireFang
 #define RabidFang 0xD1 //unimplemented
-#define GazingEye 0xD2 //unimplemented
+#define LullingEye 0xD2 //unimplemented
 
 #define PhantomAxe 0xCB //unimplemented
 
@@ -115,11 +117,17 @@
 #define Ire 0x7F //unimplemented
 #define Litany 0x80 //unimplemented
 //#define TonicSlot 0x9A //unimplemented, just booking the definition
+
+//Equippables
 #define IronRune 0x7C
 #define HoplonGuard 0xD6 //unimplemented
 /*#define BaliusWard 0xD7 //unimplemented
 #define GlaedrCharm 0xD8 //unimplemented
 #define DarkIdol 0xD9 //Don't bother defining til someone uses it if they even want to use it*/
+#define IronShield 0xE4
+#define SteelShield 0xE5
+#define SilverShield 0xE6
+#define PrayerRing 0xE8
 
 /*Items Implemented
 Key: A = W Assets, S = Spell Anims, T = Tested In-Game, U = Used In-Game

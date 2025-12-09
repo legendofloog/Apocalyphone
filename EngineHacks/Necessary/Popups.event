@@ -14,6 +14,9 @@ gBattlePopupTable:
 
 	// Skill system
 	PopRBattlePopup(InitLevelUpSkillPopup|1, SkillLearnedPopup, 96)
+
+	// Equipment Broke
+	PopRBattlePopup(PopR_InitEquipmentBroke, 0x592420, 96)
 	
 	// Learning spells for Gaiden Magic.
 	#ifdef GAIDEN_MAGIC

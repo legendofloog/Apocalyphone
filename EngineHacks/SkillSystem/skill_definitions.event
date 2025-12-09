@@ -1,7 +1,7 @@
 //Skills are installed here from 1-254.
 //To disable a skill, define it as 255.
 //Skills are categorized broadly by movement, class, personal & weapon.
-//This is currently unused and the original skillsys event is used. This will replace it eventually.
+//When defining skills here, if they are default skillsys skills make sure to comment them out in skill_definitions_old.event
 
 //Skills Used: 1-24
 
@@ -104,6 +104,13 @@
 	//Author Unknown (Initial Commit)
 	#define GaleforceID 17
 
+//Equipment Skills
+
+	//Fortune: This unit cannot be crit.
+	//By Sme
+	#define FortuneID 25
+
+
 
 //Misc Skills
 	//Steal: Unit can steal items.
@@ -119,6 +126,3 @@
 	#define LockTouchID 16
 	#define LocktouchID LockTouchID //Alias
 
-	//Fortune: This unit cannot be crit.
-	//By Sme
-	#define FortuneID 25

@@ -616,3 +616,6 @@ Broadsword[X]
 
 ## EvilEyeDesc
 A cursed, un-blinking eye.[X]
+
+## IronShieldName
+Iron Shield[X]
