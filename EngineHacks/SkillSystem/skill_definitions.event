@@ -119,3 +119,6 @@
 	#define LockTouchID 16
 	#define LocktouchID LockTouchID //Alias
 
+	//Fortune: This unit cannot be crit.
+	//By Sme
+	#define FortuneID 25

@@ -6,7 +6,7 @@
 pResistanceModifiers: // Resistance
 	POIN prAddUnitResistance prHalveIfCapturing 
 	POIN prDebuffRes StrongCon
-	POIN prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes
+	POIN prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes prEquipmentRes
 	POIN FatiguedStatPenalty
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
@@ -34,5 +34,8 @@ prItemPassiveResistance:
 #else // DONT_STACK_BOOSTS
 	rPassiveStatBoostsNonStacking(STAT_RESISTANCE)
 #endif // DONT_STACK_BOOSTS
+
+prEquipmentRes:
+	rEquipmentBonus(STAT_RESISTANCE)
 
 #endif // MODULAR_GETTER_RESISTANCE_EVENT

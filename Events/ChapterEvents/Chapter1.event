@@ -37,7 +37,7 @@ POIN Traps1 Traps2
 POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
 POIN $0 $0 $0
 POIN $0 $0 $0
-POIN BeginningScene EndingScene
+POIN BeginningSceneTest EndingScene
 
 TurnBasedEvents:
 //TurnEventPlayer(0,HintText,1) //Defunct
@@ -103,7 +103,7 @@ EnemyUnits:
 	UNIT
 
 Units1Test:
-	UNIT Trystan Survivor Trystan Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary] NoAI
+	UNIT Trystan Survivor Trystan Level(1,Ally,True) [15,1] 0x0 0x0 0x1 REDA11R6 [Broadsword,Vulnerary,IronRune] NoAI
 	UNIT Enea Archer_F Trystan Level(1,Ally,True) [14,1] 0x0 0x0 0x1 REDA10R5 [IronBow,Vulnerary] NoAI
 	UNIT Dayton Soldier Trystan Level(1,Ally,True) [16,0] 0x0 0x0 0x1 REDA12R5 [IronLance] NoAI
 	UNIT Matteo Fighter Trystan Level(1,Ally,True) [13,0] 0x0 0x0 0x1 REDA10R3 [IronAxe,Vulnerary] NoAI
@@ -113,7 +113,7 @@ Units1Test:
 
 EnemyUnitsTest:
 	UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] NoAI
-	UNIT Monster Hero ONeill Level(1,Enemy,True) [8,12] 0x0 [IronLance] NoAI
+	UNIT Monster Mercenary ONeill Level(1,Enemy,True) [8,12] 0x0 [KillingEdge] NoAI
 	UNIT Monster General ONeill Level(1,Enemy,True) [9,13] 0x0 [IronLance] NoAI
 	UNIT Monster Warrior ONeill Level(1,Enemy,True) [8,14] 0x0 [IronSword] NoAI
 	UNIT
@@ -264,7 +264,8 @@ EndingScene:
 //Everything below is for testing purposes!
 
 BeginningSceneTest:
-	LOAD1 0x1 EnemyUnitsTestA
+	ENUT 0xB
+	LOAD1 0x1 EnemyUnitsTest
 	LOAD1 0x0 Units1Test
 	//GiveGold(99999)
 	//GoToPrepScreen2

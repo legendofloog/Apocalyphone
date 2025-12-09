@@ -6,7 +6,7 @@
 pSkillModifiers: // Skill
 	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing 
 	POIN prDebuffSkl 
-	POIN prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl
+	POIN prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl prEquipmentSkl
 	POIN FatiguedStatPenalty
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
@@ -25,5 +25,8 @@ prItemPassiveSkl:
 #else // DONT_STACK_BOOSTS
 	rPassiveStatBoostsNonStacking(STAT_SKILL)
 #endif // DONT_STACK_BOOSTS
+
+prEquipmentSkl:
+	rEquipmentBonus(STAT_SKILL)
 
 #endif // MODULAR_GETTER_SKILL_EVENT

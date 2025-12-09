@@ -27,3 +27,12 @@ Sorry, that's out of stock.[A][X]
 
 ## BargainItemSoldOutSecret
 Sorry, that's out of stock.[A][X]
+
+## EquipEquipmentDescription
+Ready this equipment.[X]
+
+## UnequipName
+Unequip[X]
+
+## UnequipEquipmentDescription
+Remove this equipment.[X]

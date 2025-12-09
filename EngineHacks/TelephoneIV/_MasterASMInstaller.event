@@ -160,6 +160,11 @@ MESSAGE ello guvnah
 //Using for extended shop list + limited items
 	#include "ShoppingEdits/ShoppingEdits.event"
 
+//Pikmin1211
+//Equippables
+//Adds equippable item functionality to the hack
+	#include "Equip/Installer.event"
+
 //A whole bunch of edits by various people, see Edits.event for more info
 	#include "Edits.event"
 

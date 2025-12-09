@@ -115,7 +115,7 @@
 #define Ire 0x7F //unimplemented
 #define Litany 0x80 //unimplemented
 //#define TonicSlot 0x9A //unimplemented, just booking the definition
-#define IronRune 0xC7
+#define IronRune 0x7C
 #define HoplonGuard 0xD6 //unimplemented
 /*#define BaliusWard 0xD7 //unimplemented
 #define GlaedrCharm 0xD8 //unimplemented

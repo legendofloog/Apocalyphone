@@ -10,7 +10,7 @@ endif
 include $(DEVKITARM)/base_tools
 
 # defining path of lyn
-LYN := "$(abspath .)/lyn"
+LYN := "$(abspath .)/lyn.exe"
 LYNREF :="$(abspath .)/reference/SkillsRef.o"
 
 # setting up compilation flags
@@ -31,3 +31,4 @@ HEADER_FILES := $(abspath .)/include
 # OBJ to EVENT rule
 %.lyn.event: %.o
 	$(LYN) $< $(LYNREF) > $@
+

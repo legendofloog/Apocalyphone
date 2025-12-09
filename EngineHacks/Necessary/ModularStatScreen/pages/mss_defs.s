@@ -814,6 +814,12 @@
   cmp     r5, #0x0
   bne     SS_DoneEquipHighlightBar
   
+  DrawEquippableAccessory:
+  ldr r0, [r6, #0xC]
+  blh DrawUnitEquippedItem
+  cmp     r5, #0x0
+  bne     SS_DoneEquipHighlightBar
+  
   SS_ItemBox_GetID:
   ldr     r0, [r6, #0xC]
   add     r0, #0x1E

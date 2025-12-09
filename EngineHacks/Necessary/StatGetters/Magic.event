@@ -6,7 +6,7 @@
 pMagicModifiers: // Magic
 	POIN prAddUnitMagic HalfMagFunc prAddEquipMagic 
 	POIN prDebuffMag 
-	POIN prRallyMag prSkillFury prFortressDefensePow prFortressResistancePow prItemPassiveMag VigorDanceCheck prLifeAndDeathBonus prDefiantMag prPushMag
+	POIN prRallyMag prSkillFury prFortressDefensePow prFortressResistancePow prItemPassiveMag VigorDanceCheck prLifeAndDeathBonus prDefiantMag prPushMag prEquipmentMag
 	POIN FatiguedStatPenalty
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
@@ -19,7 +19,8 @@ prAddUnitMagic:
 prAddEquipMagic:
 	rAdd(rForUnitEquipped(rCallExternal(prGetItemMagBonus)))
 
-
+prEquipmentMag:
+	rEquipmentBonus(0x09)
 
 prItemPassiveMag:
 #ifndef DONT_STACK_BOOSTS

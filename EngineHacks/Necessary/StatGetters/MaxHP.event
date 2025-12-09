@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pMaxHPModifiers: // Maximum HP
-	POIN prAddUnitMaxHP HalfHpFunc prAddEquipHP prItemPassiveHp
+	POIN prAddUnitMaxHP HalfHpFunc prAddEquipHP prItemPassiveHp prEquipmentMHP
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -24,5 +24,8 @@ prItemPassiveHp:
 #else // DONT_STACK_BOOSTS
 	rPassiveStatBoostsNonStacking(STAT_HP)
 #endif // DONT_STACK_BOOSTS
+
+prEquipmentMHP:
+	rEquipmentBonus(STAT_HP)
 
 #endif // MODULAR_GETTER_MAXHP_EVENT

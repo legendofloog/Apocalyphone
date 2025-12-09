@@ -123,6 +123,10 @@ SkillBuffer* MakeSkillBuffer(Unit* unit, SkillBuffer* buffer) {
         buffer->skills[count++] = temp;
     }
 
+    //Get equipment skill
+    temp = GetEquipmentSkill(unit);
+    if (temp) buffer->skills[count++] = temp;
+
     //Add terminator to end of list
     buffer->skills[count++] = 0;
 

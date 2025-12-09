@@ -4,7 +4,7 @@
 #include "_Common.event"
 ALIGN 4
 pConModifiers: // Consitition
-	POIN prAddUnitBaseCon prAddUnitConBonus prItemPassiveCon prGetItemConBonus
+	POIN prAddUnitBaseCon prAddUnitConBonus prItemPassiveCon prGetItemConBonus prEquipmentCon
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -25,6 +25,9 @@ prAddUnitConBonus:
 	rAdd(rSByteAt(UNIT_CON_BONUS))
 
 #include "_asm/GetItemConBonus.lyn.event" 
+
+prEquipmentCon:
+	rEquipmentBonus(STAT_CON)
 
 ALIGN 4
 prItemPassiveCon:
