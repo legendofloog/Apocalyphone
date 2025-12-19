@@ -124,8 +124,8 @@ Pontifex,IsPointer|FighterFWalk,0x8205068
 Dead Peer,0x82051c0,0x82055a8
 Freelancer,IsPointer|LancerWalk,0x81caa20
 Freelancer (F),IsPointer|LancerFWalk,0x81caa20
-Champion,0x81e0f98,0x81e173c
-Champion (F),0x81e0f98,0x81e173c
+Champion,IsPointer|ChampionWalk,0x81e4340
+Champion (F),IsPointer|ChampionWalk,0x81e4340
 Brigand (F),IsPointer|BrigandFWalk,0x81e582c
 0x81,IsPointer|SoldierWalk,0x81edbc4
 0x82,IsPointer|SoldierWalk,0x81edbc4

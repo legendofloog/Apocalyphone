@@ -1,6 +1,6 @@
 // Adds Augury option to Preparations screen.
 // label prefix: PREEXT.
-MESSAGE somethingdoesntmatterwhat currentOffset
+//MESSAGE somethingdoesntmatterwhat currentOffset
 #ifndef _FE8_
     ERROR "You're not assembling to an FE8 ROM!"
 #endif

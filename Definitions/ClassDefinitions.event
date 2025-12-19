@@ -24,7 +24,7 @@
 //Paladins will have character animations for Females
 #define Paladin_SL 0x07 //Paladin Def
 #define Paladin_LA 0x08
-#define Paladin_SA 0x04
+#define Paladin_SA 0x03
 
 //Knights are gender neutral
 #define Knight_S 0x0A
@@ -111,6 +111,8 @@
 #define WyvernK_S WyvernKnight_S
 #define WyvernK_L WyvernKnight_L
 #define WyvernK_A WyvernKnight_A
+
+#define Lancer Freelancer
 
 //Enemy Classes
 #define Bonewalker_S 0x32

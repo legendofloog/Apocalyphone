@@ -67,6 +67,7 @@ BYTE 00 00
 ALIGN 4
 
 SniperSkillList:
+BYTE 255 BowRangeUpID
 BYTE 00 00
 ALIGN 4
 

@@ -1,10 +1,10 @@
 INLINE MagCharTable,Base Magic,Magic Growth
 None,0,0
-Eirika,0,0
-Seth,0,0
-Gilliam,0,0
-Franz,0,0
-Moulder,0,0
+Eirika,0,10
+Seth,0,10
+Gilliam,0,5
+Franz,0,5
+Moulder,0,10
 Vanessa,0,0
 Ross,0,5
 Neimi,2,15

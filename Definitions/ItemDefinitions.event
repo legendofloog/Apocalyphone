@@ -1,6 +1,6 @@
 //Double check defs
 //Current ID: 0xE8
-//Current items: 232/250
+//Current items: 234/250
 //Could compress gems and rings to be a durability item perhaps if lacking for space?
 //Could also condense to master seals only for additional slots, worst comes to worst
 //Anything marked //unimplemented are things i *plan* to leave to be implemented when needed
@@ -127,7 +127,9 @@
 #define IronShield 0xE4
 #define SteelShield 0xE5
 #define SilverShield 0xE6
-#define PrayerRing 0xE8
+#define RuneShield 0xE8
+#define HexlockShield 0xE9
+#define PrayerRing 0xF0
 
 /*Items Implemented
 Key: A = W Assets, S = Spell Anims, T = Tested In-Game, U = Used In-Game

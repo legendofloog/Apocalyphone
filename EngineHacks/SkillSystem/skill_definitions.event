@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //When defining skills here, if they are default skillsys skills make sure to comment them out in skill_definitions_old.event
 
-//Skills Used: 1-24
+//Skills Used: 1-26
 
 #include "skill_definitions_old.event"
 
@@ -69,6 +69,10 @@
 
 	//Nice Thighs: This unit has nice thighs //to be repurposed as 'Thick Skin'.
 	#define NiceThighsID 19
+
+	//Bow Range +1: Maximum range of equipped bows is increased.
+	//By Teraspark
+	#define BowRangeUpID 26
 
 
 //Personal Skills

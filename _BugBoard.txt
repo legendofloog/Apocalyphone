@@ -11,3 +11,4 @@ Minor Bugs:
 - Everyone can use stupid flippin iron dagger
 - Occasional HP bar graphical glitch with units missing HP in preps
 - Dracozombie can't use wretched air for some reason?
+- Weapon rank display issues, ranks 2 and 3 in the display order swap descriptions. Staff also moves to the top of the magic rank display order ahead of anima. Also has issues when having 2 ranks.

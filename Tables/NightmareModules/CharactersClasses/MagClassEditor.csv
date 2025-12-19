@@ -29,7 +29,7 @@ Archer (F),0,10,15,0
 Sniper,1,10,25,1
 Sniper (F),1,10,25,1
 Ranger,1,10,25,1
-Horseman,0,10,15,0
+Scout,0,10,15,0
 Wyvern Rider (L),0,5,15,0
 Wyvern Rider (S),0,5,15,0
 Dracoknight (SL),1,5,25,1
@@ -38,8 +38,8 @@ Wyvern Knight (L),1,5,25,1
 Wyvern Knight (S),1,5,25,1
 Mage,7,40,20,0
 Mage (F),7,40,20,0
-Sage,8,40,30,1
-Sage (F),8,40,30,1
+Sage,9,40,30,1
+Sage (F),9,40,30,1
 Mage Knight,8,40,30,1
 Mage Knight (F),8,40,30,1
 Bishop,4,35,25,2
@@ -50,7 +50,7 @@ Druid,11,60,30,1
 Druid (F),11,60,30,1
 Summoner,10,55,30,1
 Bonewalker (S),0,5,15,0
-Rogue,3,25,26,3
+Rogue,1,10,25,1
 Gorgon Egg,0,0,30,0
 Great Knight,1,5,25,1
 Knight (B),0,5,15,0

@@ -184,3 +184,10 @@ ALIGN 4
 HalberdierWalk:
 #incbin "DMP/HalberdierWalk(TBA).dmp"
 
+ALIGN 4
+ChampionStand:
+#incbin "DMP/ChampionStand(Spud).dmp"
+
+ALIGN 4
+ChampionWalk:
+#incbin "DMP/ChampionWalk(Spud).dmp"

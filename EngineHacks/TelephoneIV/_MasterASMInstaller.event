@@ -165,6 +165,11 @@ MESSAGE ello guvnah
 //Adds equippable item functionality to the hack
 	#include "Equip/Installer.event"
 
+//StanH
+//Stat Screen Blink
+//Makes unit portraits blink on status screen
+	#include "StatScreenBlink/SSBlink.event"
+
 //A whole bunch of edits by various people, see Edits.event for more info
 	#include "Edits.event"
 
