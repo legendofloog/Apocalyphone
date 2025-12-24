@@ -1,6 +1,6 @@
 //Double check defs
 //Current ID: 0xE8
-//Current items: 234/250
+//Current items: 234/255
 //Could compress gems and rings to be a durability item perhaps if lacking for space?
 //Could also condense to master seals only for additional slots, worst comes to worst
 //Anything marked //unimplemented are things i *plan* to leave to be implemented when needed

@@ -1,6 +1,7 @@
 Major Bugs:
 - Noticed an interaction where an axe pegasus attacking at wta against a solider or freelancer is countered and then broken. Even though the opponent is supposed to double after the miss it doesnt.
 - Enemies with negative autolevels are underflowing on Mag specifically on normal and easy.
+- Slayer appears to not work.
 
 Minor Bugs:
 - Droppable/Stealable Graphic appears when silencing a unit.

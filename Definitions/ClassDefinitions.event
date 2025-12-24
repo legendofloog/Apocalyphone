@@ -1,6 +1,5 @@
 //Free Class Slots: N/A
-//Add unimplemented classes only if you choose to use them. If you implement a T1, implement its T2.
-//Unimplemented class ID's lose priority if you need to add an undefined class.
+//Add unimplemented classes only if you choose to use them. If you implement a player T1, implement its T2.
 //Just remember to comment them out
 //If you want me to implement a class for you just ask
 
@@ -85,6 +84,7 @@
 #define Rogue_F 0x85 //unimplemented
 
 /*
+//all unimplemented
 #define WarMonk 0x8A
 #define WarMonk_F 0x8B
 #define Spellblade 0x8C

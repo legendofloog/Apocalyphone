@@ -2,6 +2,9 @@
 extern int(*gprGotoConGetter)(struct Unit* unit);
 
 int GetAidFromUnit(struct Unit* unit){
+    /*if(unit->pClassData->number&(CLASS_WYVERN_KNIGHT | CLASS_WYVERN_KNIGHT_F | 0x87)){
+        return 20-gprGotoConGetter(unit);
+        }*/
 	if(unit->pClassData->attributes&(CA_MOUNTED|CA_WYVERN)){
 		return 25-gprGotoConGetter(unit);
 		}

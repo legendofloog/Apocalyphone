@@ -113,10 +113,10 @@ Units1Test:
 
 EnemyUnitsTest:
 	UNIT ONeill Revenant ONeill Level(7,Enemy,True) [2,21] 0x0 [RottenClaw] NoAI
-	UNIT Monster Peg_L ONeill Level(1,Enemy,True) [8,12] 0x0 [IronLance] NoAI
-	UNIT Monster Falcoknight_SL ONeill Level(1,Enemy,True) [9,13] 0x0 [IronLance] NoAI
-	UNIT Monster Swordmaster ONeill Level(1,Enemy,True) [8,14] 0x0 [IronSword] NoAI
-	UNIT Monster General ONeill Level(1,Enemy,True) [9,15] 0x0 [IronLance] NoAI
+	UNIT Monster Cav_S ONeill Level(20,Enemy,True) [8,12] 0x0 [IronSword] NoAI
+	UNIT Monster Paladin_SL ONeill Level(1,Enemy,True) [9,13] 0x0 [IronSword] NoAI
+	UNIT Monster GreatKnight ONeill Level(1,Enemy,True) [8,14] 0x0 [IronSword] NoAI
+	UNIT Monster Soldier ONeill Level(20,Enemy,True) [9,15] 0x0 [IronLance] NoAI
 	UNIT
 
 

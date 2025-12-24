@@ -40,15 +40,15 @@ Mage,7,40,20,0
 Mage (F),7,40,20,0
 Sage,9,40,30,1
 Sage (F),9,40,30,1
-Mage Knight,8,40,30,1
+Mage Knight,9,45,30,1
 Mage Knight (F),8,40,30,1
-Bishop,4,35,25,2
-Bishop (F),4,35,25,1
+Bishop,10,45,30,1
+Bishop (F),10,45,30,1
 Shaman,9,60,20,0
 Shaman (F),9,60,20,0
 Druid,11,60,30,1
 Druid (F),11,60,30,1
-Summoner,10,55,30,1
+Summoner,9,55,30,1
 Bonewalker (S),0,5,15,0
 Rogue,1,10,25,1
 Gorgon Egg,0,0,30,0
@@ -68,14 +68,14 @@ Brigand,0,5,15,0
 Pirate,0,5,15,0
 Berserker,1,5,25,1
 Monk,6,40,20,0
-Priest,7,45,20,0
+Priest,8,45,20,0
 Bard,1,45,20,0
 Recruit (1),0,0,20,0
 Pegasus Knight (L),0,15,15,0
-Falcoknight (SL),1,15,25,1
-Cleric,7,45,20,0
+Falcoknight (SL),2,15,25,1
+Cleric,8,45,20,0
 Troubadour,4,40,20,0
-Valkyrie,4,35,25,2
+Valkyrie,7,40,30,1
 Dancer,1,45,20,0
 Soldier,0,10,15,0
 Soldier,0,10,15,0

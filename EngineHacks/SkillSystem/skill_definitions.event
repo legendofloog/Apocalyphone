@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //When defining skills here, if they are default skillsys skills make sure to comment them out in skill_definitions_old.event
 
-//Skills Used: 1-26
+//Skills Used: 1-27
 
 #include "skill_definitions_old.event"
 
@@ -73,6 +73,10 @@
 	//Bow Range +1: Maximum range of equipped bows is increased.
 	//By Teraspark
 	#define BowRangeUpID 26
+
+	//Slayer: Deal effective damage to monster units.
+	//By Tequila
+	#define SlayerID 27
 
 
 //Personal Skills

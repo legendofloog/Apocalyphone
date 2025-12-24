@@ -241,7 +241,7 @@
 
 //Slayer: Deal effective damage to monster units.
 //By Tequila
-#define SlayerID 255
+//#define SlayerID 255
 
 //Skybreaker: Deal effective damage to flying units.
 //By Sme
