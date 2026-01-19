@@ -3,7 +3,7 @@
 
 #define SurvivorStandID 0x1
 
-//#define PaladinSAStandID 0x2
+#define PaladinSwordStandID 0x2
 
 #define VagabondStandID 0x3
 
@@ -17,7 +17,7 @@
 
 #define WyvernRiderSwordStandID 0x1A
 
-//#define DracoknightLAStandID 0x1C
+#define DracoknightLAStandID 0x1C
 
 #define SoldierStandID 0x3F
 
@@ -56,3 +56,11 @@
 #define BrigandFStandID 0x79
 
 #define ScoutStandID 0x7A
+
+#define DracoknightSwordStandID 0x7B
+
+#define PaladinAxeStandID 0x7C
+
+#define TroubadourStand 0x3C
+
+#define ValkyrieStand 0x3D

@@ -33,3 +33,11 @@
 #define WyvernRiderLanceClassCard 0x88
 #define WyvernRiderAxeClassCard 0xB9
 #define MonkClassCard 0xBA
+#define WightBowClassCard 0xBB
+#define SummonerClassCard 0xBC
+#define SpellswordClassCard 0xBD
+#define WarMonkClassCard 0xBE
+#define DracoknightSwordClassCard 0xBF
+#define DracoknightAxeClassCard 0xC0
+#define PaladinSwordClassCard 0xC1
+#define PaladinAxeClassCard 0xC2

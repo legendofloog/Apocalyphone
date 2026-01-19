@@ -1,5 +1,15 @@
 #define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG NewPortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
 
+/*
+ALIGN 4
+_ClassCardData:
+#incbin "DMP/_(_).dmp"
+ALIGN 4
+_ClassCardPal:
+#incbin "DMP/_(_).png_pal.dmp"
+setCardEntry(_ClassCard, _ClassCardData, _ClassCardPal)
+*/
+
 
 ALIGN 4
 KnightLanceClassCardData:
@@ -51,10 +61,10 @@ setCardEntry(BonewalkerLanceClassCard, BonewalkerLanceClassCardData, BonewalkerL
 
 ALIGN 4
 BonewalkerBowClassCardData:
-#incbin "DMP/BonewalkerBow(Spud,Rasdal,Kryads,Brober).dmp"
+#incbin "DMP/BonewalkerBow(Spud,Rasdal,Kyrads,Brober).dmp"
 ALIGN 4
 BonewalkerBowClassCardPal:
-#incbin "DMP/BonewalkerBow(Spud,Rasdal,Kryads,Brober).png_pal.dmp"
+#incbin "DMP/BonewalkerBow(Spud,Rasdal,Kyrads,Brober).png_pal.dmp"
 setCardEntry(BonewalkerBowClassCard, BonewalkerBowClassCardData, BonewalkerBowClassCardPal)
 
 ALIGN 4
@@ -152,3 +162,59 @@ ALIGN 4
 MonkClassCardPal:
 #incbin "DMP/Monk(Blademaster,ltranc).png_pal.dmp"
 setCardEntry(MonkClassCard, MonkClassCardData, MonkClassCardPal)
+
+ALIGN 4
+WarMonkClassCardData:
+#incbin "DMP/WarMonk(Der).dmp"
+ALIGN 4
+WarMonkClassCardPal:
+#incbin "DMP/WarMonk(Der).png_pal.dmp"
+setCardEntry(WarMonkClassCard, WarMonkClassCardData, WarMonkClassCardPal)
+
+ALIGN 4
+WightBowClassCardData:
+#incbin "DMP/WightBow(Spud,Rasdal,Kyrads,Brober).dmp"
+ALIGN 4
+WightBowClassCardPal:
+#incbin "DMP/WightBow(Spud,Rasdal,Kyrads,Brober).png_pal.dmp"
+setCardEntry(WightBowClassCard, WightBowClassCardData, WightBowClassCardPal)
+
+ALIGN 4
+SummonerClassCardData:
+#incbin "DMP/Summoner(Unknown).dmp"
+ALIGN 4
+SummonerClassCardPal:
+#incbin "DMP/Summoner(Unknown).png_pal.dmp"
+setCardEntry(SummonerClassCard, SummonerClassCardData, SummonerClassCardPal)
+
+ALIGN 4
+SpellswordClassCardData:
+#incbin "DMP/Spellsword(Aruka,Yggdra,Zoramine).dmp"
+ALIGN 4
+SpellswordClassCardPal:
+#incbin "DMP/Spellsword(Aruka,Yggdra,Zoramine).png_pal.dmp"
+setCardEntry(SpellswordClassCard, SpellswordClassCardData, SpellswordClassCardPal)
+
+ALIGN 4
+DracoknightAxeClassCardData:
+#incbin "DMP/DracoknightAxe(Flasuban).dmp"
+ALIGN 4
+DracoknightAxeClassCardPal:
+#incbin "DMP/DracoknightAxe(Flasuban).png_pal.dmp"
+setCardEntry(DracoknightAxeClassCard, DracoknightAxeClassCardData, DracoknightAxeClassCardPal)
+
+ALIGN 4
+PaladinSwordClassCardData:
+#incbin "DMP/PaladinSword(Leif,Jj09).dmp"
+ALIGN 4
+PaladinSwordClassCardPal:
+#incbin "DMP/PaladinSword(Leif,Jj09).png_pal.dmp"
+setCardEntry(PaladinSwordClassCard, PaladinSwordClassCardData, PaladinSwordClassCardPal)
+
+ALIGN 4
+PaladinAxeClassCardData:
+#incbin "DMP/PaladinAxe(MeatOfJustice).dmp"
+ALIGN 4
+PaladinAxeClassCardPal:
+#incbin "DMP/PaladinAxe(MeatOfJustice).png_pal.dmp"
+setCardEntry(PaladinAxeClassCard, PaladinAxeClassCardData, PaladinAxeClassCardPal)

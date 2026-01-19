@@ -81,7 +81,7 @@
 #define Troubadour_M 0x86 //unimplemented
 #define Monk_F 0x83 //unimplemented
 #define Valkyrie_M 0x84 //unimplemented
-#define Rogue_F 0x85 //unimplemented
+#define Rogue_F 0x8F //unimplemented
 
 /*
 //all unimplemented
@@ -182,33 +182,33 @@
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group A2:
-	HeroF   Y
+	Hero    Y
 	HeroF	Y
-	Sword
-	SwordF
-	Rogue
-	RogueF
+	Sword 	Y
+	SwordF	Y
+	Rogue 	Y
+	RogueF 	
 	Halb 	Y
-	Champ
-	ChampF
+	Champ 	Y
+	ChampF 	Y
 	Warr 	Y
 	WarrF
-	Zerkr
+	Zerkr 	Y
 	ZerkrF
-	Sniper
-	SniprF
-	Ranger
-	PalSA
-	PalSL
-	PalLA
+	Sniper 	Y
+	SniprF 	Y
+	Ranger 	Y
+	PalSA 	Y
+	PalSL 	Y
+	PalLA 	Y
 	Gen 	Y
 	GreatK	Y
 	FalcSA
-	FalcSL
+	FalcSL 	Y
 	FalcLA
-	DracSA
-	DracSL
-	DracLA
+	DracSA  Y
+	DracSL 	Y
+	DracLA 	Y
 
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions

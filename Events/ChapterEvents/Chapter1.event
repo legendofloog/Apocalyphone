@@ -266,7 +266,7 @@ EndingScene:
 
 BeginningSceneTest:
 	ENUT 0xB
-	LOAD1 0x1 EnemyUnitsTest
+	LOAD1 0x1 EnemyUnitsTestA2
 	LOAD1 0x0 Units1Test
 	//GiveGold(99999)
 	//GoToPrepScreen2
@@ -393,7 +393,8 @@ EnemyUnitsTestB2:
 
 EnemyUnitsTestC:
 	UNIT ONeill General ONeill Level(7,Enemy,True) [0,11] 0x0 [RottenClaw,IronDagger] NoAI
-	//Wyvern Rider SLA, Assassin, Mage Knight, War Monk/Cleric, Manakete, Phantom
+	//Wyvern Rider SLA, Assassin, Mage Knight, War Monk/Cleric, Spellsword, Manakete, Phantom
+	//Add respective alt classes, draco, rogue, sage, valk, bishop, warrior
 	UNIT
 
 

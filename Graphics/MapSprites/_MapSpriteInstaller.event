@@ -191,3 +191,59 @@ ChampionStand:
 ALIGN 4
 ChampionWalk:
 #incbin "DMP/ChampionWalk(Spud).dmp"
+
+ALIGN 4
+DracoknightAxeStand:
+#incbin "DMP/DracoknightAxeStand(UltraXBlade,Unknown).dmp"
+
+ALIGN 4
+DracoknightAxeWalk:
+#incbin "DMP/DracoknightAxeWalk(UltraXBlade,Unknown).dmp"
+
+ALIGN 4
+DracoknightSwordStand:
+#incbin "DMP/DracoknightSwordStand(Knabepicer).dmp"
+
+ALIGN 4
+DracoknightSwordWalk:
+#incbin "DMP/DracoknightSwordWalk(Knabepicer).dmp"
+
+ALIGN 4
+DruidFStand:
+#incbin "DMP/DruidFStand.dmp"
+
+ALIGN 4
+DruidFWalk:
+#incbin "DMP/DruidFWalk.dmp"
+
+ALIGN 4
+PaladinAxeStand:
+#incbin "DMP/PaladinAxeStand(RobertFPY).dmp"
+
+ALIGN 4
+PaladinAxeWalk:
+#incbin "DMP/PaladinAxeWalk(RobertFPY).dmp"
+
+ALIGN 4
+PaladinSwordStand:
+#incbin "DMP/PaladinSwordStand(RobertFPY).dmp"
+
+ALIGN 4
+PaladinSwordWalk:
+#incbin "DMP/PaladinSwordWalk(RobertFPY).dmp"
+
+ALIGN 4
+TroubStand:
+#incbin "DMP/TroubadourStand(CelestiaHeart).dmp"
+
+ALIGN 4
+TroubadourWalk:
+#incbin "DMP/TroubadourWalk(CelestiaHeart).dmp"
+
+ALIGN 4
+ValkStand:
+#incbin "DMP/ValkyrieStand(CelestiaHeart).dmp"
+
+ALIGN 4
+ValkyrieWalk:
+#incbin "DMP/ValkyrieWalk(CelestiaHeart).dmp"

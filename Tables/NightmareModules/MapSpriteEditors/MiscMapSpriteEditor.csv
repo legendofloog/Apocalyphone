@@ -1,12 +1,12 @@
 INLINE NewMovingMapSpriteTable,Animation pointer,Another pointer
 Cavalier (A),IsPointer|CavAxeWalk,0x81c3d7c
 Survivor,IsPointer|SurvivorWalk,0x81c46cc
-Paladin (SA),0x81c4824,0x81c52b4
+Paladin (SA),IsPointer|PaladinSwordWalk,0x81c7428
 Vagabond,0x81c5414,0x81c5e84
 Cavalier (L),IsPointer|CavLanceWalk,0x81c692c
 Cavalier (S),IsPointer|CavSwordWalk,0x81c692c
 Paladin (SL),0x81c6a84,0x81c7428
-Paladin (LA),0x81c6a84,0x81c7428
+Paladin (LA),IsPointer|PaladinAxeWalk,0x81c7428
 Knight (L),IsPointer|KnightLanceWalk,0x81c7e74
 Knight (S),IsPointer|KnightSwordWalk,0x81c7e74
 General,0x81c7fcc,0x81c8a80
@@ -32,7 +32,7 @@ Scout,IsPointer|ScoutWalk,0x81d3194
 Wyvern Rider (L),0x81d32ec,0x81d403c
 Wyvern Rider (S),IsPointer|WyvernRiderSwordWalk,0x81d403c
 Dracoknight (SL),0x81d504c,0x81d5e58
-Dracoknight (LA),0x81d5fc0,0x81d6d6c
+Dracoknight (LA),IsPointer|DracoknightAxeWalk,0x81d5e58
 Wyvern Knight (L),0x81d6ec4,0x81d7cc8
 Wyvern Knight (S),0x81d6ec4,0x81d7cc8
 Mage,0x81d7e28,0x81d8668
@@ -46,7 +46,7 @@ Bishop (F),0x81dc6f0,0x81dcf44
 Shaman,0x81dd0a4,0x81dd888
 Shaman (F),IsPointer|ShamanFWalk,0x81dd888
 Druid,0x81dd9e0,0x81de2c4
-Druid (F),0x81dd9e0,0x81de2c4
+Druid (F),IsPointer|DruidFWalk,0x81de2c4
 Summoner,0x81de41c,0x81dec38
 Bonewalker (S),0x81f0830,0x81f1080
 Rogue,0x81ded90,0x81df548
@@ -73,8 +73,8 @@ Recruit (1),0x81e06e4,0x81e0e40
 Pegasus Knight (L),0x81e89d0,0x81e96f0
 Falcoknight (SL),0x81e9848,0x81ea5dc
 Cleric,0x81ea734,0x81eaea0
-Troubadour,0x81eaff8,0x81eb99c
-Valkyrie,0x81ebaf4,0x81ec4fc
+Troubadour,IsPointer|TroubadourWalk,0x81eb99c
+Valkyrie,IsPointer|ValkyrieWalk,0x81ec4fc
 Dancer,0x81ec654,0x81ed1c8
 Soldier,IsPointer|SoldierWalk,0x81edbc4
 Soldier (F),IsPointer|SoldierWalk,0x81ee558
@@ -131,7 +131,7 @@ Brigand (F),IsPointer|BrigandFWalk,0x81e582c
 0x82,IsPointer|SoldierWalk,0x81edbc4
 0x83,IsPointer|SoldierWalk,0x81edbc4
 0x84,IsPointer|SoldierWalk,0x81edbc4
-0x85,IsPointer|SoldierWalk,0x81edbc4
+Dracoknight_SA,IsPointer|DracoknightSwordWalk,0x81d5e58
 0x86,IsPointer|SoldierWalk,0x81edbc4
 0x87,IsPointer|SoldierWalk,0x81edbc4
 0x88,IsPointer|FighterFWalk,0x81e4340
