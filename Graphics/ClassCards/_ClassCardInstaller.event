@@ -218,3 +218,11 @@ ALIGN 4
 PaladinAxeClassCardPal:
 #incbin "DMP/PaladinAxe(MeatOfJustice).png_pal.dmp"
 setCardEntry(PaladinAxeClassCard, PaladinAxeClassCardData, PaladinAxeClassCardPal)
+
+ALIGN 4
+HalberdierClassCardData:
+#incbin "DMP/Halberdier(TBA).dmp"
+ALIGN 4
+HalberdierClassCardPal:
+#incbin "DMP/Halberdier(TBA).png_pal.dmp"
+setCardEntry(HalberdierClassCard, HalberdierClassCardData, HalberdierClassCardPal)

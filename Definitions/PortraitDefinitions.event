@@ -41,3 +41,4 @@
 #define DracoknightAxeClassCard 0xC0
 #define PaladinSwordClassCard 0xC1
 #define PaladinAxeClassCard 0xC2
+#define HalberdierClassCard 0xC3

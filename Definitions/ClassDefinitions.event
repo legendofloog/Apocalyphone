@@ -5,7 +5,7 @@
 
 //Unimplemented* - Must stay defined as highly likely to be used
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
-//Summoner (F), Valkyrie (M), Scout/Ranger (F)
+//Summoner (F), Troubdadour/Valkyrie (M), Scout/Ranger (F)
 //ID's up to 0x8F are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 //50 is left free for fleet but it will need to have stats created for it
@@ -78,19 +78,18 @@
 #define Champion 0x7E
 #define Champion_F 0x7F
 
-#define Troubadour_M 0x86 //unimplemented
+#define Troubadour_M 0x86 //unimplemented (May not need to be implemented)
 #define Monk_F 0x83 //unimplemented
-#define Valkyrie_M 0x84 //unimplemented
+#define Valkyrie_M 0x84 //unimplemented (May not need to be implemented)
 #define Rogue_F 0x8F //unimplemented
 
-/*
+
 //all unimplemented
 #define WarMonk 0x8A
 #define WarMonk_F 0x8B
+#define WarCleric WarMonk_F
 #define Spellblade 0x8C
 #define Spellblade_F 0x8D
-
-*/
 
 //Nicknames/Altnames
 #define Cav_S Cavalier_S
@@ -147,11 +146,11 @@
 //Class To-Do List
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group A1:
-	Merc	Y		Y	Y		Vanilla	Y
+	Merc	Y		Y	Y		N		Y
 	MercF	Y		Y	N/A		N		Y
 	Myrm	Y		Y	Y		Y		Y
 	MyrmF	Y		Y	N/A		Y		Y
-	Thief	Y		Y	Y		Vanilla	Y
+	Thief	Y		Y	Y		N		Y
 	ThiefF	Y		Y	N/A		Y		Y
 	Sold	Y		Y	Y		Y		Y
 	SoldF	N*		N	N/A		N		N
@@ -182,33 +181,33 @@
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group A2:
-	Hero    Y
-	HeroF	Y
-	Sword 	Y
-	SwordF	Y
-	Rogue 	Y
-	RogueF 	
-	Halb 	Y
-	Champ 	Y
-	ChampF 	Y
-	Warr 	Y
-	WarrF
-	Zerkr 	Y
-	ZerkrF
-	Sniper 	Y
-	SniprF 	Y
-	Ranger 	Y
-	PalSA 	Y
-	PalSL 	Y
-	PalLA 	Y
-	Gen 	Y
-	GreatK	Y
-	FalcSA
-	FalcSL 	Y
-	FalcLA
-	DracSA  Y
-	DracSL 	Y
-	DracLA 	Y
+	Hero    Y 		Y 	Y 		N 		Y
+	HeroF	Y 		Y 	N/A 	N  		Y
+	Sword 	Y 		Y 	Y 		Y 		Y*
+	SwordF	Y  		Y 	N/A		Y 		Y*
+	Rogue 	Y 		Y 	Y 		Mb 		N
+	RogueF 	N 		N  	N/A		N  		N
+	Halb 	Y 		Y 	Y 		N  		N
+	Champ 	Y 		Y 	Y 		N 		Y
+	ChampF 	Y 		N  	N/A 	N 		Y
+	Warr 	Y 		Y 	Y 		N 		Y
+	WarrF 	N 		N 	N/A		N 		N
+	Zerkr 	Y 		Y 	Y 		Y 		Y*
+	ZerkrF 	N 		N 	N/A 	N 		N
+	Sniper 	Y 		Y 	Y 		Y* 		Y
+	SniprF 	Y 		Y 	N/A 	Y* 		Y
+	Ranger 	Y 		Y 	Y 		Y 		Y
+	PalSA 	Y 		Y 	Y 		N 		Y
+	PalSL 	Y 		Y 	Y 		N 		Y
+	PalLA 	Y 		Y 	Y 		N 		Y
+	Gen 	Y 		Y 	Y 		Y 		Y
+	GreatK	Y 		Y 	Y 		N 		Y
+	FalcSA 	N 		N 	N 		N 		N
+	FalcSL 	Y 		Y 	Y 		N 		Y
+	FalcLA 	N 		N 	N 		N 		N
+	DracSA  Y 		Y 	Y 		N 		Y
+	DracSL 	Y 		Y 	Y 		N 		Y
+	DracLA 	Y 		Y 	Y 		N 		Y
 
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
@@ -222,7 +221,7 @@
 	Priest	Y		Y	Y		Vanilla	Y
 	Cleric	Y		Y	N/A		Vanilla	Y
 	Troub	Y		Y	Y		Y		Y
-	TroubM	N		N	N/A		N		N
+	TroubM*	N		N	N/A		N		N
 	Rev		Y		Y	Y		Y		Y
 	BoneS	Y		Y	Y		Y		Y
 	BoneL	Y		Y	Y		Y		Y
@@ -235,9 +234,49 @@
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group B2:
+	Sage 	Y 		Y 	Y 		N 		Y 		Y
+	SageF 	Y 		Y 	N/A 	N 		Y
+	Druid 	Y 		Y 	Y 		Y 		Y
+	DruidF 	Y 		Y 	N/A 	Y 		Y
+	Summon 	Y 		Y 	Y 		Y 		Y
+	Bishop  Y 		Y 	Y 		N 		Y*
+	BishopF Y 		Y 	N/A 	N 		Y*
+	Valk 	Y 		Y 	Y 		Y 		Y
+	ValkM* 	N 		N 	N/A		N 		N
+	Reven 	Y 		Y 	Y 		Vanilla Y
+	Wight 	Y 		Y 	Y 		Vanilla Y
+	WightB 	Y 		Y 	Y 		Vanilla Y
+	Balor 	Y 		Y 	Y 		Y 		Y
+	Gwyll 	Y 		Y 	Y 		Vanilla Y 		Y
+	Mael 	Y 		Y 	Y 		Vanilla	Y 		Y
+	DeathG 	Y 		Y 	Y 		Vanilla Y 		Y
+	EBael  	Y 		Y 	Y 		Vanilla Y 		Y
+	Gorgon  Y 		Y 	Y 		Vanilla Y 		Y
+	Cyclops Y 		Y 	Y 		Vanilla Y 		Y
+	Necro   Where is the stat booster??
+
+Necro
+	70/28/30/22/15/10/28/20   5/25
+
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group C:
+	MageKn
+	MageKnF
+	Ass
+	AssF
+	WyvKS
+	WyvKL
+	WyvKA
+	WarMonk
+	WarCler
+	Spellbld
+	ManaA
+	ManaB
+	ManaA2
+	ManaB2
+	Phantom
+
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group D:
