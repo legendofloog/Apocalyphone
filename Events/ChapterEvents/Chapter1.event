@@ -432,13 +432,14 @@ EnemyUnitsTestD2:
 	UNIT TestEnemy Paladin_SL ONeill Level(1,Enemy,True) [7,11] 0x0 [IronSword,SteelSword,SteelLance,SteelHalberd] NoAI
 	UNIT TestEnemy Falcoknight_SL ONeill Level(1,Enemy,True) [8,11] 0x0 [IronLance] NoAI
 	UNIT TestEnemy Champion ONeill Level(1,Enemy,True) [9,11] 0x0 [IronLance,IronSword,SteelBlade,SteelHalberd] NoAI
-	UNIT TestEnemy Sage ONeill Level(1,Enemy,True) [10,11] 0x0 [Fire,Thunder,Wind,Shaver] NoAI
-	UNIT TestEnemy Druid ONeill Level(1,Enemy,True) [11,11] 0x0 [Flux,Dusk,Umbra,Elfire] NoAI
-	UNIT TestEnemy Cyclops ONeill Level(5,Enemy,True) [12,11] 0x0 [IronAxe,IronPoleaxe] NoAI
+	UNIT TestEnemy Sage ONeill Level(1,Enemy,True) [10,11] 0x0 [Cleanse,Purge,Bolting] NoAI
+	UNIT TestEnemy Druid ONeill Level(1,Enemy,True) [11,11] 0x0 [Flux,Dusk,Umbra,Eclipse] NoAI
+	UNIT TestEnemy Cyclops ONeill Level(5,Enemy,True) [12,11] 0x0 [IronAxe,IronPoleaxe,Rations] NoAI
 	UNIT TestEnemy Entombed ONeill Level(1,Enemy,True) [13,11] 0x0 [RottenClaw,FetidClaw] NoAI
 	UNIT TestEnemy Wight_SL ONeill Level(1,Enemy,True) [14,11] 0x0 [IronSword,SteelSword,SteelLance,SteelHalberd] NoAI
 	//UNIT TestEnemy Necrodragon ONeill Level(1,Enemy,True) [14,11] 0x0 [WretchedAir] NoAI
 	//UNIT TestEnemy ElderBael ONeill Level(1,Enemy,True) [0,13] 0x0 [SharpClaw] NoAI
+	UNIT TestEnemy Valkyrie ONeill Level(1,Enemy,True) [1,13] 0x0 [Lightning,Restore,MemberCard,SilverCard] NoAI
 	UNIT
 
 //11R6, 10R5, 12R5, 10R3, 13R7

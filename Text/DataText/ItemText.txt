@@ -229,6 +229,9 @@ Immobilizes opponents.[X]
 ## CleanseName
 Cleanse[X]
 
+## AircaliburName
+Aircalibur[X]
+
 ## CombustionName
 Combustion[X]
 
@@ -320,6 +323,14 @@ Restores vast HP to allies.[X]
 
 ## RecoverUseText
 Restores vast HP.[X]
+
+## PhysicDesc 
+Restores moderate HP to[N]
+allies at a distance.[X]
+
+## FortifyDesc
+Restores moderate HP to[N]
+all allies nearby.[X]
 
 ## UnlockDesc
 Opens locks, even from[N]

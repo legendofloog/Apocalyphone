@@ -8,3 +8,7 @@ POP
 ALIGN 4
 ItemIconSheet:
 #incbin "DMP/ItemIconSheet.dmp"
+
+//Try not to replace the weapon icon sprites, they are unused ingame, but they are used by the vesly debugger
+//Affinities and mount icons are not a problem, its just the debugger wexp menu
+//They can be replaced if we run out of space though
