@@ -432,7 +432,7 @@ EnemyUnitsTestD2:
 	UNIT TestEnemy Paladin_SL ONeill Level(1,Enemy,True) [7,11] 0x0 [IronSword,SteelSword,SteelLance,SteelHalberd] NoAI
 	UNIT TestEnemy Falcoknight_SL ONeill Level(1,Enemy,True) [8,11] 0x0 [IronLance] NoAI
 	UNIT TestEnemy Champion ONeill Level(1,Enemy,True) [9,11] 0x0 [IronLance,IronSword,SteelBlade,SteelHalberd] NoAI
-	UNIT TestEnemy Sage ONeill Level(1,Enemy,True) [10,11] 0x0 [Fire,Thunder,Elfire,Shine] NoAI
+	UNIT TestEnemy Sage ONeill Level(1,Enemy,True) [10,11] 0x0 [Fire,Thunder,Wind,Shaver] NoAI
 	UNIT TestEnemy Druid ONeill Level(1,Enemy,True) [11,11] 0x0 [Flux,Dusk,Umbra,Elfire] NoAI
 	UNIT TestEnemy Cyclops ONeill Level(5,Enemy,True) [12,11] 0x0 [IronAxe,IronPoleaxe] NoAI
 	UNIT TestEnemy Entombed ONeill Level(1,Enemy,True) [13,11] 0x0 [RottenClaw,FetidClaw] NoAI

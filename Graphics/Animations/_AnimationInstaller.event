@@ -38,3 +38,7 @@
 	#include "Anims/Cavalier/AxeInstaller.event"
 	#include "Anims/Cavalier/HandaxeInstaller.event"
 }
+{
+	#include "Anims/Champion/SwordInstaller.event"
+	#include "Anims/Champion/LanceInstaller.event"
+}
