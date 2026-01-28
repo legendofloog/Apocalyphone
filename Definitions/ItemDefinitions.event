@@ -12,9 +12,9 @@
 #define SwiftSword 0x0A
 #define RubySword 0xDA
 #define Claymore Zanbato
-//#define ??? 0x85 //Legendary ID Sieg //unimplemented
+#define Zweihander 0x85 //Legendary ID Sieg
 #define FlameBlade 0x9B
-#define LunarBlade 0xE3 //unimplemented
+#define LunarBlade 0xE3
 #define LegendarySword 0x91 //Legendary ID
 
 //Lances //all lances defined
@@ -22,10 +22,10 @@
 #define SteelHalberd 0x95
 #define SwiftLance 0x9D
 #define SapphireLance 0xDB
-#define Pike 0x9E //unimplemented
-#define Glaive 0x92 //unimplemented //LegendaryID Sieg
+#define Pike 0x9E
+#define Glaive 0x92//LegendaryID Sieg
 #define SilverHalberd 0xA0
-#define Ahlspeiss 0x78 //unimplemented
+#define Ahlspeiss 0x78
 #define Longinus 0x8E //Legendary ID
 
 //Axes //all axes defined
@@ -35,8 +35,8 @@
 #define SwiftAxe 0x9F
 #define EmeraldAxe 0xDC
 #define ShortAxe 0x2C
-//#define ImposingAxe 0x86 //unimplemented
-//#define BerserkerAxe 0xA4 //unimplemented
+//#define ImposingAxe 0x86
+//#define BerserkerAxe 0xA4
 #define SilverPoleaxe 0xB8
 #define LegendaryAxe 0x93 //Legendary ID
 
@@ -47,29 +47,29 @@
 #define SteelWarbow 0x9B
 #define SwiftBow 0xBE
 #define TrickBow 0xDD
-//#define Spellbane 0xE0 //unimplemented
-//#define Yabusame 0xBF //unimplemented
-#define HeavyBow 0xB7 //juna fruit //unimplemented
+//#define Spellbane 0xE0
+//#define Yabusame 0xBF
+#define HeavyBow 0xB7 //juna fruit
 #define SilverWarbow 0xC0
 #define Greatbow 0xC1
-#define GaleBow 0xCE //unimplemented
+#define GaleBow 0xCE
 #define LegendaryBow 0x94 //Legendary ID
 
 //Anima //all anima defined
 #define Wind 0xCC
 #define Shaver 0xA7
-#define Static 0xCD //unimplemented
+#define Static 0xCD
 #define Cleanse 0xC4
 #undef Aircalibur
 #define Aircalibur 0xEB
-#define Combustion 0x3D //unimplemented
+#define Combustion 0x3D
 #define Dyrnwyn 0x3E //Legendary ID
 
 //Light //all light defined
-#define ImbueTome 0x44 //unimplemented
+#define ImbueTome 0x44
 #define Saggitae 0xC5
 #define Moonlight 0xC6
-#define Guardian 0xC7 //unimplemented
+//#define Guardian 0xC7
 #define Seraphim 0xA5
 #define Sanctus 0x87 //Legendary ID
 
@@ -78,7 +78,7 @@
 #define Umbra 0xC9
 #define Corrupt 0xCA
 #define Verrine 0xA8 //Demon Light
-#define Seer 0xA9 //Ravager
+#define Munio 0xA9 //Ravager
 #define Belial 0x49
 #define Goetia 0x4A //Legendary ID
 
@@ -88,44 +88,44 @@
 #define LegendaryStaff 0x8C //Legendary ID
 
 //Monster Weapons
-#define RipperTalon 0xCF //unimplemented
-#define PiercingTalon 0xD0 //unimplemented
+#define RipperTalon 0xCF
+#define PiercingTalon 0xD0
 #define FieryFang FireFang
-#define RabidFang 0xD1 //unimplemented
-#define LullingEye 0xD2 //unimplemented
+#define RabidFang 0xD1
+#define LullingEye 0xD2
 
-#define PhantomAxe 0xCB //unimplemented
+#define PhantomAxe 0xCB
 
 //Misc
 #define IronDagger 0xC2
 #define VeninDagger 0xDE
 #define SteelDagger 0xC3
-#define MainGauche 0xD3 //unimplemented
-#define Wingclipper 0xE1 //unimplemented
-#define Silencer 0xD4 //unimplemented
-#define SilverDagger 0xD5 //unimplemented
+#define MainGauche 0xD3
+#define Wingclipper 0xE1
+#define Silencer 0xD4
+#define SilverDagger 0xD5
 #define LongBallista IronBallista
 #define Arbalest KillerBallista
-#define RainBallista 0xB6 //unimplemented
+#define RainBallista 0xB6
 
 //Items
 #define SpiritDust 0xA3
-#define SecretSeal 0x8A //unimplemented
+#define SecretSeal 0x8A
 #define Rations 0xA2
 #define EnergyHerbs 0xE2
 #define GreenGem 0xBB
 #define TseScroll MetissTome
-#define Might 0x7D //unimplemented
-#define Grace 0x7E //unimplemented
-#define Ire 0x7F //unimplemented
-#define Litany 0x80 //unimplemented
-//#define TonicSlot 0x9A //unimplemented, just booking the definition
+#define Might 0x7D
+#define Grace 0x7E
+#define Ire 0x7F
+#define Litany 0x80
+//#define TonicSlot 0x9A
 
 //Equippables
 #define IronRune 0x7C
-#define HoplonGuard 0xD6 //unimplemented
-/*#define BaliusWard 0xD7 //unimplemented
-#define GlaedrCharm 0xD8 //unimplemented
+#define HoplonGuard 0xD6
+/*#define BaliusWard 0xD7
+#define GlaedrCharm 0xD8
 #define DarkIdol 0xD9 //Don't bother defining til someone uses it if they even want to use it*/
 #define IronShield 0xE4
 #define SteelShield 0xE5
@@ -133,75 +133,3 @@
 #define RuneShield 0xE8
 #define HexlockShield 0xE9
 #define PrayerRing 0xEA
-
-/*Items Implemented
-Key: A = W Assets, S = Spell Anims, T = Tested In-Game, U = Used In-Game
-
-Iron Sword - AST
-Slim Sword - AST
-Iron Blade - AST
-Steel Sword - AST
-Steel Blade - AST
-Claymore - AST
-Armourslayer - AS
-Shadowkiller - AST
-Poison Sword - AST
-Killing Edge - AST
-Swift Sword* - S
-Light Brand - AST
-Lancereaver - AST
-Iron Lance - AST
-Slim Lance - AST
-Iron Halberd - AST
-Steel Lance - AST
-Steel Halberd - AST
-Javelin - AST
-Horseslayer - AST
-Bright Lance - AST
-Toxin Lance - AST
-Killer Lance - AST
-Swift Lance - S
-Short Spear - AST
-Axereaver - AST
-Iron Axe - AST
-Slim Axe - AST
-Iron Poleaxe - AST
-Steel Axe - AST
-Steel Poleaxe - AST
-Hand Axe - AST
-Short Axe - AST
-Hammer - AST
-Fiendcleaver - AST
-Poison Axe - AST
-Killer Axe - AST
-Swift Axe - S
-Swordreaver -AST
-Devil Axe - AS
-Iron Bow - AST
-Slim Bow - AST
-Iron Warbow - AST
-Steel Bow - AST
-Steel Warbow - AT
-Shortbow - AST
-Longbow - AST
-Beacon Bow - AST
-Venin Bow - AST
-Killer Bow - AST
-Swift Bow - S
-Wind - AT
-Fire - AST
-Thunder - AST
-Lightning - AST
-Shine - AST
-Flux - AST
-Dusk - AST
-Luna - AS*T
-Heal - AST
-Mend - AST
-
-Iron Dagger* - AS*T
-
-Rotten Claw - AST
-Sharp Claw - AST
-Fiery Fang - AST
-Evil Eye - AST */
