@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //When defining skills here, if they are default skillsys skills make sure to comment them out in skill_definitions_old.event
 
-//Skills Used: 1-27
+//Skills Used: 1-28
 
 #include "skill_definitions_old.event"
 
@@ -111,6 +111,10 @@
 	//Galeforce: Move again after attacking and defeating an enemy.
 	//Author Unknown (Initial Commit)
 	#define GaleforceID 17
+
+	//Desperation: If HP < 50%, double attacks occur immediately.
+	//By ??? (Initial Commit)
+	#define DesperationID 28
 
 //Equipment Skills
 
