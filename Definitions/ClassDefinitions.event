@@ -113,6 +113,8 @@
 
 #define Lancer Freelancer
 
+#define Phantom GhostFighter
+
 //Enemy Classes
 #define Bonewalker_S 0x32
 #define Bonewalker_B 0x55
@@ -226,7 +228,7 @@
 	BoneS	Y		Y	Y		Y		Y
 	BoneL	Y		Y	Y		Y		Y
 	BoneB	Y		Y	Y		Y		Y
-	Mog`	Y		Y	Y		Y		Y
+	Mog 	Y		Y	Y		Y		Y
 	Doog	Y		Y	Y		Y		Y
 	Tarv 	Y		Y	Y		Y		Y
 	Goyle	Y		Y	Y		Y		Y
@@ -243,9 +245,9 @@
 	BishopF Y 		Y 	N/A 	N 		Y*
 	Valk 	Y 		Y 	Y 		Y 		Y
 	ValkM* 	N 		N 	N/A		N 		N
-	Reven 	Y 		Y 	Y 		Vanilla Y
-	Wight 	Y 		Y 	Y 		Vanilla Y
-	WightB 	Y 		Y 	Y 		Vanilla Y
+	Reven 	Y 		Y 	Y 		N 		Y
+	Wight 	Y 		Y 	Y 		N 		Y
+	WightB 	Y 		Y 	Y 		N 		Y
 	Balor 	Y 		Y 	Y 		Y 		Y
 	Gwyll 	Y 		Y 	Y 		Vanilla Y 		Y
 	Mael 	Y 		Y 	Y 		Vanilla	Y 		Y
@@ -261,15 +263,15 @@ Necro
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group C:
-	MageKn
-	MageKnF
-	Ass
-	AssF
-	WyvKS
-	WyvKL
-	WyvKA
-	WarMonk
-	WarCler
+	MageKn 	Y 		Y 	Y 		Y 		Y  		Y
+	MageKnF Y 		Y 	N/A		Y 		Y 		Y
+	Ass     Y 		Y 	Y 		N 		N  		Y
+	AssF 	N 		Y 	N/A		N 		N  		Y
+	WyvKS 	Y 		N 	N 		N 		Y 		Y
+	WyvKL 	Y 		Y 	Y 		Vanilla Y 		Y
+	WyvKA 	Y 		Y 	Y 		N 		N 		N
+	WarMonk N 		Y 	Y 		N 		N 		N
+	WarCler N 		Y 	N/A 	N 		N 		N
 	Spellbld
 	ManaA
 	ManaB

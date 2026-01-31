@@ -38,10 +38,10 @@ Wyvern Knight (L),1,5,25,1
 Wyvern Knight (S),1,5,25,1
 Mage,7,40,20,0
 Mage (F),7,40,20,0
-Sage,9,40,30,1
-Sage (F),9,40,30,1
+Sage,10,40,30,1
+Sage (F),10,40,30,1
 Mage Knight,9,45,30,1
-Mage Knight (F),8,40,30,1
+Mage Knight (F),9,45,30,1
 Bishop,10,45,30,1
 Bishop (F),10,45,30,1
 Shaman,9,60,20,0

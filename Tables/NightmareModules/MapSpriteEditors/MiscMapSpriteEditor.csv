@@ -133,11 +133,11 @@ Brigand (F),IsPointer|BrigandFWalk,0x81e582c
 0x84,IsPointer|SoldierWalk,0x81edbc4
 Dracoknight_SA,IsPointer|DracoknightSwordWalk,0x81d5e58
 0x86,IsPointer|SoldierWalk,0x81edbc4
-0x87,IsPointer|SoldierWalk,0x81edbc4
+0x87,IsPointer|WyvernKnightAxeWalk,0x81d7cc8
 0x88,IsPointer|FighterFWalk,0x81e4340
 0x89,IsPointer|SoldierWalk,0x81edbc4
-0x8a,IsPointer|SoldierWalk,0x81edbc4
-0x8b,IsPointer|SoldierWalk,0x81edbc4
+0x8a,IsPointer|WarMonkWalk,0x81edbc4
+0x8b,IsPointer|WarClericWalk,0x81edbc4
 0x8c,IsPointer|SoldierWalk,0x81edbc4
 0x8d,IsPointer|SoldierWalk,0x81edbc4
 Halberdier,IsPointer|HalberdierWalk,0x81edbc4

@@ -61,6 +61,12 @@
 
 #define PaladinAxeStandID 0x7C
 
-#define TroubadourStand 0x3C
+#define TroubadourStandID 0x3C
 
-#define ValkyrieStand 0x3D
+#define ValkyrieStandID 0x3D
+
+#define WyvernKnightAxeStandID 0x7D
+
+#define WarMonkStandID 0x7E
+
+#define WarClericStandID 0x7F

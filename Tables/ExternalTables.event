@@ -107,3 +107,16 @@ AffinityEntry(9, 0, 0, 0, 0, 0, 0) //Metal
 AffinityEntry(10, 0, 0, 0, 0, 0, 0) //Luna
 AffinityEntry(11, 0, 0, 0, 0, 0, 0) //Sol
 AffinityEntry(0, 0, 0, 0, 0, 0, 0) //Terminator
+
+//PromoBonusTable
+#define UnitPromotionEntry(charID, hpBonus, strBonus,magBonus,sklBonus,spdBonus,defBonus,resBonus,lukBonus,conBonus, swdWex, lncWex, axeWex, bowWex, aniWex, lgtWex, drkWex, stfWex) "BYTE charID hpBonus strBonus magBonus sklBonus spdBonus defBonus resBonus lukBonus conBonus swdWex lncWex axeWex bowWex aniWex lgtWex drkWex stfWex"
+
+ALIGN 4
+UnitPromotionEntries:
+//UnitPromotionEntry(charID, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+UnitPromotionEntry(Eirika, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRank, 0, 0, DRank, 0, 0, 0, 0)
+UnitPromotionEntry(Enea, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, 0, 0)
+UnitPromotionEntry(Dayton, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, DRank, DRank, 0, 0, 0, 0, 0)
+UnitPromotionEntry(Matteo, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, ERankPlus, 0, 0, 0, 0)
+UnitPromotionEntry(Iva, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, 0, 0, 0, 0, 0)
+UnitPromotionEntry(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) //Terminator

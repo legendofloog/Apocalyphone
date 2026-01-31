@@ -247,3 +247,27 @@ ValkStand:
 ALIGN 4
 ValkyrieWalk:
 #incbin "DMP/ValkyrieWalk(CelestiaHeart).dmp"
+
+ALIGN 4
+WyvernKnightAxeStand:
+#incbin "DMP/WyvernKnightAxeStand(ArcaneEli).dmp"
+
+ALIGN 4
+WyvernKnightAxeWalk:
+#incbin "DMP/WyvernKnightAxeWalk(ArcaneEli).dmp"
+
+ALIGN 4
+WarMonkStand:
+#incbin "DMP/WarMonkStand(Der).dmp"
+
+ALIGN 4
+WarMonkWalk:
+#incbin "DMP/WarMonkWalk(Der).dmp"
+
+ALIGN 4
+WarClericStand:
+#incbin "DMP/WarClericStand(Der).dmp"
+
+ALIGN 4
+WarClericWalk:
+#incbin "DMP/WarClericWalk(Der).dmp"
