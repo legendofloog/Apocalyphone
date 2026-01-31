@@ -1,6 +1,7 @@
 #include "gbafe.h"
 #include "magic.h"
-struct PromotionEntry
+
+struct PromotionBonuses
 {
   u8 charID;
   u8 hpBonus;
@@ -10,7 +11,7 @@ struct PromotionEntry
   u8 spdBonus;
   u8 defBonus;
   u8 resBonus;
-  u8 lukBonus;
+  u8 lckBonus;
   u8 conBonus;
   u8 swdWexp;
   u8 lncWexp;
@@ -23,8 +24,7 @@ struct PromotionEntry
   u8 _pad[2];
 };
 
-extern struct PromotionEntry UnitPromotionEntries[];
-
+extern const struct PromotionBonuses UnitPromotionBonusTable[];
 
 //not sure what if anything needs to change here?
 void ExecUnitPromotion(struct Unit* unit, u8 classId, int itemIdx, s8 unk) {
@@ -63,17 +63,76 @@ void ExecUnitPromotion(struct Unit* unit, u8 classId, int itemIdx, s8 unk) {
     return;
 }
 
-//Planned changes
-//void ApplyUnitPromotion(struct Unit* unit, u8 classId){
-//    const struct ClassData* promotedClass = GetClassData(classId);
-//    //get the unit name
-//    //use name to for loop table of promo bonuses including HP, Str, Mag, Skl, Spd, Lck, Def, Res, Wexp
-//    //Con and mov seem to be handled by just changing the class, need to find a way to do con manually
-//    //save promo bonuses as variables and then apply
-//    //reset level and maybe exp
-//    //keep ewan thing i guess 
-//}
 
+const struct PromotionBonuses* GetUnitPromotionBonuses(struct Unit* unit)
+{
+    for (int i = 0; UnitPromotionBonuses[i].charID != 0; i++)
+    {
+        if (UnitPromotionBonuses[i].charID == unit->pCharacterData->number) { return &UnitPromotionBonuses[i]; }
+    }
+
+    return NULL;
+}
+
+void ApplyUnitPromotionSpecific(struct Unit* unit, const struct ClassData* promotedClass, const struct PromotionBonuses* bonuses)
+{
+    unit->maxHP += bonuses->hpBonus;
+    if (unit->maxHP > promotedClass->maxHP) { unit->maxHP = promotedClass->maxHP; }
+
+    unit->pow += bonuses->strBonus;
+    if (unit->pow > promotedClass->maxPow) { unit->pow = promotedClass->maxPow; }
+
+    unit->skl += bonuses->sklBonus;
+    if (unit->skl > promotedClass->maxSkl) { unit->skl = promotedClass->maxSkl; }
+
+    unit->spd += bonuses->spdBonus;
+    if (unit->spd > promotedClass->maxSpd) { unit->spd = promotedClass->maxSpd; }
+
+    unit->def += bonuses->defBonus;
+    if (unit->def > promotedClass->maxDef) { unit->def = promotedClass->maxDef; }
+
+    unit->res += bonuses->resBonus;
+    if (unit->res > promotedClass->maxRes) { unit->res = promotedClass->maxRes; }
+
+    unit->lck += bonuses->lckBonus;
+    if (unit->lck > 30) { unit->lck = 30; }
+
+    unit->conBonus += bonuses->conBonus; 
+    // uh idk how you are capping con in your project so add that here
+
+    unit->ranks[ITYPE_SWORD] += bonuses->swdWexp;
+    if (unit->ranks[ITYPE_SWORD] > WPN_EXP_S) { unit->ranks[ITYPE_SWORD] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_LANCE] += bonuses->lncWexp;
+    if (unit->ranks[ITYPE_LANCE] > WPN_EXP_S) { unit->ranks[ITYPE_LANCE] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_AXE] += bonuses->axeWexp;
+    if (unit->ranks[ITYPE_AXE] > WPN_EXP_S) { unit->ranks[ITYPE_AXE] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_BOW] += bonuses->swdWexp;
+    if (unit->ranks[ITYPE_BOW] > WPN_EXP_S) { unit->ranks[ITYPE_BOW] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_ANIMA] += bonuses->aniWexp;
+    if (unit->ranks[ITYPE_ANIMA] > WPN_EXP_S) { unit->ranks[ITYPE_ANIMA] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_LIGHT] += bonuses->lgtWexp;
+    if (unit->ranks[ITYPE_LIGHT] > WPN_EXP_S) { unit->ranks[ITYPE_LIGHT] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_DARK] += bonuses->drkWexp;
+    if (unit->ranks[ITYPE_DARK] > WPN_EXP_S) { unit->ranks[ITYPE_DARK] = WPN_EXP_S; }
+
+    unit->ranks[ITYPE_STAFF] += bonuses->stfWexp;
+    if (unit->ranks[ITYPE_STAFF] > WPN_EXP_S) { unit->ranks[ITYPE_STAFF] = WPN_EXP_S; }
+
+    unit->pClassData = promotedClass;
+
+    unit->level = 1;
+    unit->exp = 0;
+
+    unit->curHP += bonuses->hpBonus;
+    if (unit->curHP > unit->maxHP) { unit->curHP = unit->maxHP; }
+
+}
 
 void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
     const struct ClassData* promotedClass = GetClassData(classId);
@@ -82,6 +141,12 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
     int promClassId = promotedClass->number;
 
     int i;
+
+    const struct PromotionBonuses* bonuses = GetUnitPromotionBonuses(unit);
+    if (bonuses) { 
+        ApplyUnitPromotionSpecific(unit, promotedClass, bonuses); 
+        return; 
+    }
 
     // Apply stat ups
 
@@ -139,40 +204,10 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
         unit->ranks[ITYPE_ANIMA] = 0;
 
     unit->level = 1;
-    //I could comment this out? maybe? that would be awesome
     unit->exp   = 0;
 
     unit->curHP += promotedClass->promotionHp;
 
     if (unit->curHP > GetUnitMaxHp(unit))
         unit->curHP = GetUnitMaxHp(unit);
-}
-
-
-//Wip code, its not good
-void ApplyUnitPromotionNew(struct Unit* unit, u8 classId){
-
-    const struct ClassData* promotedClass = GetClassData(classId);
-
-    int baseClassId = unit->pClassData->number;
-    int promClassId = promotedClass->number;
-    int unitCharId = unit->pCharacterData->number;
-
-    int i = 0;
-
-    //Find unit stat ups
-    while(true){
-        u8 character = UnitPromotionEntries[i];
-        if(unitCharId == character){
-            //break
-            //grab bonuses from entry
-        }
-        if (character = 0){
-            break;
-        }
-        i++;
-    }
-
-void GetUnitPromotionEntry(struct Unit* unit){
-    //code goes here
 }

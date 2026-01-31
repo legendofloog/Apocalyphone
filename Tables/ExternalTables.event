@@ -112,7 +112,7 @@ AffinityEntry(0, 0, 0, 0, 0, 0, 0) //Terminator
 #define UnitPromotionEntry(charID, hpBonus, strBonus,magBonus,sklBonus,spdBonus,defBonus,resBonus,lukBonus,conBonus, swdWex, lncWex, axeWex, bowWex, aniWex, lgtWex, drkWex, stfWex) "BYTE charID hpBonus strBonus magBonus sklBonus spdBonus defBonus resBonus lukBonus conBonus swdWex lncWex axeWex bowWex aniWex lgtWex drkWex stfWex"
 
 ALIGN 4
-UnitPromotionEntries:
+UnitPromotionBonusTable:
 //UnitPromotionEntry(charID, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 UnitPromotionEntry(Eirika, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRank, 0, 0, DRank, 0, 0, 0, 0)
 UnitPromotionEntry(Enea, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, 0, 0)
