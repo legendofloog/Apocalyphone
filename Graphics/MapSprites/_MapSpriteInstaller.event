@@ -271,3 +271,27 @@ WarClericStand:
 ALIGN 4
 WarClericWalk:
 #incbin "DMP/WarClericWalk(Der).dmp"
+
+ALIGN 4
+SpellbladeStand:
+#incbin "DMP/SpellbladeStand(L95).dmp"
+
+ALIGN 4
+SpellbladeWalk:
+#incbin "DMP/SpellbladeWalk(L95).dmp"
+
+ALIGN 4
+SpellbladeFStand:
+#incbin "DMP/SpellbladeFStand(L95,Leif).dmp"
+
+ALIGN 4
+SpellbladeFWalk:
+#incbin "DMP/SpellbladeFWalk(L95,Leif).dmp"
+
+ALIGN 4
+RogueFStand:
+#incbin "DMP/RogueFStand(Unknown).dmp"
+
+ALIGN 4
+RogueFWalk:
+#incbin "DMP/RogueFWalk(Unknown).dmp"

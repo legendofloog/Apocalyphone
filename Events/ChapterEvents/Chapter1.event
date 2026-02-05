@@ -271,7 +271,7 @@ EndingScene:
 
 BeginningSceneTest:
 	ENUT 0xB
-	LOAD1 0x1 EnemyUnitsTestC
+	LOAD1 0x1 EnemyUnitsTestA2
 	LOAD1 0x0 Units1Test
 	//GiveGold(99999)
 	//GoToPrepScreen2
@@ -423,9 +423,7 @@ EnemyUnitsTestC:
 	UNIT TestEnemy Necrodragon ONeill Level(1,Enemy,True) [4,17] 0x0 [WretchedAir] NoAI
 	UNIT TestEnemy General ONeill Level(1,Enemy,True) [5,17] 0x0 [IronLance] NoAI
 	UNIT TestEnemy Swordmaster ONeill Level(1,Enemy,True) [6,17] 0x0 [IronSword] NoAI
-	UNIT TestEnemy Rogue ONeill Level(1,Enemy,True) [7,17] 0x0 [IronDagger] NoAI
-	//Wyvern Rider SLA, Assassin, Mage Knight, War Monk/Cleric, Spellsword, Manakete, Phantom
-	//Add respective alt classes, draco, rogue, sage, valk, bishop, warrior, fighter
+	UNIT TestEnemy Rogue_F ONeill Level(1,Enemy,True) [7,17] 0x0 [IronDagger] NoAI
 	UNIT
 
 EnemyUnitsTestD2:

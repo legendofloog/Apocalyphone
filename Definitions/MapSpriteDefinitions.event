@@ -70,3 +70,9 @@
 #define WarMonkStandID 0x7E
 
 #define WarClericStandID 0x7F
+
+#define SpellbladeStandID 0x80
+
+#define SpellbladeFStandID 0x81
+
+#define RogueFStandID 0x82

@@ -255,3 +255,9 @@ War Cleric[X]
 
 ## WarMonkClericDesc
  [X]
+
+## SpellbladeName
+Spellblade[X]
+
+## SpellbladeDesc
+ [X]
