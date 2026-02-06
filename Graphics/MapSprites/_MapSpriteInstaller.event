@@ -295,3 +295,19 @@ RogueFStand:
 ALIGN 4
 RogueFWalk:
 #incbin "DMP/RogueFWalk(Unknown).dmp"
+
+ALIGN 4
+SoldierFStand:
+#incbin "DMP/SoldierFStand(Rexacuse,Peerless,Alusq,Warpath).dmp"
+
+ALIGN 4
+SoldierFWalk:
+#incbin "DMP/SoldierFWalk(Rexacuse,Peerless,Alusq,Warpath).dmp"
+
+ALIGN 4
+ChampionFStand:
+#incbin "DMP/ChampionFStand(Spud,DoraDrago).dmp"
+
+ALIGN 4
+ChampionFWalk:
+#incbin "DMP/ChampionFWalk(Spud,DoraDrago).dmp"
