@@ -26,49 +26,12 @@ struct PromotionBonuses
 
 extern const struct PromotionBonuses UnitPromotionBonusTable[];
 
-//not sure what if anything needs to change here?
-void ExecUnitPromotion(struct Unit* unit, u8 classId, int itemIdx, s8 unk) {
-
-    if (itemIdx != -1) {
-        gBattleActor.weaponBefore = gBattleTarget.weaponBefore = unit->items[itemIdx];
-    }
-
-    gBattleActor.weapon = gBattleTarget.weapon = GetUnitEquippedWeapon(unit);
-
-    InitBattleUnitWithoutBonuses(&gBattleTarget, unit);
-
-    ApplyUnitPromotion(unit, classId);
-
-    InitBattleUnitWithoutBonuses(&gBattleActor, unit);
-
-    GenerateBattleUnitStatGainsComparatively(&gBattleActor, &gBattleTarget.unit);
-
-    SetBattleUnitTerrainBonusesAuto(&gBattleActor);
-    SetBattleUnitTerrainBonusesAuto(&gBattleTarget);
-
-    if (unk) {
-        unit->state |= US_HAS_MOVED;
-    }
-
-    if (itemIdx != -1) {
-        UnitUpdateUsedItem(unit, itemIdx);
-    }
-
-    gBattleHitArray[0].attributes = 0;
-    gBattleHitArray[0].info = BATTLE_HIT_INFO_END;
-    gBattleHitArray[0].hpChange = 0;
-
-    gBattleStats.config = BATTLE_CONFIG_PROMOTION;
-
-    return;
-}
-
 
 const struct PromotionBonuses* GetUnitPromotionBonuses(struct Unit* unit)
 {
-    for (int i = 0; UnitPromotionBonuses[i].charID != 0; i++)
+    for (int i = 0; UnitPromotionBonusTable[i].charID != 0; i++)
     {
-        if (UnitPromotionBonuses[i].charID == unit->pCharacterData->number) { return &UnitPromotionBonuses[i]; }
+        if (UnitPromotionBonusTable[i].charID == unit->pCharacterData->number) { return &UnitPromotionBonusTable[i]; }
     }
 
     return NULL;
@@ -81,6 +44,9 @@ void ApplyUnitPromotionSpecific(struct Unit* unit, const struct ClassData* promo
 
     unit->pow += bonuses->strBonus;
     if (unit->pow > promotedClass->maxPow) { unit->pow = promotedClass->maxPow; }
+
+    unit->mag += bonuses->magBonus;
+    if (unit->mag > MagClassTable[promotedClass->number].maxMag) {unit->mag = MagClassTable[promotedClass->number].maxMag; }
 
     unit->skl += bonuses->sklBonus;
     if (unit->skl > promotedClass->maxSkl) { unit->skl = promotedClass->maxSkl; }
@@ -97,7 +63,7 @@ void ApplyUnitPromotionSpecific(struct Unit* unit, const struct ClassData* promo
     unit->lck += bonuses->lckBonus;
     if (unit->lck > 30) { unit->lck = 30; }
 
-    unit->conBonus += bonuses->conBonus; 
+    //unit->conBonus += bonuses->conBonus; 
     // uh idk how you are capping con in your project so add that here
 
     unit->ranks[ITYPE_SWORD] += bonuses->swdWexp;
@@ -159,6 +125,11 @@ void ApplyUnitPromotion(struct Unit* unit, u8 classId) {
 
     if (unit->pow > promotedClass->maxPow)
         unit->pow = promotedClass->maxPow;
+
+    unit->mag += MagClassTable[promotedClass->number].promotionMag;
+
+    if (unit->mag > MagClassTable[promotedClass->number].maxMag)
+        unit->mag = MagClassTable[promotedClass->number].maxMag;
 
     unit->skl += promotedClass->promotionSkl;
 
