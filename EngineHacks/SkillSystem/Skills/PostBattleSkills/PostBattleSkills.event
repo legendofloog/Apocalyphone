@@ -64,6 +64,15 @@ POIN GetUnitsInRange
 #include "SavageBlow/SavageBlowEvent.event"
 
 ALIGN 4
+SweepingBlow:
+#incbin "SweepingBlow/sweepingblow.dmp"
+POIN SkillTester
+WORD SweepingBlowID
+POIN SweepingBlowEvent
+POIN GetUnitsInRange
+#include "SweepingBlow/SweepingBlowEvent.event"
+
+ALIGN 4
 BreathOfLife:
 #incbin "BreathOfLife/BreathOfLife.dmp"
 POIN SkillTester

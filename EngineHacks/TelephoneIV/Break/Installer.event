@@ -33,28 +33,10 @@ BYTE 0
 ALIGN 4
 gDebuffTable:
 WORD DebuffTableRam
-ALIGN 4
-/*
-DazzleIDLink:
-BYTE DazzleID
-ALIGN 4
-
-CritthriftIDLink:
-BYTE CritthriftID
-ALIGN 4
-
-PulverizeIDLink:
-BYTE PulverizeID
-ALIGN 4
-
-HandCannonIDLink:
-BYTE HandCannonID
-ALIGN 4
 
 ALIGN 4
-ThornSkillID_Link:
-BYTE ThornSkillID
-*/
+BreakSkillIDLink:
+BYTE BreakSkillID
 
 ALIGN 4
 gRoundCount:

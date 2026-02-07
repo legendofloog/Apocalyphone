@@ -45,6 +45,12 @@ Uses magic at range.[X]
 Imbued with wind magic.[N]
 3x effective against flying units.[X]
 
+## ZweihanderName
+Zweihander[X]
+
+## ZweihanderDesc
+Cannot counter or be countered.[X]
+
 ## ShamshirDesc
 Greatly improves critical[N]
 hit rate.[X]
@@ -99,7 +105,10 @@ Strikes foes surrounding wielder.[X]
 ## SilverHalberdName
 Slv. Halberd[X]
 
-## AhlspeissName
+## PartisanName
+Partisan[X]
+
+## PartisanDesc
 Pierces opponent's defence.[X]
 
 ## LonginusName

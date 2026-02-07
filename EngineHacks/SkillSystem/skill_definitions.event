@@ -3,7 +3,7 @@
 //Skills are categorized broadly by movement, class, personal & weapon.
 //When defining skills here, if they are default skillsys skills make sure to comment them out in skill_definitions_old.event
 
-//Skills Used: 1-28
+//Skills Used: 1-31
 
 #include "skill_definitions_old.event"
 
@@ -115,6 +115,16 @@
 	//Desperation: If HP < 50%, double attacks occur immediately.
 	//By ??? (Initial Commit)
 	#define DesperationID 28
+
+	//Vantage+: User always attacks first, even if attacked. Negates crits.
+	//By SD9k
+	#define VantagePlusID 29
+
+	//Sweeping Blow: Deals ATK / 2 - DEF to adjacent enemies after combat.
+	#define SweepingBlowID 30
+
+	//Break: Allows a unit to Break by default, not using WTA.
+	#define BreakSkillID 31
 
 //Equipment Skills
 

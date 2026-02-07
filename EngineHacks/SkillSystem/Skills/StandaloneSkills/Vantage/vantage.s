@@ -57,19 +57,10 @@ b Normal
 @ ldrb  r0, VantageID
 @ strb  r0, [r3,#4] 
 
-VantagePlus:
+VantagePlus: @ why is this doing anything with crit at all ?
 eor r4,r5
 eor r5,r4
 eor r4,r5
-mov r1, #0x66 @crit
-mov r0, #0
-strh r0, [r4,r1]
-@mov r1, #0x68 @crit avoid
-@mov r0, #0
-@strh r0, [r4,r1]
-mov r1, #0x6A @battle crit
-mov r0, #0
-strh r0, [r4,r1]
 
 Normal:
 str r4, [r6]

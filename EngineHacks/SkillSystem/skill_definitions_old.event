@@ -1058,9 +1058,7 @@
 //By Leonarth
 #define CatchEmAllID 255
 
-//Vantage+: User always attacks first, even if attacked. Negates crits.
-//By SD9k
-#define VantagePlusID 255
+
 
 //Nihil: Cancels the opponent's skills in combat.
 //Author Unknown (Initial Commit)

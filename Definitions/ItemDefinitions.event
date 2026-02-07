@@ -13,7 +13,7 @@
 #define RubySword 0xDA
 #define Claymore Zanbato
 #define Zweihander 0x85 //Legendary ID Sieg
-#define FlameBlade 0x9B
+#define FlameBlade 0xbf
 #define LunarBlade 0xE3
 #define LegendarySword 0x91 //Legendary ID
 
@@ -25,7 +25,7 @@
 #define Pike 0x9E
 #define Glaive 0x92//LegendaryID Sieg
 #define SilverHalberd 0xA0
-#define Ahlspeiss 0x78
+#define Partisan 0x78
 #define Longinus 0x8E //Legendary ID
 
 //Axes //all axes defined

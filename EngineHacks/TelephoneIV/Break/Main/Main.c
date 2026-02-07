@@ -26,10 +26,10 @@ bool DidUnitBreak(){
 		}
 		
 	}
-	//Hand Cannon skill
-	//if (gSkillTester(&gBattleActor.unit,HandCannonIDLink)){
-		//return true;
-	//} 
+	//General Break Skill
+	if (gSkillTester(&gBattleActor.unit,BreakSkillIDLink)){
+		return true;
+	} 
 	
 	//Thorn (Lance) skill
 	//if (gBattleActor.unit.pow > gBattleTarget.unit.pow && gSkillTester(&gBattleActor.unit, ThornSkillID_Link)) {
