@@ -19,4 +19,4 @@ ENDA
 #include "Event/Misc_CHAX/Misc_CHAX.lyn.event"
 #include "Event/Skills/Skills.lyn.event"
 #include "Event/HealAll/HealAll.lyn.event"
-#include "Event/PromotionChanges/PromotionChanges.lyn.event"
+#include "Event/PromotionChanges/PromotionChanges.lyn.event" //By dittosalsa

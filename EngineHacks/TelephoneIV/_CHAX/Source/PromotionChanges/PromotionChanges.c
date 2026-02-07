@@ -91,7 +91,7 @@ void ApplyUnitPromotionSpecific(struct Unit* unit, const struct ClassData* promo
     if (unit->ranks[ITYPE_AXE] > WPN_EXP_S) 
         { unit->ranks[ITYPE_AXE] = WPN_EXP_S; }
 
-    unit->ranks[ITYPE_BOW] += bonuses->swdWexp;
+    unit->ranks[ITYPE_BOW] += bonuses->bowWexp;
     if (unit->ranks[ITYPE_BOW] > WPN_EXP_S) 
         { unit->ranks[ITYPE_BOW] = WPN_EXP_S; }
 

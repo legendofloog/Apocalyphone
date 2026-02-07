@@ -115,8 +115,8 @@ ALIGN 4
 UnitPromotionBonusTable:
 //UnitPromotionEntry(charID, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 UnitPromotionEntry(Trystan, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRank, 0, 0, DRank, 0, 0, 0, 0)
-UnitPromotionEntry(Enea, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, ARank, 0, 0, 0, 0)
+UnitPromotionEntry(Enea, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, 0, 0)
 UnitPromotionEntry(Dayton, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, DRank, DRank, 0, 0, 0, 0, 0)
-UnitPromotionEntry(Matteo, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, ERankPlus, 0, 0, 0, 0)
+UnitPromotionEntry(Matteo, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, ERank, 0, 0, 0, 0)
 UnitPromotionEntry(Iva, 1, 0, 0, 0, 0, 0, 0, 0, 0, DRankPlus, 0, 0, 0, 0, 0, 0, 0)
 UnitPromotionEntry(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) //Terminator
