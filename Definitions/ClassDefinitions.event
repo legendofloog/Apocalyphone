@@ -7,7 +7,7 @@
 //Manaketes will be implemented as used outside of maybe the male adult manakete as that may be used as an enemy.
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Troubdadour/Valkyrie (M), Scout/Ranger (F)
-//ID's up to 0x8F are used
+//ID's up to 0x91 are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 //50 is left free for fleet but it will need to have stats created for it
 
@@ -67,7 +67,7 @@
 #define Warrior_F 0x89 //unimplemented*
 
 #define Brigand_F 0x80
-#define Pirate_F 0x8F //unimplemented
+#define Pirate_F 0x91 //unimplemented
 #define Berserker_F 0x81 //unimplemented
 
 #define Soldier_F 0x4F
@@ -83,6 +83,7 @@
 #define Monk_F 0x83 //unimplemented
 #define Valkyrie_M 0x84 //unimplemented (May not need to be implemented)
 #define Rogue_F 0x8F
+#define DarkKnight 0x90 //unimplemented
 
 
 //all unimplemented
@@ -282,6 +283,7 @@ Necro
 	ManaA2
 	ManaB2
 	Phantom N 		Y 	Y 		N 		N 		Y
+	DKnight
 
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions

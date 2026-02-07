@@ -31,7 +31,7 @@ BYTE 00 00
 ALIGN 4
 
 GeneralSkillList:
-BYTE 255 PersonalityID
+BYTE 1 PersonalityID
 BYTE 00 00
 ALIGN 4
 
@@ -53,12 +53,12 @@ BYTE 00 00
 ALIGN 4
 
 SwordmasterSkillList:
-BYTE 255 CritBoostID
+BYTE 1 CritBoostID
 BYTE 00 00
 ALIGN 4
 
 AssassinSkillList:
-BYTE 255 CunningID
+BYTE 1 CunningID
 BYTE 00 00
 ALIGN 4
 
@@ -104,7 +104,7 @@ BYTE 00 00
 ALIGN 4
 
 BishopSkillList:
-BYTE 255 SlayerID
+BYTE 1 SlayerID
 BYTE 00 00
 ALIGN 4
 
@@ -117,17 +117,17 @@ BYTE 00 00
 ALIGN 4
 
 SummonerSkillList:
-BYTE 255 SummonID
+BYTE 1 SummonID
 BYTE 00 00
 ALIGN 4
 
 RogueSkillList:
-BYTE 255 CunningID
+BYTE 1 CunningID
 BYTE 00 00
 ALIGN 4
 
 GreatKnightSkillList:
-BYTE 255 PersonalityID
+BYTE 1 PersonalityID
 BYTE 00 00
 ALIGN 4
 

@@ -269,9 +269,10 @@ EndingScene:
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //Everything below is for testing purposes!
 
+
 BeginningSceneTest:
 	ENUT 0xB
-	LOAD1 0x1 EnemyUnitsTestC
+	LOAD1 0x1 EnemyUnitsTestA
 	LOAD1 0x0 Units1Test
 	//GiveGold(99999)
 	//GoToPrepScreen2
