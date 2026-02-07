@@ -109,7 +109,7 @@ AffinityEntry(11, 0, 0, 0, 0, 0, 0) //Sol
 AffinityEntry(0, 0, 0, 0, 0, 0, 0) //Terminator
 
 //PromoBonusTable
-#define UnitPromotionEntry(charID, hpBonus, strBonus,magBonus,sklBonus,spdBonus,defBonus,resBonus,lukBonus,conBonus, swdWex, lncWex, axeWex, bowWex, aniWex, lgtWex, drkWex, stfWex) "BYTE charID hpBonus strBonus magBonus sklBonus spdBonus defBonus resBonus lukBonus conBonus swdWex lncWex axeWex bowWex aniWex lgtWex drkWex stfWex"
+#define UnitPromotionEntry(charID, hpBonus, strBonus,magBonus,sklBonus,spdBonus,defBonus,resBonus,lukBonus,conBonus, swdWex, lncWex, axeWex, bowWex, aniWex, lgtWex, drkWex, stfWex) "BYTE charID hpBonus strBonus magBonus sklBonus spdBonus defBonus resBonus lukBonus conBonus swdWex lncWex axeWex bowWex aniWex lgtWex drkWex stfWex 0 0"
 
 ALIGN 4
 UnitPromotionBonusTable:
