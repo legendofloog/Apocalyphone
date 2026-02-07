@@ -116,10 +116,10 @@ void ApplyUnitPromotionSpecific(struct Unit* unit, const struct ClassData* promo
     unit->level = 1;
     unit->exp = 0;
 
-    /*unit->curHP += bonuses->hpBonus;
+    unit->curHP += bonuses->hpBonus;
     if (unit->curHP > unit->maxHP) 
         { unit->curHP = unit->maxHP; }
-        */
+        
 
 }
 
