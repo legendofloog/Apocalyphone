@@ -238,8 +238,26 @@ cursed gaze turn all to stone.[X]
 One-eyed giants boasting inhuman[N]
 strength and durability.[X]
 
-## DracozombieDesc
+## NecrodragonName
+Necrodragon
+
+## NecrodragonDesc
  [X]
 
 ## PhantomDesc
+ [X]
+
+## WarMonkName
+War Monk[X]
+
+## WarClericName
+War Cleric[X]
+
+## WarMonkClericDesc
+ [X]
+
+## SpellbladeName
+Spellblade[X]
+
+## SpellbladeDesc
  [X]

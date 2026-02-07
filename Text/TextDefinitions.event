@@ -592,7 +592,7 @@
 #define GorgonEggDesc $F76
 #define GorgonDesc $F77
 #define CyclopsDesc $F78
-#define DracozombieDesc $F79
+#define NecrodragonName $F79
 #define PhantomDesc $F7A
 #define ClaymoreName $F7B
 #define ArmourslayerName $F7C

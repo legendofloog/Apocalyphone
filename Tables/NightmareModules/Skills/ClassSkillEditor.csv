@@ -29,7 +29,7 @@ Archer (F),SwapID
 Sniper,SwapID
 Sniper (F),SwapID
 Ranger,CantoPlusID
-Horseman,CantoPlusID
+Scout,CantoPlusID
 Wyvern Rider (L),CantoPlusID
 Wyvern Rider (S),CantoPlusID
 Dracoknight (SL),CantoPlusID
@@ -58,10 +58,10 @@ Pegasus Knight (S),CantoPlusID
 Journeyman (3),0x0
 Pupil (3),0x0
 Wyvern Rider (A),CantoPlusID
-Manakete,SmiteID
-Manakete (F),SmiteID
-Journeyman (1),0x0
-Pupil (1),0x0
+Manakete (A) (M),SmiteID
+Manakete (Ch) (F),SmiteID
+Journeyman,0x0
+Pupil,0x0
 Fighter,ShoveID
 Warrior,ShoveID
 Brigand,ShoveID
@@ -70,7 +70,7 @@ Berserker,ShoveID
 Monk,SwapID
 Priest,SwapID
 Bard,0x0
-Recruit (1),0x0
+Recruit,0x0
 Pegasus Knight (L),CantoPlusID
 Falcoknight (SL),CantoPlusID
 Cleric,SwapID
@@ -78,7 +78,7 @@ Troubadour,CantoPlusID
 Valkyrie,CantoPlusID
 Dancer,PivotID
 Soldier,SwapID
-Necromancer,0x0
+Soldier (F),SwapID
 Fleet,0x0
 Phantom,SwarpID
 Revenant,0x0
@@ -108,11 +108,11 @@ Archer on Arbalest,0x0
 Ballista,0x0
 Long Ballista,0x0
 Arbalest,0x0
-Civilian,SwapID
-Civilian (F),SwapID
-Civilian,SwapID
-Civilian (F),SwapID
-Civilian,SwapID
+Civilian,0x0
+Civilian (F),0x0
+Civilian,0x0
+Civilian (F),0x0
+Civilian,0x0
 Pegasus Knight (A),CantoPlusID
 Dracoknight (SA),CantoPlusID
 Queen,SwapID
@@ -127,24 +127,24 @@ Freelancer,ShoveID
 Freelancer (F),ShoveID
 Champion,ShoveID
 Champion (F),ShoveID
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
-0,0x0
+Brigand (F),ShoveID
+0x81,0x0
+0x82,0x0
+0x83,0x0
+0x84,0x0
+Dracoknight (SA),CantoPlusID
+0x86,0x0
+Wyvern Knight (A),CantoPlusID
+Fighter (F),ShoveID
+0x89,0x0
+War Monk,ShoveID
+War Cleric,ShoveID
+Spellblade,SwapID
+Spellblade (F),SwapID
+Halberdier,SwapID
+Rogue,PivotID
+0x90,0x0
+0x91,0x0
 0,0x0
 0,0x0
 0,0x0

@@ -170,6 +170,12 @@ MESSAGE ello guvnah
 //Makes unit portraits blink on status screen
 	#include "StatScreenBlink/SSBlink.event"
 
+//StanH
+//Per Chapter Battle Quotes
+//Creates macros that let you set death/battle quotes within chapter events
+//Guide on using it here: https://feuniverse.us/t/fe8u-stans-asm-stuff/2376/21
+	#include "PerChapterBattleQuotes/PerChapterBattleQuotes.event"
+
 //A whole bunch of edits by various people, see Edits.event for more info
 	#include "Edits.event"
 

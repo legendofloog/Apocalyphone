@@ -4,9 +4,10 @@
 //If you want me to implement a class for you just ask
 
 //Unimplemented* - Must stay defined as highly likely to be used
+//Manaketes will be implemented as used outside of maybe the male adult manakete as that may be used as an enemy.
 //Classes that need character anims for gender: Cavalier/Paladin (F), Pegasus/Falco (M)
 //Summoner (F), Troubdadour/Valkyrie (M), Scout/Ranger (F)
-//ID's up to 0x8F are used
+//ID's up to 0x91 are used
 //73-7A are left free if anyone wants stuff like queen for cutscene NPCs since the table is being expanded anyway
 //50 is left free for fleet but it will need to have stats created for it
 
@@ -52,7 +53,7 @@
 #define Dracoknight Dracoknight_SL
 #define WyvernKnight_S 0x24
 #define WyvernKnight_L 0x23 //WyvernKnight Def
-#define WyvernKnight_A 0x87 //unimplemented
+#define WyvernKnight_A 0x87
 
 #undef Manakete
 #define Manakete 0x3B //unimplemented
@@ -66,10 +67,10 @@
 #define Warrior_F 0x89 //unimplemented*
 
 #define Brigand_F 0x80
-#define Pirate_F 0x8F //unimplemented
+#define Pirate_F 0x91 //unimplemented
 #define Berserker_F 0x81 //unimplemented
 
-#define Soldier_F 0x4F //unimplemented*
+#define Soldier_F 0x4F
 //Halberdier is gender neutral
 #define Halberdier 0x8e
 
@@ -81,7 +82,8 @@
 #define Troubadour_M 0x86 //unimplemented (May not need to be implemented)
 #define Monk_F 0x83 //unimplemented
 #define Valkyrie_M 0x84 //unimplemented (May not need to be implemented)
-#define Rogue_F 0x8F //unimplemented
+#define Rogue_F 0x8F
+#define DarkKnight 0x90 //unimplemented
 
 
 //all unimplemented
@@ -112,6 +114,8 @@
 #define WyvernK_A WyvernKnight_A
 
 #define Lancer Freelancer
+
+#define Phantom GhostFighter
 
 //Enemy Classes
 #define Bonewalker_S 0x32
@@ -146,37 +150,37 @@
 //Class To-Do List
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group A1:
-	Merc	Y		Y	Y		N		Y
-	MercF	Y		Y	N/A		N		Y
-	Myrm	Y		Y	Y		Y		Y
-	MyrmF	Y		Y	N/A		Y		Y
-	Thief	Y		Y	Y		N		Y
+	Merc	Y		Y	Y		N		Y 		Y
+	MercF	Y		Y	N/A		N		Y 		
+	Myrm	Y		Y	Y		Y		Y 		Y
+	MyrmF	Y		Y	N/A		Y		Y 		Y
+	Thief	Y		Y	Y		N		Y 		Y
 	ThiefF	Y		Y	N/A		Y		Y
-	Sold	Y		Y	Y		Y		Y
+	Sold	Y		Y	Y		Y		Y  		Y
 	SoldF	N*		N	N/A		N		N
 	Lncr	Y		Y	Y		Y		Y
 	LncrF	Y		Y	N/A		Y		Y
-	Fgtr	Y		Y	Y*		Y		Y
+	Fgtr	Y		Y	Y*		Y		Y  		Y
 	FgtrF	N		Y	N/A		N		N
-	Brig	Y		Y	Y		Y		Y
+	Brig	Y		Y	Y		Y		Y  		Y
 	BrigF	Y		Y	N/A		N		N
-	Pirt	Y		Y	Y		Y		Y
-	PirtF	N		N	N		N		N
-	Arch	Y		Y	Y		Vanilla	Y
-	ArchF	Y		Y	Y		Vanilla	Y
-	Scout	Y		Y	Y		Y*		Y
-	CavS	Y		Y	Y		Y		Y
-	CavL	Y		Y	Y		Y		Y
+	Pirt	Y		Y	Y		Y		Y     	Y
+	PirtF	N		N	N/A		N		N
+	Arch	Y		Y	Y		Vanilla	Y 		Y
+	ArchF	Y		Y	Y		Vanilla	Y 		Y
+	Scout	Y		Y	Y		Y*		Y 		Y
+	CavS	Y		Y	Y		Y		Y 		
+	CavL	Y		Y	Y		Y		Y 		Y
 	CavA	Y		Y	Y		Y		Y
-	KngtS	Y		Y	Y		Y		Y
-	KngtL	Y		Y	Y		Y		Y
+	KngtS	Y		Y	Y		Y		Y 		
+	KngtL	Y		Y	Y		Y		Y 		Y
 	KngtA	Y		Y	Y		Y		Y
 	KngtB	Y		Y	Y		Y		Y
-	PegS	Y		Y	Y		N		Y
-	PegL	Y		Y	Y		Vanilla	Y
+	PegS	Y		Y	Y		N		Y 		
+	PegL	Y		Y	Y		Vanilla	Y 		Y
 	PegA	Y		Y*	Y		N		Y
 	WyvS	Y		Y	Y		N		Y
-	WyvL	Y		Y	Y		Vanilla	Y
+	WyvL	Y		Y	Y		Vanilla	Y 		Y
 	WyvA	Y		Y*	Y		N		Y
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
@@ -186,7 +190,7 @@
 	Sword 	Y 		Y 	Y 		Y 		Y*
 	SwordF	Y  		Y 	N/A		Y 		Y*
 	Rogue 	Y 		Y 	Y 		Mb 		N
-	RogueF 	N 		N  	N/A		N  		N
+	RogueF 	N 		N* 	N/A		N  		N
 	Halb 	Y 		Y 	Y 		N  		N
 	Champ 	Y 		Y 	Y 		N 		Y
 	ChampF 	Y 		N  	N/A 	N 		Y
@@ -209,13 +213,15 @@
 	DracSL 	Y 		Y 	Y 		N 		Y
 	DracLA 	Y 		Y 	Y 		N 		Y
 
+	*Prob can use male rogue for female, its p neutral
+
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group B1:
 	Mage	Y		Y	Y		Vanilla	Y
 	MageF	Y		Y	N/A		Vanilla	Y
 	Monk	Y		Y	Y		Y		Y
-	MonkF	N		N	N		N		N
+	MonkF	N		N	N/A		N		N
 	Sham	Y		Y	Y		Y		Y
 	ShamF	Y		Y	N/A		N		Y
 	Priest	Y		Y	Y		Vanilla	Y
@@ -226,7 +232,7 @@
 	BoneS	Y		Y	Y		Y		Y
 	BoneL	Y		Y	Y		Y		Y
 	BoneB	Y		Y	Y		Y		Y
-	Mog`	Y		Y	Y		Y		Y
+	Mog 	Y		Y	Y		Y		Y
 	Doog	Y		Y	Y		Y		Y
 	Tarv 	Y		Y	Y		Y		Y
 	Goyle	Y		Y	Y		Y		Y
@@ -243,9 +249,9 @@
 	BishopF Y 		Y 	N/A 	N 		Y*
 	Valk 	Y 		Y 	Y 		Y 		Y
 	ValkM* 	N 		N 	N/A		N 		N
-	Reven 	Y 		Y 	Y 		Vanilla Y
-	Wight 	Y 		Y 	Y 		Vanilla Y
-	WightB 	Y 		Y 	Y 		Vanilla Y
+	Reven 	Y 		Y 	Y 		N 		Y
+	Wight 	Y 		Y 	Y 		N 		Y
+	WightB 	Y 		Y 	Y 		N 		Y
 	Balor 	Y 		Y 	Y 		Y 		Y
 	Gwyll 	Y 		Y 	Y 		Vanilla Y 		Y
 	Mael 	Y 		Y 	Y 		Vanilla	Y 		Y
@@ -261,21 +267,23 @@ Necro
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions
 	Group C:
-	MageKn
-	MageKnF
-	Ass
-	AssF
-	WyvKS
-	WyvKL
-	WyvKA
-	WarMonk
-	WarCler
-	Spellbld
+	MageKn 	Y 		Y 	Y 		Y 		Y  		Y
+	MageKnF Y 		Y 	N/A		Y 		Y 		Y
+	Ass     Y 		Y 	Y 		N 		N  		Y
+	AssF 	Y 		Y 	N/A		N 		N  		Y
+	WyvKS 	Y 		N 	N 		N 		Y 		Y
+	WyvKL 	Y 		Y 	Y 		Vanilla Y 		Y
+	WyvKA 	Y 		Y 	Y 		N 		N 		N
+	WarMonk N 		Y 	Y 		N 		N 		N
+	WarCler N 		Y 	N/A 	N 		N 		N
+	Spellb 	Y 		Y 	Y 		N 		N 		
+	Splb F 	Y 		Y 	N/A 	N 		N
 	ManaA
 	ManaB
 	ManaA2
 	ManaB2
-	Phantom
+	Phantom N 		Y 	Y 		N 		N 		Y
+	DKnight
 
 
 	Class	Stats	Map	Card	Anim	Skills	Footsteps	Descriptions

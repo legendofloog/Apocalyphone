@@ -42,3 +42,5 @@
 #define PaladinSwordClassCard 0xC1
 #define PaladinAxeClassCard 0xC2
 #define HalberdierClassCard 0xC3
+#define WyvernKnightAxeClassCard 0xC4
+#define AssassinClassCard 0xC5

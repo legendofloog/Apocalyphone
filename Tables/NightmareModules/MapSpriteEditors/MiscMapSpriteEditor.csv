@@ -57,10 +57,10 @@ Pegasus Knight (S),IsPointer|PegKnightSwordWalk,0x81e0e40
 Journeyman (3),0x81e0f98,0x81e173c
 Pupil (3),0x81e189c,0x81e2088
 Wyvern Rider (A),IsPointer|WyvernRiderAxeWalk,0x81d403c
-Manakete,0x81e21e0,0x81e2f34
-Manakete (F),0x81e308c,0x81e39ec
-Journeyman (1),0x81e0f98,0x81e173c
-Pupil (1),0x81e189c,0x81e2088
+Manakete (A) (M),0x81e21e0,0x81e2f34
+Manakete (Ch) (F),0x81e308c,0x81e39ec
+Journeyman,0x81e0f98,0x81e173c
+Pupil,0x81e189c,0x81e2088
 Fighter,0x81e3b44,0x81e4340
 Warrior,0x81e4498,0x81e4ea4
 Brigand,0x81e4ffc,0x81e582c
@@ -69,7 +69,7 @@ Berserker,0x81e640c,0x81e6df4
 Monk,0x81e6f4c,0x81e7638
 Priest,0x81e7790,0x81e7f58
 Bard,0x81e80b0,0x81e8840
-Recruit (1),0x81e06e4,0x81e0e40
+Recruit,0x81e06e4,0x81e0e40
 Pegasus Knight (L),0x81e89d0,0x81e96f0
 Falcoknight (SL),0x81e9848,0x81ea5dc
 Cleric,0x81ea734,0x81eaea0
@@ -125,20 +125,20 @@ Dead Peer,0x82051c0,0x82055a8
 Freelancer,IsPointer|LancerWalk,0x81caa20
 Freelancer (F),IsPointer|LancerFWalk,0x81caa20
 Champion,IsPointer|ChampionWalk,0x81e4340
-Champion (F),IsPointer|ChampionWalk,0x81e4340
+Champion (F),IsPointer|ChampionFWalk,0x81e4340
 Brigand (F),IsPointer|BrigandFWalk,0x81e582c
 0x81,IsPointer|SoldierWalk,0x81edbc4
 0x82,IsPointer|SoldierWalk,0x81edbc4
 0x83,IsPointer|SoldierWalk,0x81edbc4
 0x84,IsPointer|SoldierWalk,0x81edbc4
-Dracoknight_SA,IsPointer|DracoknightSwordWalk,0x81d5e58
+Dracoknight (SA),IsPointer|DracoknightSwordWalk,0x81d5e58
 0x86,IsPointer|SoldierWalk,0x81edbc4
-0x87,IsPointer|SoldierWalk,0x81edbc4
-0x88,IsPointer|FighterFWalk,0x81e4340
+Wyvern Knight (A),IsPointer|WyvernKnightAxeWalk,0x81d7cc8
+Fighter (F),IsPointer|FighterFWalk,0x81e4340
 0x89,IsPointer|SoldierWalk,0x81edbc4
-0x8a,IsPointer|SoldierWalk,0x81edbc4
-0x8b,IsPointer|SoldierWalk,0x81edbc4
-0x8c,IsPointer|SoldierWalk,0x81edbc4
-0x8d,IsPointer|SoldierWalk,0x81edbc4
+War Monk,IsPointer|WarMonkWalk,0x81edbc4
+War Cleric,IsPointer|WarClericWalk,0x81edbc4
+Spellblade,IsPointer|SpellbladeWalk,0x81d9b58
+Spellblade (F),IsPointer|SpellbladeFWalk,0x81da694
 Halberdier,IsPointer|HalberdierWalk,0x81edbc4
-0x8f,IsPointer|SoldierWalk,0x81edbc4
+Rogue,IsPointer|RogueFWalk,0x81df548

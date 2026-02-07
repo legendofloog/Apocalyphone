@@ -226,3 +226,19 @@ ALIGN 4
 HalberdierClassCardPal:
 #incbin "DMP/Halberdier(TBA).png_pal.dmp"
 setCardEntry(HalberdierClassCard, HalberdierClassCardData, HalberdierClassCardPal)
+
+ALIGN 4
+WyvernKnightAxeClassCardData:
+#incbin "DMP/WyvernKnightAxe(topazlight).dmp"
+ALIGN 4
+WyvernKnightAxeClassCardPal:
+#incbin "DMP/WyvernKnightAxe(topazlight).png_pal.dmp"
+setCardEntry(WyvernKnightAxeClassCard, WyvernKnightAxeClassCardData, WyvernKnightAxeClassCardPal)
+
+ALIGN 4
+AssassinClassCardData:
+#incbin "DMP/Assassin(SwordOfHeavenAndEarth,Scraiza,Leif).dmp"
+ALIGN 4
+AssassinClassCardPal:
+#incbin "DMP/Assassin(SwordOfHeavenAndEarth,Scraiza,Leif).png_pal.dmp"
+setCardEntry(AssassinClassCard, AssassinClassCardData, AssassinClassCardPal)

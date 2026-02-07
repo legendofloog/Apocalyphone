@@ -368,7 +368,7 @@ Rain Ballista[X]
 Arbalest[X]
 
 ## DaggerDesc
-Ignore defence in melee.[X]
+Ignore defence. Throwable.[X]
 
 ## IronDaggerName
 Iron Dagger[X]
@@ -377,7 +377,7 @@ Iron Dagger[X]
 Venin Dagger[X]
 
 ## VeninDaggerDesc
-Ignore defence in melee.[N]
+Ignore defence. Throwable[N]
 Inflicts poison.[X]
 
 ## VeninBowName
@@ -397,7 +397,7 @@ melee. +25 avoid.[X]
 Wingclipper[X]
 
 ## WingclipperDesc
-Ignore defence in melee. 3x effective[N]
+Ignore defence. 3x effective[N]
 against flying units.[X]
 
 ## SilencerName
